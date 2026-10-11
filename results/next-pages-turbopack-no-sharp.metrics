@@ -1,0 +1,31 @@
+BENCH_METRIC bundler=turbopack
+BENCH_METRIC router=pages
+BENCH_METRIC build_seconds=6.581
+BENCH_METRIC output_bytes=39803986
+BENCH_METRIC cache_bytes=61860469
+BENCH_METRIC standalone_bytes=26304629
+BENCH_METRIC static_bytes=754888
+BENCH_METRIC static_html_count=500
+BENCH_METRIC dynamic_html_count=0
+BENCH_METRIC standalone_server=standalone/server.js
+BENCH_METRIC native_bytes=0
+BENCH_FILE 4301622	.next/standalone/node_modules/next/dist/server/capsize-font-metrics.json
+BENCH_FILE 800754	.next/standalone/node_modules/next/dist/compiled/@edge-runtime/primitives/load.js
+BENCH_FILE 715762	.next/standalone/node_modules/next/dist/compiled/next-server/app-page-turbo-experimental.runtime.prod.js
+BENCH_FILE 704400	.next/standalone/node_modules/next/dist/compiled/next-server/app-page-turbo.runtime.prod.js
+BENCH_FILE 525791	.next/standalone/node_modules/next/dist/compiled/edge-runtime/index.js
+BENCH_FILE 452252	.next/standalone/node_modules/react-dom/cjs/react-dom-server.edge.development.js
+BENCH_FILE 451470	.next/standalone/node_modules/react-dom/cjs/react-dom-server.browser.development.js
+BENCH_FILE 421786	.next/standalone/node_modules/react-dom/cjs/react-dom-server-legacy.browser.development.js
+BENCH_FILE 386098	.next/standalone/node_modules/next/dist/server/app-render/app-render.js
+BENCH_FILE 308356	.next/standalone/node_modules/next/dist/compiled/compression/index.js
+BENCH_FILE 300544	.next/standalone/node_modules/react-dom/cjs/react-dom-server.node.production.js
+BENCH_FILE 292617	.next/standalone/node_modules/react-dom/cjs/react-dom-server.edge.production.js
+BENCH_FILE 286554	.next/standalone/node_modules/react-dom/cjs/react-dom-server.browser.production.js
+BENCH_FILE 264184	.next/standalone/node_modules/react-dom/cjs/react-dom-server-legacy.node.production.js
+BENCH_FILE 258822	.next/standalone/node_modules/react-dom/cjs/react-dom-server-legacy.browser.production.js
+BENCH_FILE 159969	.next/standalone/node_modules/next/dist/server/use-cache/use-cache-wrapper.js
+BENCH_FILE 157171	.next/standalone/node_modules/next/dist/compiled/comment-json/index.js
+BENCH_FILE 150256	.next/standalone/node_modules/next/dist/client/components/segment-cache/cache.js
+BENCH_FILE 143364	.next/standalone/node_modules/next/dist/compiled/conf/index.js
+BENCH_FILE 142814	.next/standalone/.next/server/middleware-build-manifest.js

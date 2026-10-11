@@ -1,0 +1,53 @@
+BENCH_METRIC app_bytes=58734773
+BENCH_METRIC native_bytes=19042592
+BENCH_METRIC file_count=4077
+BENCH_DIRS
+BENCH_DIR 25071931	node_modules/next
+BENCH_DIR 19091339	node_modules/@img
+BENCH_DIR 9436565	.next/server
+BENCH_DIR 2531883	.next/static
+BENCH_DIR 1416814	node_modules/react-dom
+BENCH_DIR 339057	node_modules/caniuse-lite
+BENCH_DIR 229339	node_modules/sharp
+BENCH_DIR 121917	node_modules/postcss
+BENCH_DIR 111635	node_modules/source-map-js
+BENCH_DIR 74387	.next/routes-manifest.json
+BENCH_DIR 71299	node_modules/react
+BENCH_DIR 68829	node_modules/semver
+BENCH_DIR 46525	node_modules/baseline-browser-mapping
+BENCH_DIR 30917	node_modules/@swc
+BENCH_DIR 22255	node_modules/styled-jsx
+BENCH_DIR 18423	.next/app-path-routes-manifest.json
+BENCH_DIR 11429	node_modules/detect-libc
+BENCH_DIR 11000	node_modules/@next
+BENCH_DIR 10819	.next/required-server-files.json
+BENCH_DIR 8108	server.js
+BENCH_DIR 3215	node_modules/picocolors
+BENCH_DIR 2912	node_modules/nanoid
+BENCH_DIR 2534	.next/prerender-manifest.json
+BENCH_DIR 618	package.json
+BENCH_DIR 512	.next/build-manifest.json
+BENCH_LARGEST
+BENCH_FILE 18712760	node_modules/@img/sharp-libvips-linuxmusl-arm64/lib/libvips-cpp.so.8.18.7
+BENCH_FILE 4301622	node_modules/next/dist/server/capsize-font-metrics.json
+BENCH_FILE 1540081	node_modules/next/dist/compiled/babel-packages/packages-bundle.js
+BENCH_FILE 1364777	node_modules/next/dist/compiled/babel/bundle.js
+BENCH_FILE 885783	node_modules/next/dist/compiled/next-devtools/index.js
+BENCH_FILE 815049	node_modules/next/dist/compiled/@next/font/dist/fontkit/index.js
+BENCH_FILE 800754	node_modules/next/dist/compiled/@edge-runtime/primitives/load.js
+BENCH_FILE 715920	node_modules/next/dist/compiled/next-server/app-page-experimental.runtime.prod.js
+BENCH_FILE 715762	node_modules/next/dist/compiled/next-server/app-page-turbo-experimental.runtime.prod.js
+BENCH_FILE 704560	node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js
+BENCH_FILE 704400	node_modules/next/dist/compiled/next-server/app-page-turbo.runtime.prod.js
+BENCH_FILE 695393	.next/server/chunks/22430.js
+BENCH_FILE 525791	node_modules/next/dist/compiled/edge-runtime/index.js
+BENCH_FILE 488742	node_modules/next/dist/compiled/@next/font/dist/google/font-data.json
+BENCH_FILE 387574	node_modules/next/dist/compiled/postcss-preset-env/index.cjs
+BENCH_FILE 386098	node_modules/next/dist/server/app-render/app-render.js
+BENCH_FILE 363591	node_modules/next/dist/compiled/crypto-browserify/index.js
+BENCH_FILE 329832	node_modules/@img/sharp-linuxmusl-arm64/lib/sharp-linuxmusl-arm64-0.35.5.node
+BENCH_FILE 308356	node_modules/next/dist/compiled/compression/index.js
+BENCH_FILE 300544	node_modules/react-dom/cjs/react-dom-server.node.production.js
+BENCH_NATIVE
+BENCH_FILE 18712760	node_modules/@img/sharp-libvips-linuxmusl-arm64/lib/libvips-cpp.so.8.18.7
+BENCH_FILE 329832	node_modules/@img/sharp-linuxmusl-arm64/lib/sharp-linuxmusl-arm64-0.35.5.node

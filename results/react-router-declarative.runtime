@@ -1,0 +1,29 @@
+BENCH_METRIC app_bytes=392662
+BENCH_METRIC native_bytes=0
+BENCH_METRIC file_count=503
+BENCH_DIRS
+BENCH_DIR 389331	dist/assets
+BENCH_DIR 3013	server.mjs
+BENCH_DIR 318	dist/index.html
+BENCH_LARGEST
+BENCH_FILE 292547	dist/assets/index-LJspFeen.js
+BENCH_FILE 3013	server.mjs
+BENCH_FILE 318	dist/index.html
+BENCH_FILE 194	dist/assets/100-CQN-W6c6.js
+BENCH_FILE 194	dist/assets/101-m_jS8e_2.js
+BENCH_FILE 194	dist/assets/102-9UJCQOrD.js
+BENCH_FILE 194	dist/assets/103-B6AWDfz7.js
+BENCH_FILE 194	dist/assets/104-CE0Vol44.js
+BENCH_FILE 194	dist/assets/105-DqFsojg6.js
+BENCH_FILE 194	dist/assets/106-D451DUfK.js
+BENCH_FILE 194	dist/assets/107-Cz7HbwYF.js
+BENCH_FILE 194	dist/assets/108-BAvDPkCr.js
+BENCH_FILE 194	dist/assets/109-CXDCT3nT.js
+BENCH_FILE 194	dist/assets/110-DDBLg5nJ.js
+BENCH_FILE 194	dist/assets/111-C1lrzz7K.js
+BENCH_FILE 194	dist/assets/112-Blgqc-3p.js
+BENCH_FILE 194	dist/assets/113-BnNBSzTc.js
+BENCH_FILE 194	dist/assets/114-DvFWURaR.js
+BENCH_FILE 194	dist/assets/115-BTXjWh1x.js
+BENCH_FILE 194	dist/assets/116-BMmV7Ffy.js
+BENCH_NATIVE

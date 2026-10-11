@@ -1,0 +1,16 @@
+BENCH_METRIC bundler=vite-rolldown
+BENCH_METRIC build_seconds=0.458
+BENCH_METRIC output_bytes=354827
+BENCH_METRIC client_bytes=347425
+BENCH_METRIC server_bytes=7402
+BENCH_METRIC client_html_count=0
+BENCH_METRIC native_bytes=0
+BENCH_FILE 214705	build/client/assets/entry.client-DF8hY4KR.js
+BENCH_FILE 86979	build/client/assets/jsx-runtime-Bbntekxr.js
+BENCH_FILE 33652	build/client/assets/errorBoundaries-Doolcmyu.js
+BENCH_FILE 10430	build/client/assets/root-CCZxrRf8.js
+BENCH_FILE 7402	build/server/index.js
+BENCH_FILE 1220	build/client/assets/manifest-f3a0f9a8.js
+BENCH_FILE 229	build/client/assets/dynamic-BIp1JE5y.js
+BENCH_FILE 209	build/client/assets/home-MhivSL-j.js
+BENCH_FILE 1	build/client/.gitkeep

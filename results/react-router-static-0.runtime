@@ -1,0 +1,51 @@
+BENCH_METRIC app_bytes=39056747
+BENCH_METRIC native_bytes=0
+BENCH_METRIC file_count=1441
+BENCH_DIRS
+BENCH_DIR 23624971	node_modules/typescript
+BENCH_DIR 8063782	node_modules/react-dom
+BENCH_DIR 2856262	node_modules/react-router
+BENCH_DIR 805224	node_modules/source-map
+BENCH_DIR 374851	node_modules/qs
+BENCH_DIR 347425	build/client
+BENCH_DIR 344185	node_modules/iconv-lite
+BENCH_DIR 300044	node_modules/@remix-run
+BENCH_DIR 225566	node_modules/mime-db
+BENCH_DIR 178663	node_modules/react
+BENCH_DIR 102920	node_modules/object-inspect
+BENCH_DIR 102370	node_modules/@react-router
+BENCH_DIR 85285	node_modules/morgan
+BENCH_DIR 85177	node_modules/source-map-support
+BENCH_DIR 82659	node_modules/scheduler
+BENCH_DIR 78135	node_modules/compression
+BENCH_DIR 76638	node_modules/express
+BENCH_DIR 59680	node_modules/path-to-regexp
+BENCH_DIR 48820	node_modules/isbot
+BENCH_DIR 48581	node_modules/content-disposition
+BENCH_DIR 46851	node_modules/router
+BENCH_DIR 46542	node_modules/get-intrinsic
+BENCH_DIR 42793	node_modules/debug
+BENCH_DIR 42536	node_modules/body-parser
+BENCH_DIR 42299	node_modules/safer-buffer
+BENCH_LARGEST
+BENCH_FILE 9112572	node_modules/typescript/lib/typescript.js
+BENCH_FILE 6213092	node_modules/typescript/lib/_tsc.js
+BENCH_FILE 1874901	node_modules/typescript/lib/lib.dom.d.ts
+BENCH_FILE 1199917	node_modules/react-dom/cjs/react-dom-profiling.development.js
+BENCH_FILE 1182785	node_modules/react-dom/cjs/react-dom-client.development.js
+BENCH_FILE 699916	node_modules/react-dom/cjs/react-dom-profiling.profiling.js
+BENCH_FILE 625168	node_modules/react-dom/cjs/react-dom-client.production.js
+BENCH_FILE 609557	node_modules/typescript/lib/lib.webworker.d.ts
+BENCH_FILE 588085	node_modules/typescript/lib/typescript.d.ts
+BENCH_FILE 458095	node_modules/react-dom/cjs/react-dom-server.node.development.js
+BENCH_FILE 452252	node_modules/react-dom/cjs/react-dom-server.edge.development.js
+BENCH_FILE 451470	node_modules/react-dom/cjs/react-dom-server.browser.development.js
+BENCH_FILE 443587	node_modules/typescript/lib/ru/diagnosticMessages.generated.json
+BENCH_FILE 421786	node_modules/react-dom/cjs/react-dom-server-legacy.browser.development.js
+BENCH_FILE 421783	node_modules/react-dom/cjs/react-dom-server-legacy.node.development.js
+BENCH_FILE 399427	node_modules/react-dom/cjs/react-dom-server.bun.development.js
+BENCH_FILE 381398	node_modules/typescript/lib/ja/diagnosticMessages.generated.json
+BENCH_FILE 346139	node_modules/typescript/lib/ko/diagnosticMessages.generated.json
+BENCH_FILE 346016	node_modules/typescript/lib/fr/diagnosticMessages.generated.json
+BENCH_FILE 344426	node_modules/typescript/lib/de/diagnosticMessages.generated.json
+BENCH_NATIVE

@@ -1,0 +1,45 @@
+BENCH_METRIC app_bytes=30778661
+BENCH_METRIC native_bytes=0
+BENCH_METRIC file_count=7137
+BENCH_DIRS
+BENCH_DIR 14532101	node_modules/next
+BENCH_DIR 13888898	.next/server
+BENCH_DIR 1416698	node_modules/react-dom
+BENCH_DIR 568796	.next/static
+BENCH_DIR 121455	.next/build-manifest.json
+BENCH_DIR 74387	.next/routes-manifest.json
+BENCH_DIR 71299	node_modules/react
+BENCH_DIR 30691	node_modules/@swc
+BENCH_DIR 22255	node_modules/styled-jsx
+BENCH_DIR 18423	.next/app-path-routes-manifest.json
+BENCH_DIR 11000	node_modules/@next
+BENCH_DIR 10819	.next/required-server-files.json
+BENCH_DIR 8178	server.js
+BENCH_DIR 2534	.next/prerender-manifest.json
+BENCH_DIR 618	package.json
+BENCH_DIR 467	node_modules/client-only
+BENCH_DIR 21	.next/BUILD_ID
+BENCH_DIR 20	.next/package.json
+BENCH_DIR 1	public/.gitkeep
+BENCH_LARGEST
+BENCH_FILE 4301622	node_modules/next/dist/server/capsize-font-metrics.json
+BENCH_FILE 800754	node_modules/next/dist/compiled/@edge-runtime/primitives/load.js
+BENCH_FILE 715762	node_modules/next/dist/compiled/next-server/app-page-turbo-experimental.runtime.prod.js
+BENCH_FILE 704400	node_modules/next/dist/compiled/next-server/app-page-turbo.runtime.prod.js
+BENCH_FILE 525791	node_modules/next/dist/compiled/edge-runtime/index.js
+BENCH_FILE 386098	node_modules/next/dist/server/app-render/app-render.js
+BENCH_FILE 308356	node_modules/next/dist/compiled/compression/index.js
+BENCH_FILE 300544	node_modules/react-dom/cjs/react-dom-server.node.production.js
+BENCH_FILE 292617	node_modules/react-dom/cjs/react-dom-server.edge.production.js
+BENCH_FILE 286554	node_modules/react-dom/cjs/react-dom-server.browser.production.js
+BENCH_FILE 264184	node_modules/react-dom/cjs/react-dom-server-legacy.node.production.js
+BENCH_FILE 258822	node_modules/react-dom/cjs/react-dom-server-legacy.browser.production.js
+BENCH_FILE 229820	.next/static/chunks/0rc4o-n058wwa.js
+BENCH_FILE 217760	.next/server/chunks/ssr/[root-of-the-server]__07irjv8er3ezd._.js
+BENCH_FILE 185237	.next/static/chunks/0q7dcktmi0kta.js
+BENCH_FILE 159969	node_modules/next/dist/server/use-cache/use-cache-wrapper.js
+BENCH_FILE 157171	node_modules/next/dist/compiled/comment-json/index.js
+BENCH_FILE 150256	node_modules/next/dist/client/components/segment-cache/cache.js
+BENCH_FILE 143364	node_modules/next/dist/compiled/conf/index.js
+BENCH_FILE 126913	node_modules/next/dist/compiled/next-server/pages-turbo.runtime.prod.js
+BENCH_NATIVE

@@ -1,0 +1,25 @@
+{
+  "name": "next-benchmark",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build --turbopack",
+    "build:webpack": "next build --webpack",
+    "build:turbopack": "next build --turbopack",
+    "build:rspack": "BUNDLER=rspack next build",
+    "start": "node .next/standalone/server.js"
+  },
+  "dependencies": {
+    "next": "16.4.0",
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.0",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "next-rspack": "16.4.0",
+    "typescript": "5.9.3"
+  }
+}

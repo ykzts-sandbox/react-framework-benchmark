@@ -1,0 +1,33 @@
+BENCH_METRIC bundler=turbopack
+BENCH_METRIC router=app
+BENCH_METRIC build_seconds=2.890
+BENCH_METRIC output_bytes=40844120
+BENCH_METRIC cache_bytes=22278886
+BENCH_METRIC standalone_bytes=36513657
+BENCH_METRIC static_bytes=568792
+BENCH_METRIC static_html_count=0
+BENCH_METRIC dynamic_html_count=0
+BENCH_METRIC standalone_server=standalone/server.js
+BENCH_METRIC native_bytes=19042592
+BENCH_FILE 18712760	.next/standalone/node_modules/@img/sharp-libvips-linuxmusl-arm64/lib/libvips-cpp.so.8.18.7
+BENCH_FILE 4301622	.next/standalone/node_modules/next/dist/server/capsize-font-metrics.json
+BENCH_FILE 800754	.next/standalone/node_modules/next/dist/compiled/@edge-runtime/primitives/load.js
+BENCH_FILE 715762	.next/standalone/node_modules/next/dist/compiled/next-server/app-page-turbo-experimental.runtime.prod.js
+BENCH_FILE 704400	.next/standalone/node_modules/next/dist/compiled/next-server/app-page-turbo.runtime.prod.js
+BENCH_FILE 525791	.next/standalone/node_modules/next/dist/compiled/edge-runtime/index.js
+BENCH_FILE 386098	.next/standalone/node_modules/next/dist/server/app-render/app-render.js
+BENCH_FILE 329832	.next/standalone/node_modules/@img/sharp-linuxmusl-arm64/lib/sharp-linuxmusl-arm64-0.35.5.node
+BENCH_FILE 308356	.next/standalone/node_modules/next/dist/compiled/compression/index.js
+BENCH_FILE 300544	.next/standalone/node_modules/react-dom/cjs/react-dom-server.node.production.js
+BENCH_FILE 292617	.next/standalone/node_modules/react-dom/cjs/react-dom-server.edge.production.js
+BENCH_FILE 286554	.next/standalone/node_modules/react-dom/cjs/react-dom-server.browser.production.js
+BENCH_FILE 264184	.next/standalone/node_modules/react-dom/cjs/react-dom-server-legacy.node.production.js
+BENCH_FILE 258822	.next/standalone/node_modules/react-dom/cjs/react-dom-server-legacy.browser.production.js
+BENCH_FILE 217758	.next/standalone/.next/server/chunks/ssr/[root-of-the-server]__07irjv8er3ezd._.js
+BENCH_FILE 159969	.next/standalone/node_modules/next/dist/server/use-cache/use-cache-wrapper.js
+BENCH_FILE 157171	.next/standalone/node_modules/next/dist/compiled/comment-json/index.js
+BENCH_FILE 150256	.next/standalone/node_modules/next/dist/client/components/segment-cache/cache.js
+BENCH_FILE 143364	.next/standalone/node_modules/next/dist/compiled/conf/index.js
+BENCH_FILE 126913	.next/standalone/node_modules/next/dist/compiled/next-server/pages-turbo.runtime.prod.js
+BENCH_FILE 18712760	.next/standalone/node_modules/@img/sharp-libvips-linuxmusl-arm64/lib/libvips-cpp.so.8.18.7
+BENCH_FILE 329832	.next/standalone/node_modules/@img/sharp-linuxmusl-arm64/lib/sharp-linuxmusl-arm64-0.35.5.node

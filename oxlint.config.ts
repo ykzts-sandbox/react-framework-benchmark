@@ -4,5 +4,14 @@ import react from "ultracite/oxlint/react";
 
 export default defineConfig({
   extends: [core, react],
-  ignorePatterns: [...core.ignorePatterns, "**/devcontainer-lock.json"],
+  ignorePatterns: [
+    ...core.ignorePatterns,
+    "**/devcontainer-lock.json",
+    "apps/next/app/static/**",
+    "apps/next-pages/pages/static/**",
+    "apps/react-router/app/routes/static/**",
+    "apps/react-router-data/src/routes/static/**",
+    "apps/react-router-declarative/src/routes/static/**",
+    "backend/**",
+  ],
 });
