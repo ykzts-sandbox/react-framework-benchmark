@@ -1,0 +1,12 @@
+BENCH_METRIC app_bytes=314927
+BENCH_METRIC native_bytes=0
+BENCH_METRIC file_count=3
+BENCH_DIRS
+BENCH_DIR 312950	dist/assets
+BENCH_DIR 1659	server.mjs
+BENCH_DIR 318	dist/index.html
+BENCH_LARGEST
+BENCH_FILE 312950	dist/assets/index-Cm5k9NL2.js
+BENCH_FILE 1659	server.mjs
+BENCH_FILE 318	dist/index.html
+BENCH_NATIVE

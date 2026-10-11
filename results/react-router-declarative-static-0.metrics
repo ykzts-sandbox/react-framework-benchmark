@@ -1,0 +1,9 @@
+BENCH_METRIC bundler=vite-rolldown
+BENCH_METRIC mode=declarative
+BENCH_METRIC build_seconds=0.198
+BENCH_METRIC output_bytes=258568
+BENCH_METRIC client_html_count=1
+BENCH_METRIC client_js_count=1
+BENCH_METRIC native_bytes=0
+BENCH_FILE 258250	dist/assets/index-CWmGJyK_.js
+BENCH_FILE 318	dist/index.html

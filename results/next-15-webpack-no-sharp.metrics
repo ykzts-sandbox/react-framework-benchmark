@@ -1,0 +1,31 @@
+BENCH_METRIC bundler=webpack
+BENCH_METRIC router=app
+BENCH_METRIC build_seconds=36.125
+BENCH_METRIC output_bytes=72221218
+BENCH_METRIC cache_bytes=396595059
+BENCH_METRIC standalone_bytes=52571552
+BENCH_METRIC static_bytes=2393670
+BENCH_METRIC static_html_count=0
+BENCH_METRIC dynamic_html_count=0
+BENCH_METRIC standalone_server=standalone/server.js
+BENCH_METRIC native_bytes=0
+BENCH_FILE 9112572	.next/standalone/node_modules/typescript/lib/typescript.js
+BENCH_FILE 4301622	.next/standalone/node_modules/next/dist/server/capsize-font-metrics.json
+BENCH_FILE 4012235	.next/standalone/node_modules/next/dist/compiled/amphtml-validator/validator_wasm.js
+BENCH_FILE 1538674	.next/standalone/node_modules/next/dist/compiled/babel-packages/packages-bundle.js
+BENCH_FILE 1359783	.next/standalone/node_modules/next/dist/compiled/babel/bundle.js
+BENCH_FILE 822498	.next/standalone/node_modules/next/dist/compiled/next-devtools/index.js
+BENCH_FILE 815117	.next/standalone/node_modules/next/dist/compiled/@next/font/dist/fontkit/index.js
+BENCH_FILE 800754	.next/standalone/node_modules/next/dist/compiled/@edge-runtime/primitives/load.js
+BENCH_FILE 551528	.next/standalone/node_modules/next/dist/compiled/next-server/app-page-turbo-experimental.runtime.prod.js
+BENCH_FILE 551519	.next/standalone/node_modules/next/dist/compiled/next-server/app-page-experimental.runtime.prod.js
+BENCH_FILE 526518	.next/standalone/node_modules/next/dist/compiled/next-server/app-page-turbo.runtime.prod.js
+BENCH_FILE 526509	.next/standalone/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js
+BENCH_FILE 525805	.next/standalone/node_modules/next/dist/compiled/edge-runtime/index.js
+BENCH_FILE 452252	.next/standalone/node_modules/react-dom/cjs/react-dom-server.edge.development.js
+BENCH_FILE 451470	.next/standalone/node_modules/react-dom/cjs/react-dom-server.browser.development.js
+BENCH_FILE 449613	.next/standalone/node_modules/next/dist/compiled/@next/font/dist/google/font-data.json
+BENCH_FILE 421786	.next/standalone/node_modules/react-dom/cjs/react-dom-server-legacy.browser.development.js
+BENCH_FILE 384015	.next/standalone/node_modules/next/dist/compiled/postcss-preset-env/index.cjs
+BENCH_FILE 363603	.next/standalone/node_modules/next/dist/compiled/crypto-browserify/index.js
+BENCH_FILE 363260	.next/standalone/.next/server/chunks/80571.js

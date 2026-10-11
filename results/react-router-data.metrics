@@ -1,0 +1,27 @@
+BENCH_METRIC bundler=vite-rolldown
+BENCH_METRIC mode=data
+BENCH_METRIC build_seconds=0.442
+BENCH_METRIC output_bytes=444159
+BENCH_METRIC client_html_count=1
+BENCH_METRIC client_js_count=501
+BENCH_METRIC native_bytes=0
+BENCH_FILE 347057	dist/assets/index-D4UIPt5F.js
+BENCH_FILE 318	dist/index.html
+BENCH_FILE 194	dist/assets/100-B1CpoSGF.js
+BENCH_FILE 194	dist/assets/101-BSLXCMr5.js
+BENCH_FILE 194	dist/assets/102-DpIBsUwL.js
+BENCH_FILE 194	dist/assets/103-kL167K-m.js
+BENCH_FILE 194	dist/assets/104-C3wrjrxw.js
+BENCH_FILE 194	dist/assets/105-Dc607s9N.js
+BENCH_FILE 194	dist/assets/106-DGsycrNy.js
+BENCH_FILE 194	dist/assets/107-f5h7jGZt.js
+BENCH_FILE 194	dist/assets/108-hnd8bukC.js
+BENCH_FILE 194	dist/assets/109-G_gmX5Yy.js
+BENCH_FILE 194	dist/assets/110-BXIeWdVZ.js
+BENCH_FILE 194	dist/assets/111-CxgsM5cM.js
+BENCH_FILE 194	dist/assets/112-DjBuqeVN.js
+BENCH_FILE 194	dist/assets/113-B_-JoxMH.js
+BENCH_FILE 194	dist/assets/114-DwXWUcoE.js
+BENCH_FILE 194	dist/assets/115-Dgvp9-9m.js
+BENCH_FILE 194	dist/assets/116-CoJBMTlA.js
+BENCH_FILE 194	dist/assets/117-DId8dga1.js

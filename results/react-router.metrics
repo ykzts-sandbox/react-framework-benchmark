@@ -1,0 +1,27 @@
+BENCH_METRIC bundler=vite-rolldown
+BENCH_METRIC build_seconds=2.676
+BENCH_METRIC output_bytes=1186102
+BENCH_METRIC client_bytes=617250
+BENCH_METRIC server_bytes=568852
+BENCH_METRIC client_html_count=0
+BENCH_METRIC native_bytes=0
+BENCH_FILE 568852	build/server/index.js
+BENCH_FILE 214705	build/client/assets/entry.client-DF8hY4KR.js
+BENCH_FILE 168788	build/client/assets/manifest-df46e402.js
+BENCH_FILE 86979	build/client/assets/jsx-runtime-Bbntekxr.js
+BENCH_FILE 33652	build/client/assets/errorBoundaries-Doolcmyu.js
+BENCH_FILE 10430	build/client/assets/root-CCZxrRf8.js
+BENCH_FILE 209	build/client/assets/home-MhivSL-j.js
+BENCH_FILE 205	build/client/assets/100-BAQz5-I2.js
+BENCH_FILE 205	build/client/assets/101-Cw_zcb8p.js
+BENCH_FILE 205	build/client/assets/102-DwKJBT68.js
+BENCH_FILE 205	build/client/assets/103-DMIEb94K.js
+BENCH_FILE 205	build/client/assets/104-Dbfe5T_H.js
+BENCH_FILE 205	build/client/assets/105-ChTV4ucI.js
+BENCH_FILE 205	build/client/assets/106-DEAvbDt6.js
+BENCH_FILE 205	build/client/assets/107-DCDzO10p.js
+BENCH_FILE 205	build/client/assets/108-Drs6GBiu.js
+BENCH_FILE 205	build/client/assets/109-aJmpca09.js
+BENCH_FILE 205	build/client/assets/110-CJ651zQr.js
+BENCH_FILE 205	build/client/assets/111-DL82Fkkk.js
+BENCH_FILE 205	build/client/assets/112-D0RLxfgE.js

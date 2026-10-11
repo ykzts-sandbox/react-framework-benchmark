@@ -1,0 +1,96 @@
+services:
+  mysql:
+    image: mysql:8.4
+    environment:
+      MYSQL_DATABASE: benchmark
+      MYSQL_PASSWORD: benchmark
+      MYSQL_ROOT_PASSWORD: benchmark
+      MYSQL_USER: benchmark
+    healthcheck:
+      test:
+        [
+          "CMD",
+          "mysqladmin",
+          "ping",
+          "-h",
+          "127.0.0.1",
+          "-ubenchmark",
+          "-pbenchmark",
+        ]
+      interval: 2s
+      timeout: 5s
+      retries: 40
+      start_period: 20s
+
+  laravel:
+    build:
+      context: ./backend
+    environment:
+      APP_DEBUG: "false"
+      APP_ENV: local
+      APP_KEY: base64:FGQXoEpQPL28MJKODUsx0KdmRc+NBiExaOwv4TEUF4w=
+      APP_URL: http://127.0.0.1:8000
+      DB_CONNECTION: mysql
+      DB_DATABASE: benchmark
+      DB_HOST: mysql
+      DB_PASSWORD: benchmark
+      DB_PORT: "3306"
+      DB_USERNAME: benchmark
+      LOG_CHANNEL: stderr
+    depends_on:
+      mysql:
+        condition: service_healthy
+    ports:
+      - "8000:8000"
+    healthcheck:
+      test:
+        [
+          "CMD",
+          "php",
+          "-r",
+          "exit(@file_get_contents('http://127.0.0.1:8000/up')===false?1:0);",
+        ]
+      interval: 2s
+      timeout: 5s
+      retries: 40
+      start_period: 30s
+
+  nextjs:
+    image: benchmark-next:cache-demo
+    build:
+      context: .
+      dockerfile: apps/next/Dockerfile
+      args:
+        BUNDLER: turbopack
+        CACHEBUST: cache-demo
+        STATIC_ROUTES: "500"
+    environment:
+      HOSTNAME: 0.0.0.0
+      LARAVEL_ORIGIN: http://laravel:8000
+      PORT: "3000"
+    depends_on:
+      laravel:
+        condition: service_healthy
+    ports:
+      - "3000:3000"
+
+  react-router:
+    image: benchmark-react-router:vite
+    environment:
+      LARAVEL_ORIGIN: http://laravel:8000
+      PORT: "3000"
+    ports:
+      - "3001:3000"
+
+  varnish:
+    image: varnish:7.7
+    depends_on:
+      - nextjs
+    ports:
+      - "8080:80"
+    volumes:
+      - ./varnish/default.vcl:/etc/varnish/default.vcl:ro
+    # The image runs as uid 1000. A root-owned tmpfs cannot create
+    # /var/lib/varnish/varnishd, and the compiled VCL must be executable.
+    tmpfs:
+      - /var/lib/varnish:exec,uid=1000,gid=1000
