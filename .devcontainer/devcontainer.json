@@ -5,9 +5,7 @@
   "customizations": {
     "vscode": {
       "settings": {},
-      "extensions": [
-        "oxc.oxc-vscode"
-      ]
+      "extensions": ["oxc.oxc-vscode"]
     }
   },
   "features": {
