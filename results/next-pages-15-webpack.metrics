@@ -1,11 +1,11 @@
 BENCH_METRIC bundler=webpack
 BENCH_METRIC router=pages
-BENCH_METRIC build_seconds=19.503
-BENCH_METRIC output_bytes=63267902
-BENCH_METRIC cache_bytes=85847384
-BENCH_METRIC standalone_bytes=59434346
-BENCH_METRIC static_bytes=722279
-BENCH_METRIC static_html_count=500
+BENCH_METRIC build_seconds=17.530
+BENCH_METRIC output_bytes=69608555
+BENCH_METRIC cache_bytes=91352553
+BENCH_METRIC standalone_bytes=62643302
+BENCH_METRIC static_bytes=731779
+BENCH_METRIC static_html_count=0
 BENCH_METRIC dynamic_html_count=0
 BENCH_METRIC standalone_server=standalone/server.js
 BENCH_METRIC native_bytes=19042592

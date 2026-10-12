@@ -16,7 +16,9 @@ const tracingExcludes = [
 ];
 
 const nextConfig: NextConfig = {
-  output: "standalone",
+  // STANDALONE=0 builds the image that runs next start with the whole
+  // node_modules. See the runner-full stage in the Dockerfile.
+  output: process.env.STANDALONE === "0" ? undefined : "standalone",
   // Standalone tracing follows require("next-rspack") below. That package
   // only runs during the build.
   outputFileTracingExcludes: {

@@ -15,15 +15,20 @@ WORKDIR /app
 COPY apps/react-router/package.json apps/react-router/package-lock.json ./
 RUN npm ci --omit=dev --no-audit --no-fund
 
-FROM ${NODE_IMAGE} AS builder
+FROM ${NODE_IMAGE} AS source
 WORKDIR /app
 COPY --from=development-dependencies /app/node_modules ./node_modules
 COPY apps/react-router/ ./
 COPY scripts/generate-routes.sh /tmp/generate-routes.sh
 ARG STATIC_ROUTES=500
 RUN STATIC_ROUTES="$STATIC_ROUTES" sh /tmp/generate-routes.sh /app
-ARG CACHEBUST=0
 ENV NODE_ENV=production
+
+# scripts/bench-repeat.sh repeats the timed build in fresh containers of
+# the source stage.
+FROM source AS builder
+ARG STATIC_ROUTES=500
+ARG CACHEBUST=0
 RUN echo "cold-build static_routes=${STATIC_ROUTES} cachebust=${CACHEBUST}" \
   && node scripts/timed-build.mjs
 

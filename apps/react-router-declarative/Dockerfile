@@ -10,7 +10,7 @@ WORKDIR /app
 COPY apps/react-router-declarative/package.json apps/react-router-declarative/package-lock.json ./
 RUN npm ci --no-audit --no-fund
 
-FROM ${NODE_IMAGE} AS builder
+FROM ${NODE_IMAGE} AS source
 WORKDIR /app
 COPY --from=deps /app/node_modules ./node_modules
 COPY apps/react-router-declarative/ ./
@@ -18,9 +18,14 @@ COPY scripts/generate-routes.sh /tmp/generate-routes.sh
 COPY scripts/timed-spa-build.mjs ./scripts/timed-build.mjs
 ARG STATIC_ROUTES=500
 RUN STATIC_ROUTES="$STATIC_ROUTES" sh /tmp/generate-routes.sh /app
-ARG CACHEBUST=0
 ENV BENCHMARK_MODE=declarative
 ENV NODE_ENV=production
+
+# scripts/bench-repeat.sh repeats the timed build in fresh containers of
+# the source stage.
+FROM source AS builder
+ARG STATIC_ROUTES=500
+ARG CACHEBUST=0
 RUN echo "cold-build mode=declarative static_routes=${STATIC_ROUTES} cachebust=${CACHEBUST}" \
   && node scripts/timed-build.mjs
 

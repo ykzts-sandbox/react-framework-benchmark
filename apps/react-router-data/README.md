@@ -1,7 +1,7 @@
 # React Router Data Mode
 
-React Router 8.4.0 の `createBrowserRouter`。Vite 8.3.4、Rolldown。
+React Router 8.4.0の`createBrowserRouter`とVite 8.3.4 (Rolldown) を使っています。
 
-静的ルート 500 個は `import.meta.glob("./routes/static/*.tsx")` と route の `lazy`。`scripts/generate-routes.sh` が `src/routes/static/<id>.tsx` を作る。動的ルートの loader はブラウザから `/api/pages/:id` を取る。最初の HTML は空のシェルで、文言は JS のあとで入る。行が無い ID は Error Boundary が `Not found` を描く。文書の HTTP ステータスは 200。
+静的なルート500個は`import.meta.glob("./routes/static/*.tsx")`とrouteの`lazy`で読み込みます。`scripts/generate-routes.sh`が`src/routes/static/<id>.tsx`を作ります。動的なルートのloaderはブラウザから`/api/pages/:id`を読みます。最初に返すHTMLは中身のない枠だけで文字はJavaScriptが動いてから出ます。行がないIDはError Boundaryが`Not found`を出しますがHTTPのステータスは200のままです。
 
-本番イメージは `dist/` と `scripts/spa-server.mjs`。`/api` は `LARAVEL_ORIGIN` へ中継し、ステータスと `Cache-Control` を返す。拡張子の無い URL には `index.html` を返し、拡張子のある無いファイルは 404。計測タグは `benchmark-react-router-data:vite`。
+イメージには`dist/`と`scripts/spa-server.mjs`だけを入れています。`/api`は`LARAVEL_ORIGIN`へ中継してステータスと`Cache-Control`をそのまま返します。拡張子のないURLには`index.html`を返して拡張子のあるURLでファイルがないときは404です。タグは`benchmark-react-router-data:vite`です。

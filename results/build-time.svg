@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="916" height="498" viewBox="0 0 916 498" font-family='system-ui, -apple-system, "Hiragino Sans", "Noto Sans JP", "Noto Sans CJK JP", "Yu Gothic", sans-serif' role="img" aria-label="ビルドの時間">
+<style>
+  .surface { fill: #fcfcfb; }
+  .title { fill: #0b0b0b; font-size: 18px; font-weight: 600; }
+  .note, .tick, .reference-label { fill: #52514e; font-size: 12px; }
+  .label { fill: #0b0b0b; font-size: 13px; }
+  .value { fill: #52514e; font-size: 12px; }
+  .legend { fill: #0b0b0b; font-size: 12px; }
+  .grid { stroke: #e1e0d9; stroke-width: 1; }
+  .baseline { stroke: #c3c2b7; stroke-width: 1; }
+  .reference { stroke: #52514e; stroke-width: 1; stroke-dasharray: 4 3; }
+  .next16 { fill: #2a78d6; }
+  .next15 { fill: #eb6834; }
+  .router { fill: #1baf7a; }
+  @media (prefers-color-scheme: dark) {
+    .surface { fill: #1a1a19; }
+    .title, .label, .legend { fill: #f0efec; }
+    .note, .tick, .value, .reference-label { fill: #c3c2b7; }
+    .grid { stroke: #2c2c2a; }
+    .baseline { stroke: #383835; }
+    .reference { stroke: #c3c2b7; }
+    .next16 { fill: #3987e5; }
+    .next15 { fill: #d95926; }
+    .router { fill: #199e70; }
+  }
+</style>
+<rect class="surface" width="100%" height="100%" rx="8"/>
+<text class="title" x="24" y="32">ビルドの時間</text>
+<text class="note" x="24" y="50">依存のインストールを除いた本番ビルドのコマンドの時間を10回ずつ計った中央値です</text>
+<rect class="next16" x="24" y="58" width="12" height="12" rx="2"/>
+<text class="legend" x="42" y="68">Next.js 16</text>
+<rect class="next15" x="131.6" y="58" width="12" height="12" rx="2"/>
+<text class="legend" x="149.6" y="68">Next.js 15</text>
+<rect class="router" x="239.2" y="58" width="12" height="12" rx="2"/>
+<text class="legend" x="257.2" y="68">React Router</text>
+<line class="baseline" x1="300" y1="90" x2="300" y2="458"/>
+<text class="tick" x="300" y="474" text-anchor="middle">0秒</text>
+<line class="grid" x1="473.3333333333333" y1="90" x2="473.3333333333333" y2="458"/>
+<text class="tick" x="473.3333333333333" y="474" text-anchor="middle">20秒</text>
+<line class="grid" x1="646.6666666666666" y1="90" x2="646.6666666666666" y2="458"/>
+<text class="tick" x="646.6666666666666" y="474" text-anchor="middle">40秒</text>
+<line class="grid" x1="820" y1="90" x2="820" y2="458"/>
+<text class="tick" x="820" y="474" text-anchor="middle">60秒</text>
+<g><title>Next.js 16 App Router (webpack): 26.4秒</title>
+<text class="label" x="288" y="108" text-anchor="end">Next.js 16 App Router (webpack)</text>
+<path class="next16" d="M300,96 H525.19 Q529.19,96 529.19,100 V108 Q529.19,112 525.19,112 H300 Z"/>
+<text class="value" x="535.19" y="108">26.4秒</text>
+</g>
+<g><title>Next.js 16 App Router (Turbopack): 6.6秒</title>
+<text class="label" x="288" y="130" text-anchor="end">Next.js 16 App Router (Turbopack)</text>
+<path class="next16" d="M300,118 H352.89666666666665 Q356.89666666666665,118 356.89666666666665,122 V130 Q356.89666666666665,134 352.89666666666665,134 H300 Z"/>
+<text class="value" x="362.89666666666665" y="130">6.6秒</text>
+</g>
+<g><title>Next.js 16 App Router (Rspack): 21.7秒</title>
+<text class="label" x="288" y="152" text-anchor="end">Next.js 16 App Router (Rspack)</text>
+<path class="next16" d="M300,140 H483.9626666666667 Q487.9626666666667,140 487.9626666666667,144 V152 Q487.9626666666667,156 483.9626666666667,156 H300 Z"/>
+<text class="value" x="493.9626666666667" y="152">21.7秒</text>
+</g>
+<g><title>Next.js 16 Pages Router (webpack): 15.5秒</title>
+<text class="label" x="288" y="182" text-anchor="end">Next.js 16 Pages Router (webpack)</text>
+<path class="next16" d="M300,170 H430.2033333333333 Q434.2033333333333,170 434.2033333333333,174 V182 Q434.2033333333333,186 430.2033333333333,186 H300 Z"/>
+<text class="value" x="440.2033333333333" y="182">15.5秒</text>
+</g>
+<g><title>Next.js 16 Pages Router (Turbopack): 5.3秒</title>
+<text class="label" x="288" y="204" text-anchor="end">Next.js 16 Pages Router (Turbopack)</text>
+<path class="next16" d="M300,192 H341.5953333333333 Q345.5953333333333,192 345.5953333333333,196 V204 Q345.5953333333333,208 341.5953333333333,208 H300 Z"/>
+<text class="value" x="351.5953333333333" y="204">5.3秒</text>
+</g>
+<g><title>Next.js 16 Pages Router (Rspack): 13.7秒</title>
+<text class="label" x="288" y="226" text-anchor="end">Next.js 16 Pages Router (Rspack)</text>
+<path class="next16" d="M300,214 H414.60333333333335 Q418.60333333333335,214 418.60333333333335,218 V226 Q418.60333333333335,230 414.60333333333335,230 H300 Z"/>
+<text class="value" x="424.60333333333335" y="226">13.7秒</text>
+</g>
+<g><title>Next.js 15 App Router (webpack): 29.6秒</title>
+<text class="label" x="288" y="256" text-anchor="end">Next.js 15 App Router (webpack)</text>
+<path class="next15" d="M300,244 H552.4813333333334 Q556.4813333333334,244 556.4813333333334,248 V256 Q556.4813333333334,260 552.4813333333334,260 H300 Z"/>
+<text class="value" x="562.4813333333334" y="256">29.6秒</text>
+</g>
+<g><title>Next.js 15 App Router (Turbopack): 50.1秒</title>
+<text class="label" x="288" y="278" text-anchor="end">Next.js 15 App Router (Turbopack)</text>
+<path class="next15" d="M300,266 H730.46 Q734.46,266 734.46,270 V278 Q734.46,282 730.46,282 H300 Z"/>
+<text class="value" x="740.46" y="278">50.1秒</text>
+</g>
+<g><title>Next.js 15 App Router (Rspack): 24.3秒</title>
+<text class="label" x="288" y="300" text-anchor="end">Next.js 15 App Router (Rspack)</text>
+<path class="next15" d="M300,288 H506.21866666666665 Q510.21866666666665,288 510.21866666666665,292 V300 Q510.21866666666665,304 506.21866666666665,304 H300 Z"/>
+<text class="value" x="516.2186666666666" y="300">24.3秒</text>
+</g>
+<g><title>Next.js 15 Pages Router (webpack): 17.2秒</title>
+<text class="label" x="288" y="330" text-anchor="end">Next.js 15 Pages Router (webpack)</text>
+<path class="next15" d="M300,318 H444.798 Q448.798,318 448.798,322 V330 Q448.798,334 444.798,334 H300 Z"/>
+<text class="value" x="454.798" y="330">17.2秒</text>
+</g>
+<g><title>Next.js 15 Pages Router (Turbopack): 29.7秒</title>
+<text class="label" x="288" y="352" text-anchor="end">Next.js 15 Pages Router (Turbopack)</text>
+<path class="next15" d="M300,340 H552.9926666666667 Q556.9926666666667,340 556.9926666666667,344 V352 Q556.9926666666667,356 552.9926666666667,356 H300 Z"/>
+<text class="value" x="562.9926666666667" y="352">29.7秒</text>
+</g>
+<g><title>Next.js 15 Pages Router (Rspack): 15.0秒</title>
+<text class="label" x="288" y="374" text-anchor="end">Next.js 15 Pages Router (Rspack)</text>
+<path class="next15" d="M300,362 H425.62733333333335 Q429.62733333333335,362 429.62733333333335,366 V374 Q429.62733333333335,378 425.62733333333335,378 H300 Z"/>
+<text class="value" x="435.62733333333335" y="374">15.0秒</text>
+</g>
+<g><title>React Router Framework: 1.7秒</title>
+<text class="label" x="288" y="404" text-anchor="end">React Router Framework</text>
+<path class="router" d="M300,392 H310.3953333333333 Q314.3953333333333,392 314.3953333333333,396 V404 Q314.3953333333333,408 310.3953333333333,408 H300 Z"/>
+<text class="value" x="320.3953333333333" y="404">1.7秒</text>
+</g>
+<g><title>React Router Data: 0.3秒</title>
+<text class="label" x="288" y="426" text-anchor="end">React Router Data</text>
+<path class="router" d="M300,414 H301.3693333333334 Q302.7386666666667,414 302.7386666666667,415.3693333333333 V428.6306666666667 Q302.7386666666667,430 301.3693333333334,430 H300 Z"/>
+<text class="value" x="308.7386666666667" y="426">0.3秒</text>
+</g>
+<g><title>React Router Declarative: 0.3秒</title>
+<text class="label" x="288" y="448" text-anchor="end">React Router Declarative</text>
+<path class="router" d="M300,436 H301.34333333333336 Q302.68666666666667,436 302.68666666666667,437.3433333333333 V450.6566666666667 Q302.68666666666667,452 301.34333333333336,452 H300 Z"/>
+<text class="value" x="308.68666666666667" y="448">0.3秒</text>
+</g>
+</svg>

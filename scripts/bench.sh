@@ -3,9 +3,13 @@
 # npm ci layers may be reused. The timed step always starts without a
 # previous .next or Vite build directory.
 #
-# Usage: bench.sh [all|next-15]
-#   all      Next.js 16, Next.js 15, and React Router, 500 static routes.
-#   next-15  Next.js 15 only. Writes results/next-15.md.
+# Usage: bench.sh [all|next-15|no-standalone]
+#   all            Next.js 16, Next.js 15, and React Router, 500 static routes.
+#   next-15        Next.js 15 only. Writes results/next-15.md.
+#   no-standalone  Next.js with webpack and Turbopack, without output:
+#                  "standalone".
+#                  Writes results/no-standalone.md.
+# Set BENCH_HOST to record the host machine in the report.
 set -eu
 
 root=$(CDPATH= cd -- "$(dirname "$0")/.." && pwd)
@@ -14,9 +18,9 @@ mkdir -p results
 
 scope=${1:-all}
 case "$scope" in
-  all | next-15) ;;
+  all | next-15 | no-standalone) ;;
   *)
-    echo "usage: bench.sh [all|next-15]" >&2
+    echo "usage: bench.sh [all|next-15|no-standalone]" >&2
     exit 1
     ;;
 esac
@@ -25,6 +29,8 @@ node_image=${NODE_IMAGE:-node:24.21.0-alpine}
 cachebust=$(date +%s)
 if [ "$scope" = "next-15" ]; then
   base_metrics="$root/results/next-15.md"
+elif [ "$scope" = "no-standalone" ]; then
+  base_metrics="$root/results/no-standalone.md"
 else
   base_metrics="$root/results/benchmark.md"
 fi
@@ -89,6 +95,7 @@ build_app() {
     -f "$dockerfile" \
     "$@" \
     --build-arg CACHEBUST="$cachebust" \
+    ${runner_target:+--target "$runner_target"} \
     -t "$tag" \
     . >>"$log" 2>&1; then
     show_failure "${tag} runner failed" "$log"
@@ -114,6 +121,17 @@ build_next() {
     "$@" --build-arg EXCLUDE_SHARP=1
 }
 
+# The runner-full stage copies the production node_modules and the whole
+# .next directory instead of .next/standalone.
+runner_target=
+build_full() {
+  local status=0
+  runner_target=runner-full
+  build_app "$@" --build-arg EXCLUDE_SHARP=0 --build-arg STANDALONE=0 || status=$?
+  runner_target=
+  return "$status"
+}
+
 docker pull "$node_image" >/dev/null
 
 node_version=$(docker run --rm --entrypoint node "$node_image" -p "process.version")
@@ -128,9 +146,12 @@ base_size=$(image_size "$node_image")
   echo "## Environment"
   echo
   echo "- Date: $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+  if [ -n "${BENCH_HOST:-}" ]; then
+    echo "- Host: ${BENCH_HOST}"
+  fi
   echo "- Scope: ${scope}"
   echo "- OS: $(. /etc/os-release && printf '%s' "$PRETTY_NAME") ($(uname -srm))"
-  echo "- CPU: $(nproc) cores; $(awk -F: '/model name|Model name|CPU implementer|CPU part/ { gsub(/^[ \t]+/, "", $1); gsub(/^[ \t]+/, "", $2); key = $1 "=" $2; if (!seen[key]++) printf "%s ", key }' /proc/cpuinfo)"
+  echo "- CPU: $(nproc) cores; $(awk -F: '/model name|Model name|CPU implementer|CPU part/ { gsub(/^[ \t]+|[ \t]+$/, "", $1); gsub(/^[ \t]+|[ \t]+$/, "", $2); key = $1 "=" $2; if (!seen[key]++) printf "%s ", key }' /proc/cpuinfo)"
   echo "- Memory: $(awk '/MemTotal/ { printf "%.1f GiB", $2/1024/1024 }' /proc/meminfo)"
   echo "- Docker: $(docker version --format '{{.Server.Version}}')"
   echo "- Node.js image: ${node_image} (${node_version})"
@@ -142,6 +163,7 @@ base_size=$(image_size "$node_image")
   echo "- Compressed size: config blob plus layer blobs of the linux platform manifest after \`docker push\` to a temporary registry. This is the \`docker pull\` transfer size. Attestation manifests are excluded."
   echo "- Compressed added size: compressed size minus the base image compressed size"
   echo "- Build output: \`.next\` excluding \`.next/cache\` for Next.js, \`build/\` for React Router Framework Mode, and \`dist/\` for React Router Data Mode and Declarative Mode"
+  echo "- No standalone: built with \`STANDALONE=0\`, which leaves \`output\` unset, and run from the \`runner-full\` stage. It has the production \`node_modules\` and \`.next\` without \`cache\`, and runs \`next start\`."
   echo "- Build time: wall-clock time of the production build command inside a fresh builder container. Dependency installation is not included."
   echo "- These builds are cold application builds. Docker may reuse the \`npm ci\` layer when the lockfile is unchanged."
   echo
@@ -150,10 +172,14 @@ base_size=$(image_size "$node_image")
 run_v16=0
 run_v15=0
 run_router=0
+run_full=0
 if [ "$scope" = "all" ]; then
   run_v16=1
   run_v15=1
   run_router=1
+  run_full=1
+elif [ "$scope" = "no-standalone" ]; then
+  run_full=1
 else
   run_v15=1
 fi
@@ -209,6 +235,25 @@ if [ "$run_v15" -eq 1 ]; then
   fi
 fi
 
+if [ "$run_full" -eq 1 ]; then
+  build_full apps/next/Dockerfile benchmark-next:webpack-full results/next-webpack-full.log \
+    --build-arg BUNDLER=webpack --build-arg STATIC_ROUTES=500
+  build_full apps/next-15/Dockerfile benchmark-next-15:webpack-full results/next-15-webpack-full.log \
+    --build-arg BUNDLER=webpack --build-arg STATIC_ROUTES=500
+  build_full apps/next-pages/Dockerfile benchmark-next-pages:webpack-full results/next-pages-webpack-full.log \
+    --build-arg BUNDLER=webpack --build-arg STATIC_ROUTES=500
+  build_full apps/next-pages-15/Dockerfile benchmark-next-pages-15:webpack-full results/next-pages-15-webpack-full.log \
+    --build-arg BUNDLER=webpack --build-arg STATIC_ROUTES=500
+  build_full apps/next/Dockerfile benchmark-next:turbopack-full results/next-turbopack-full.log \
+    --build-arg BUNDLER=turbopack --build-arg STATIC_ROUTES=500
+  build_full apps/next-15/Dockerfile benchmark-next-15:turbopack-full results/next-15-turbopack-full.log \
+    --build-arg BUNDLER=turbopack --build-arg STATIC_ROUTES=500
+  build_full apps/next-pages/Dockerfile benchmark-next-pages:turbopack-full results/next-pages-turbopack-full.log \
+    --build-arg BUNDLER=turbopack --build-arg STATIC_ROUTES=500
+  build_full apps/next-pages-15/Dockerfile benchmark-next-pages-15:turbopack-full results/next-pages-15-turbopack-full.log \
+    --build-arg BUNDLER=turbopack --build-arg STATIC_ROUTES=500
+fi
+
 if [ "$run_router" -eq 1 ]; then
   build_app apps/react-router/Dockerfile benchmark-react-router:vite results/react-router.log \
     --build-arg STATIC_ROUTES=500
@@ -234,6 +279,16 @@ if [ "$run_v15" -eq 1 ]; then
   docker run --rm --entrypoint npm benchmark-next-15:turbopack-builder ls --depth=0 >>"$base_metrics" || true
   echo >>"$base_metrics"
   docker run --rm --entrypoint npm benchmark-next-pages-15:turbopack-builder ls --depth=0 >>"$base_metrics" || true
+  echo >>"$base_metrics"
+fi
+if [ "$run_full" -eq 1 ] && [ "$run_v16" -eq 0 ]; then
+  docker run --rm --entrypoint npm benchmark-next:webpack-full ls --depth=0 >>"$base_metrics" || true
+  echo >>"$base_metrics"
+  docker run --rm --entrypoint npm benchmark-next-15:webpack-full ls --depth=0 >>"$base_metrics" || true
+  echo >>"$base_metrics"
+  docker run --rm --entrypoint npm benchmark-next-pages:webpack-full ls --depth=0 >>"$base_metrics" || true
+  echo >>"$base_metrics"
+  docker run --rm --entrypoint npm benchmark-next-pages-15:webpack-full ls --depth=0 >>"$base_metrics" || true
   echo >>"$base_metrics"
 fi
 if [ "$run_router" -eq 1 ]; then
@@ -318,6 +373,17 @@ if [ "$run_v15" -eq 1 ]; then
   fi
 fi
 
+if [ "$run_full" -eq 1 ]; then
+  append_row "Next.js 16 App Router / webpack / sharp / no standalone" benchmark-next:webpack-full results/next-webpack-full.metrics
+  append_row "Next.js 15 App Router / webpack / sharp / no standalone" benchmark-next-15:webpack-full results/next-15-webpack-full.metrics
+  append_row "Next.js 16 Pages Router / webpack / sharp / no standalone" benchmark-next-pages:webpack-full results/next-pages-webpack-full.metrics
+  append_row "Next.js 15 Pages Router / webpack / sharp / no standalone" benchmark-next-pages-15:webpack-full results/next-pages-15-webpack-full.metrics
+  append_row "Next.js 16 App Router / Turbopack / sharp / no standalone" benchmark-next:turbopack-full results/next-turbopack-full.metrics
+  append_row "Next.js 15 App Router / Turbopack / sharp / no standalone" benchmark-next-15:turbopack-full results/next-15-turbopack-full.metrics
+  append_row "Next.js 16 Pages Router / Turbopack / sharp / no standalone" benchmark-next-pages:turbopack-full results/next-pages-turbopack-full.metrics
+  append_row "Next.js 15 Pages Router / Turbopack / sharp / no standalone" benchmark-next-pages-15:turbopack-full results/next-pages-15-turbopack-full.metrics
+fi
+
 if [ "$run_router" -eq 1 ]; then
   append_row "React Router Framework / Vite + Rolldown" benchmark-react-router:vite results/react-router.metrics
   append_row "React Router Data / Vite + Rolldown" benchmark-react-router-data:vite results/react-router-data.metrics
@@ -359,6 +425,17 @@ if [ "$run_v15" -eq 1 ]; then
   if [ "$pages_rspack_15_ok" -eq 1 ]; then
     set -- "$@" benchmark-next-pages-15:rspack benchmark-next-pages-15:rspack-no-sharp
   fi
+fi
+if [ "$run_full" -eq 1 ]; then
+  set -- "$@" \
+    benchmark-next:webpack-full \
+    benchmark-next-15:webpack-full \
+    benchmark-next-pages:webpack-full \
+    benchmark-next-pages-15:webpack-full \
+    benchmark-next:turbopack-full \
+    benchmark-next-15:turbopack-full \
+    benchmark-next-pages:turbopack-full \
+    benchmark-next-pages-15:turbopack-full
 fi
 if [ "$run_router" -eq 1 ]; then
   set -- "$@" \
@@ -444,6 +521,17 @@ if [ "$run_v15" -eq 1 ]; then
     echo "| Next.js 15 Pages Router / Rspack / sharp | failed |  |" >>"$base_metrics"
     echo "| Next.js 15 Pages Router / Rspack / no sharp | failed |  |" >>"$base_metrics"
   fi
+fi
+
+if [ "$run_full" -eq 1 ]; then
+  append_compressed "Next.js 16 App Router / webpack / sharp / no standalone" benchmark-next:webpack-full
+  append_compressed "Next.js 15 App Router / webpack / sharp / no standalone" benchmark-next-15:webpack-full
+  append_compressed "Next.js 16 Pages Router / webpack / sharp / no standalone" benchmark-next-pages:webpack-full
+  append_compressed "Next.js 15 Pages Router / webpack / sharp / no standalone" benchmark-next-pages-15:webpack-full
+  append_compressed "Next.js 16 App Router / Turbopack / sharp / no standalone" benchmark-next:turbopack-full
+  append_compressed "Next.js 15 App Router / Turbopack / sharp / no standalone" benchmark-next-15:turbopack-full
+  append_compressed "Next.js 16 Pages Router / Turbopack / sharp / no standalone" benchmark-next-pages:turbopack-full
+  append_compressed "Next.js 15 Pages Router / Turbopack / sharp / no standalone" benchmark-next-pages-15:turbopack-full
 fi
 
 if [ "$run_router" -eq 1 ]; then

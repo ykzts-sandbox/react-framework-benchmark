@@ -1,19 +1,19 @@
 # Next.js App Router
 
-Next.js 16.4.0。静的ルート 500 個と、パラメータ付きの動的ルート 1 つ。
+Next.js 16.4.0で静的なルート500個と引数をひとつ取る動的なルートをひとつ持っています。
 
-`scripts/generate-routes.sh` が `app/static/<id>/page.tsx` を作る。各モジュールは `dynamic = "force-dynamic"` で、中身は `Page N` と `Benchmark page N`。`next.config.ts` の `headers()` が `/static/:id` に `Cache-Control: public, s-maxage=31536000` を付ける。
+`scripts/generate-routes.sh`が`app/static/<id>/page.tsx`を作ります。どれも`dynamic = "force-dynamic"`で`Page N`と`Benchmark page N`を出すだけです。`next.config.ts`の`headers()`で`/static/:id`に`Cache-Control: public, s-maxage=31536000`を付けています。
 
-`app/dynamic/[id]/page.tsx` は `LARAVEL_ORIGIN`（既定は `http://laravel:8000`）へ、オプションなしの `fetch` で `GET /api/pages/:id` を取る。`headers()` が `/dynamic/:id` に `Cache-Control: public, s-maxage=60` を付け、Varnish がそれを保存する。
+`app/dynamic/[id]/page.tsx`は`LARAVEL_ORIGIN` (指定がなければ`http://laravel:8000`) の`GET /api/pages/:id`をオプションなしの`fetch`で読みます。`headers()`で`/dynamic/:id`に`Cache-Control: public, s-maxage=60`を付けているのでVarnishがそれを見てキャッシュします。
 
-本番出力は `output: "standalone"`。`outputFileTracingRoot` はこのディレクトリ。イメージは `node:24.21.0-alpine` で、`public`、`.next/standalone`、`.next/static` を載せる。`next-rspack` はビルド専用なので standalone には含めない。
+`output: "standalone"`にしていて`outputFileTracingRoot`はこのディレクトリです。イメージは`node:24.21.0-alpine`に`public`と`.next/standalone`と`.next/static`を入れただけのものです。`next-rspack`はビルドのときにしか使わないのでstandaloneからは外しています。
 
-バンドラはビルド引数 `BUNDLER`。
+バンドラはビルド引数の`BUNDLER`で選びます。
 
-- webpack は `next build --webpack`
-- Turbopack は `next build --turbopack`
-- Rspack は `BUNDLER=rspack next build`。`next-rspack` が設定を包む
+- webpackは`next build --webpack`
+- Turbopackは`next build --turbopack`
+- Rspackは`BUNDLER=rspack next build`で`next-rspack`が設定を包みます
 
-`EXCLUDE_SHARP=1` のビルドは `outputFileTracingExcludes` で `node_modules/sharp/**/*` と `node_modules/@img/**/*` を外す。
+`EXCLUDE_SHARP=1`のときは`outputFileTracingExcludes`で`node_modules/sharp/**/*`と`node_modules/@img/**/*`を外します。
 
-計測タグは `benchmark-next:webpack`、`benchmark-next:turbopack`、`benchmark-next:rspack`。`sharp` を外したタグはそれぞれ `-no-sharp` が付く。Varnish の前に置くイメージは `benchmark-next:cache-demo`。
+タグは`benchmark-next:webpack`と`benchmark-next:turbopack`と`benchmark-next:rspack`でsharpを外したものはそれぞれ`-no-sharp`が付きます。Varnishの前に置くイメージは`benchmark-next:cache-demo`です。

@@ -1,5 +1,5 @@
 BENCH_METRIC bundler=vite-rolldown
-BENCH_METRIC build_seconds=2.676
+BENCH_METRIC build_seconds=2.135
 BENCH_METRIC output_bytes=1186102
 BENCH_METRIC client_bytes=617250
 BENCH_METRIC server_bytes=568852

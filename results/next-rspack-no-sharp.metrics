@@ -1,8 +1,8 @@
 BENCH_METRIC bundler=rspack
 BENCH_METRIC router=app
-BENCH_METRIC build_seconds=27.798
-BENCH_METRIC output_bytes=60381670
-BENCH_METRIC cache_bytes=645258003
+BENCH_METRIC build_seconds=25.526
+BENCH_METRIC output_bytes=60378735
+BENCH_METRIC cache_bytes=645259342
 BENCH_METRIC standalone_bytes=36781011
 BENCH_METRIC static_bytes=1014717
 BENCH_METRIC static_html_count=0

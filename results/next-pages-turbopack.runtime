@@ -1,16 +1,16 @@
-BENCH_METRIC app_bytes=46873112
+BENCH_METRIC app_bytes=47215804
 BENCH_METRIC native_bytes=19042592
-BENCH_METRIC file_count=6203
+BENCH_METRIC file_count=6703
 BENCH_DIRS
 BENCH_DIR 19102200	node_modules/@img
 BENCH_DIR 14532101	node_modules/next
-BENCH_DIR 8626593	.next/server
+BENCH_DIR 8901001	.next/server
 BENCH_DIR 2760687	node_modules/react-dom
-BENCH_DIR 754888	.next/static
+BENCH_DIR 762388	.next/static
 BENCH_DIR 631459	node_modules/sharp
 BENCH_DIR 142782	.next/build-manifest.json
+BENCH_DIR 134720	.next/routes-manifest.json
 BENCH_DIR 84331	node_modules/react
-BENCH_DIR 73936	.next/routes-manifest.json
 BENCH_DIR 68746	node_modules/semver
 BENCH_DIR 30691	node_modules/@swc
 BENCH_DIR 22255	node_modules/styled-jsx

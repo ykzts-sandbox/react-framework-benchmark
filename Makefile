@@ -1,13 +1,19 @@
 STATIC_ROUTES ?= 500
 export STATIC_ROUTES
 
-.PHONY: generate bench compressed varnish-up varnish-down varnish-verify
+.PHONY: generate bench repeat charts compressed varnish-up varnish-down varnish-verify
 
 generate:
 	sh scripts/generate-routes.sh apps/next apps/next-15 apps/next-pages apps/next-pages-15 apps/react-router apps/react-router-data apps/react-router-declarative
 
 bench:
 	sh scripts/bench.sh
+
+repeat:
+	sh scripts/bench-repeat.sh
+
+charts:
+	node scripts/render-charts.mjs
 
 compressed:
 	sh scripts/measure-compressed.sh \
@@ -36,6 +42,14 @@ compressed:
 		benchmark-next-pages-15:turbopack-no-sharp \
 		benchmark-next-pages-15:rspack \
 		benchmark-next-pages-15:rspack-no-sharp \
+		benchmark-next:webpack-full \
+		benchmark-next-15:webpack-full \
+		benchmark-next-pages:webpack-full \
+		benchmark-next-pages-15:webpack-full \
+		benchmark-next:turbopack-full \
+		benchmark-next-15:turbopack-full \
+		benchmark-next-pages:turbopack-full \
+		benchmark-next-pages-15:turbopack-full \
 		benchmark-react-router:vite \
 		benchmark-react-router-data:vite \
 		benchmark-react-router-declarative:vite

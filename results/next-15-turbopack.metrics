@@ -1,7 +1,7 @@
 BENCH_METRIC bundler=turbopack
 BENCH_METRIC router=app
-BENCH_METRIC build_seconds=57.250
-BENCH_METRIC output_bytes=127997745
+BENCH_METRIC build_seconds=53.546
+BENCH_METRIC output_bytes=127996686
 BENCH_METRIC cache_bytes=181994
 BENCH_METRIC standalone_bytes=74181115
 BENCH_METRIC static_bytes=922228
