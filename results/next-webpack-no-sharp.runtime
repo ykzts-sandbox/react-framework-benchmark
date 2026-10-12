@@ -1,28 +1,28 @@
-BENCH_METRIC app_bytes=39334077
+BENCH_METRIC app_bytes=29879081
 BENCH_METRIC native_bytes=0
-BENCH_METRIC file_count=4002
+BENCH_METRIC file_count=2199
 BENCH_DIRS
 BENCH_DIR 25071931	node_modules/next
-BENCH_DIR 9436565	.next/server
-BENCH_DIR 2531883	.next/static
+BENCH_DIR 1645666	.next/server
 BENCH_DIR 1416814	node_modules/react-dom
+BENCH_DIR 947281	.next/static
 BENCH_DIR 339057	node_modules/caniuse-lite
 BENCH_DIR 121917	node_modules/postcss
 BENCH_DIR 111635	node_modules/source-map-js
-BENCH_DIR 74387	.next/routes-manifest.json
 BENCH_DIR 71299	node_modules/react
 BENCH_DIR 46525	node_modules/baseline-browser-mapping
 BENCH_DIR 30917	node_modules/@swc
 BENCH_DIR 22255	node_modules/styled-jsx
-BENCH_DIR 18423	.next/app-path-routes-manifest.json
+BENCH_DIR 11144	.next/routes-manifest.json
 BENCH_DIR 11000	node_modules/@next
 BENCH_DIR 10957	.next/required-server-files.json
 BENCH_DIR 8210	server.js
 BENCH_DIR 3215	node_modules/picocolors
 BENCH_DIR 2912	node_modules/nanoid
 BENCH_DIR 2534	.next/prerender-manifest.json
+BENCH_DIR 2172	.next/app-path-routes-manifest.json
 BENCH_DIR 618	package.json
-BENCH_DIR 512	.next/build-manifest.json
+BENCH_DIR 511	.next/build-manifest.json
 BENCH_DIR 467	node_modules/client-only
 BENCH_DIR 21	.next/BUILD_ID
 BENCH_DIR 20	.next/package.json
@@ -38,7 +38,7 @@ BENCH_FILE 715920	node_modules/next/dist/compiled/next-server/app-page-experimen
 BENCH_FILE 715762	node_modules/next/dist/compiled/next-server/app-page-turbo-experimental.runtime.prod.js
 BENCH_FILE 704560	node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js
 BENCH_FILE 704400	node_modules/next/dist/compiled/next-server/app-page-turbo.runtime.prod.js
-BENCH_FILE 695393	.next/server/chunks/22430.js
+BENCH_FILE 694196	.next/server/chunks/2430.js
 BENCH_FILE 525791	node_modules/next/dist/compiled/edge-runtime/index.js
 BENCH_FILE 488742	node_modules/next/dist/compiled/@next/font/dist/google/font-data.json
 BENCH_FILE 387574	node_modules/next/dist/compiled/postcss-preset-env/index.cjs

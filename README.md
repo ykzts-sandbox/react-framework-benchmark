@@ -1,6 +1,6 @@
 # react-framework-benchmark
 
-同じ500個の静的なルートをNext.jsとReact Routerのいくつかの書き方で作ってビルドの時間とDockerイメージの大きさを計ったものです。
+同じルートをNext.jsとReact Routerのいくつかの書き方で作ってビルドの時間とDockerイメージの大きさを計ったものです。ルートは決まった文字を出すだけの静的なルート20個と、Laravelから行を読む動的なルート30個です。動的なルートはそれぞれidが1から1000までのページを出すので合わせて30,000ページになります。
 
 ![ビルドの時間](results/build-time.svg)
 
@@ -10,22 +10,22 @@
 
 | アプリ | Turbopack / Vite + Rolldown | Turbopack (standaloneなし) | webpack | webpack (standaloneなし) | Rspack |
 | --- | --: | --: | --: | --: | --: |
-| Next.js 16 App Router | 6.6秒 | 6.5秒 | 26.4秒 | 23.5秒 | 21.7秒 |
-| Next.js 16 Pages Router | 5.3秒 | 5.0秒 | 15.5秒 | 11.9秒 | 13.7秒 |
-| Next.js 15 App Router | 50.1秒 | 46.0秒 | 29.6秒 | 26.2秒 | 24.3秒 |
-| Next.js 15 Pages Router | 29.7秒 | 25.5秒 | 17.2秒 | 12.2秒 | 15.0秒 |
-| React Router Framework | 1.7秒 |  |  |  |  |
-| React Router Data | 0.3秒 |  |  |  |  |
-| React Router Declarative | 0.3秒 |  |  |  |  |
+| Next.js 16 App Router | 3.1秒 | 2.9秒 | 13.2秒 | 9.5秒 | 11.4秒 |
+| Next.js 16 Pages Router | 2.7秒 | 2.4秒 | 11.0秒 | 7.5秒 | 10.0秒 |
+| Next.js 15 App Router | 17.1秒 | 12.4秒 | 14.5秒 | 9.7秒 | 12.5秒 |
+| Next.js 15 Pages Router | 13.0秒 | 8.3秒 | 12.2秒 | 7.4秒 | 10.9秒 |
+| React Router Framework | 0.7秒 |  |  |  |  |
+| React Router Data | 0.2秒 |  |  |  |  |
+| React Router Declarative | 0.2秒 |  |  |  |  |
 
 Dockerイメージの大きさもsharpありのものです。sharpなしにするとNext.jsはどれも8.4MiBほど小さくなります。
 
 | アプリ | Turbopack / Vite + Rolldown | Turbopack (standaloneなし) | webpack | webpack (standaloneなし) | Rspack |
 | --- | --: | --: | --: | --: | --: |
-| Next.js 16 App Router | 71.2 MiB | 144.9 MiB | 73.8 MiB | 144.4 MiB | 73.8 MiB |
-| Next.js 16 Pages Router | 71.3 MiB | 144.2 MiB | 73.7 MiB | 143.9 MiB | 73.7 MiB |
-| Next.js 15 App Router | 75.8 MiB | 158.2 MiB | 75.8 MiB | 147.3 MiB | 75.7 MiB |
-| Next.js 15 Pages Router | 75.6 MiB | 147.3 MiB | 75.4 MiB | 147.0 MiB | 75.4 MiB |
+| Next.js 16 App Router | 70.9 MiB | 144.5 MiB | 73.7 MiB | 144.0 MiB | 73.6 MiB |
+| Next.js 16 Pages Router | 71.0 MiB | 143.8 MiB | 73.6 MiB | 143.7 MiB | 73.6 MiB |
+| Next.js 15 App Router | 75.5 MiB | 148.5 MiB | 75.6 MiB | 147.0 MiB | 75.5 MiB |
+| Next.js 15 Pages Router | 75.3 MiB | 146.9 MiB | 75.3 MiB | 146.8 MiB | 75.3 MiB |
 | React Router Framework | 66.6 MiB |  |  |  |  |
 | React Router Data | 59.3 MiB |  |  |  |  |
 | React Router Declarative | 59.3 MiB |  |  |  |  |
@@ -34,7 +34,7 @@ Dockerイメージの大きさもsharpありのものです。sharpなしにす�
 
 どれもMac mini (Apple M4、メモリ16GB) の上で立ち上げたDev ContainerからDocker in Dockerで計っています。Dockerから見えるのは8コアと11.7GiBのメモリです。
 
-静的なルートといってもビルドのときにHTMLを書き出すことはしていません。App Routerは`dynamic = "force-dynamic"`でPages Routerは`getServerSideProps`を使ってReact Router Framework Modeと同じくリクエストのたびにレンダリングするようにそろえています。
+静的なルートといってもビルドのときにHTMLを書き出すことはしていません。App Routerは`dynamic = "force-dynamic"`でPages Routerは`getServerSideProps`を使ってReact Router Framework Modeと同じくリクエストのたびにレンダリングするようにそろえています。動的なルートも`generateStaticParams`や`getStaticPaths`や`prerender`は使わずにリクエストのたびにLaravelから読みます。
 
 リポジトリのルートで`make bench`を実行するとイメージを作り直してすべて1回ずつ計り直します。ビルドの時間を10回ずつ計るのは`make repeat`で`RUNS`で回数を変えられます。止まっても`results/build-times.csv`にある分から続けます。standaloneなしだけなら`sh scripts/bench.sh no-standalone`です。グラフは`make charts`で作り直せます。
 
@@ -65,4 +65,4 @@ Dockerイメージの大きさもsharpありのものです。sharpなしにす�
 
 App Routerでもページごとのキャッシュができることを確かめるために`benchmark-next:cache-demo`の前にVarnishを置いています。`make varnish-verify`のログは`results/varnish.md`にあります。
 
-静的なHTMLは`s-maxage=31536000`で2回目からHITになります。動的なHTMLは`public, s-maxage=60`でURLごとにHITになります。`?_rsc`の付いたRSCはHTMLとは別のものとしてHITになり`_rsc`のないRSCのリクエストはPASSです。`/dynamic/1`は`Page 1`と`Benchmark page 1`を返し`/dynamic/501`は404のHTMLを返して2回目からHITになります。
+静的なHTMLは`s-maxage=31536000`で2回目からHITになります。動的なHTMLは`public, s-maxage=60`でURLごとにHITになります。`?_rsc`の付いたRSCはHTMLとは別のものとしてHITになり`_rsc`のないRSCのリクエストはPASSです。`/dynamic/1/1`は`Page 1-1`と`Benchmark page 1-1`を返し`/dynamic/30/1001`は404のHTMLを返して2回目からHITになります。

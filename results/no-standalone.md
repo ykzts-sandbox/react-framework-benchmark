@@ -4,7 +4,7 @@ Measured by `scripts/bench.sh`.
 
 ## Environment
 
-- Date: 2026-10-12T05:46:33Z
+- Date: 2026-10-12T07:32:33Z
 - Host: Mac mini (Apple M4, 16 GB RAM), Dev Container with Docker in Docker
 - Scope: no-standalone
 - OS: Debian GNU/Linux 13 (trixie) (Linux 7.0.12-linuxkit aarch64)
@@ -14,7 +14,8 @@ Measured by `scripts/bench.sh`.
 - Node.js image: node:24.21.0-alpine (v24.21.0)
 - npm in image: 11.19.0
 - Base image size: 237469016 bytes (226.5 MiB)
-- Static route modules: 500
+- Static route modules: 20
+- Dynamic route modules: 30, each reading ids 1 to 1000 of its own kind from Laravel
 - Image size metric: `docker image inspect --format '{{.Size}}'`, the local uncompressed image size, including the shared base image
 - Added size: image size minus the base image size
 - Compressed size: config blob plus layer blobs of the linux platform manifest after `docker push` to a temporary registry. This is the `docker pull` transfer size. Attestation manifests are excluded.
@@ -57,14 +58,14 @@ next-pages-15-benchmark@ /app
 
 | Framework / Bundler | Build time (s) | Image size (bytes) | Added size (bytes) | Build output (bytes) |
 | --- | ---: | ---: | ---: | ---: |
-| Next.js 16 App Router / webpack / sharp / no standalone | 24.902 | 722772399 | 485303383 | 35310367 |
-| Next.js 15 App Router / webpack / sharp / no standalone | 27.189 | 723184154 | 485715138 | 19564609 |
-| Next.js 16 Pages Router / webpack / sharp / no standalone | 13.076 | 687525136 | 450056120 | 8868497 |
-| Next.js 15 Pages Router / webpack / sharp / no standalone | 13.353 | 703839613 | 466370597 | 6893350 |
-| Next.js 16 App Router / Turbopack / sharp / no standalone | 7.367 | 726572031 | 489103015 | 23377655 |
-| Next.js 15 App Router / Turbopack / sharp / no standalone | 46.299 | 785127430 | 547658414 | 53738664 |
-| Next.js 16 Pages Router / Turbopack / sharp / no standalone | 5.815 | 712278550 | 474809534 | 13307322 |
-| Next.js 15 Pages Router / Turbopack / sharp / no standalone | 26.621 | 738566566 | 501097550 | 20508347 |
+| Next.js 16 App Router / webpack / sharp / no standalone | 11.178 | 679746942 | 442277926 | 3535594 |
+| Next.js 15 App Router / webpack / sharp / no standalone | 11.176 | 697638371 | 460169355 | 3331734 |
+| Next.js 16 Pages Router / webpack / sharp / no standalone | 9.460 | 676425473 | 438956457 | 1689447 |
+| Next.js 15 Pages Router / webpack / sharp / no standalone | 8.353 | 694607214 | 457138198 | 1441368 |
+| Next.js 16 App Router / Turbopack / sharp / no standalone | 3.735 | 684323129 | 446854113 | 6228202 |
+| Next.js 15 App Router / Turbopack / sharp / no standalone | 12.978 | 706146949 | 468677933 | 8724487 |
+| Next.js 16 Pages Router / Turbopack / sharp / no standalone | 3.227 | 679554763 | 442085747 | 2645660 |
+| Next.js 15 Pages Router / Turbopack / sharp / no standalone | 9.095 | 698684858 | 461215842 | 3338869 |
 
 Uncompressed sizes above come from `docker image inspect`. They describe the expanded image, including the shared base image.
 
@@ -78,14 +79,14 @@ Base image compressed size: 62060190 bytes.
 
 | Framework / Bundler | Compressed size (bytes) | Compressed added size (bytes) |
 | --- | ---: | ---: |
-| Next.js 16 App Router / webpack / sharp / no standalone | 151448028 | 89387838 |
-| Next.js 15 App Router / webpack / sharp / no standalone | 154485128 | 92424938 |
-| Next.js 16 Pages Router / webpack / sharp / no standalone | 150869310 | 88809120 |
-| Next.js 15 Pages Router / webpack / sharp / no standalone | 154133739 | 92073549 |
-| Next.js 16 App Router / Turbopack / sharp / no standalone | 151974956 | 89914766 |
-| Next.js 15 App Router / Turbopack / sharp / no standalone | 165879666 | 103819476 |
-| Next.js 16 Pages Router / Turbopack / sharp / no standalone | 151190084 | 89129894 |
-| Next.js 15 Pages Router / Turbopack / sharp / no standalone | 154466580 | 92406390 |
+| Next.js 16 App Router / webpack / sharp / no standalone | 150951340 | 88891150 |
+| Next.js 15 App Router / webpack / sharp / no standalone | 154166609 | 92106419 |
+| Next.js 16 Pages Router / webpack / sharp / no standalone | 150636335 | 88576145 |
+| Next.js 15 Pages Router / webpack / sharp / no standalone | 153916636 | 91856446 |
+| Next.js 16 App Router / Turbopack / sharp / no standalone | 151542118 | 89481928 |
+| Next.js 15 App Router / Turbopack / sharp / no standalone | 155761138 | 93700948 |
+| Next.js 16 Pages Router / Turbopack / sharp / no standalone | 150816505 | 88756315 |
+| Next.js 15 Pages Router / Turbopack / sharp / no standalone | 154078504 | 92018314 |
 
 ## Build details
 
@@ -94,33 +95,33 @@ Base image compressed size: 62060190 bytes.
 ```text
 BENCH_METRIC bundler=webpack
 BENCH_METRIC router=app
-BENCH_METRIC build_seconds=24.902
-BENCH_METRIC output_bytes=35310367
-BENCH_METRIC cache_bytes=218071692
+BENCH_METRIC build_seconds=11.178
+BENCH_METRIC output_bytes=3535594
+BENCH_METRIC cache_bytes=69814645
 BENCH_METRIC standalone_bytes=0
-BENCH_METRIC static_bytes=2531883
+BENCH_METRIC static_bytes=947281
 BENCH_METRIC static_html_count=0
 BENCH_METRIC dynamic_html_count=0
 BENCH_METRIC standalone_server=missing
 BENCH_METRIC native_bytes=0
 
 # runtime image
-BENCH_METRIC app_bytes=350117409
+BENCH_METRIC app_bytes=318342642
 BENCH_METRIC native_bytes=111031103
-BENCH_METRIC file_count=12931
+BENCH_METRIC file_count=10677
 BENCH_DIRS
 BENCH_DIR 192287675	node_modules/next
 BENCH_DIR 90441126	node_modules/@next
-BENCH_DIR 20649724	.next/trace
 BENCH_DIR 19139746	node_modules/@img
-BENCH_DIR 9436577	.next/server
 BENCH_DIR 8063782	node_modules/react-dom
-BENCH_DIR 2531883	.next/static
-BENCH_DIR 2517972	.next/types
+BENCH_DIR 1645714	.next/server
 BENCH_DIR 1546386	node_modules/caniuse-lite
 BENCH_DIR 1032395	node_modules/styled-jsx
 BENCH_DIR 962168	node_modules/sharp
+BENCH_DIR 947281	.next/static
+BENCH_DIR 578733	.next/trace
 BENCH_DIR 282322	node_modules/@swc
+BENCH_DIR 269157	.next/types
 BENCH_DIR 216017	node_modules/postcss
 BENCH_DIR 178663	node_modules/react
 BENCH_DIR 142723	node_modules/source-map-js
@@ -128,15 +129,14 @@ BENCH_DIR 133053	node_modules/baseline-browser-mapping
 BENCH_DIR 96108	node_modules/semver
 BENCH_DIR 90359	node_modules/tslib
 BENCH_DIR 82659	node_modules/scheduler
-BENCH_DIR 74387	.next/routes-manifest.json
 BENCH_DIR 46572	.next/next-server.js.nft.json
 BENCH_DIR 37396	node_modules/.bin
 BENCH_DIR 26437	node_modules/detect-libc
 BENCH_DIR 25679	node_modules/nanoid
-BENCH_DIR 18423	.next/app-path-routes-manifest.json
+BENCH_DIR 12787	node_modules/.package-lock.json
+BENCH_DIR 11144	.next/routes-manifest.json
 BENCH_LARGEST
 BENCH_FILE 90428680	node_modules/@next/swc-linux-arm64-musl/next-swc.linux-arm64-musl.node
-BENCH_FILE 20649724	.next/trace
 BENCH_FILE 18712760	node_modules/@img/sharp-libvips-linuxmusl-arm64/lib/libvips-cpp.so.8.18.7
 BENCH_FILE 5494329	node_modules/next/dist/compiled/next-server/app-page-turbo-experimental.runtime.dev.js.map
 BENCH_FILE 5486978	node_modules/next/dist/compiled/next-server/app-page-experimental.runtime.dev.js.map
@@ -155,6 +155,7 @@ BENCH_FILE 1809280	node_modules/next/dist/compiled/next-server/app-page-experime
 BENCH_FILE 1808820	node_modules/next/dist/compiled/next-server/app-page-turbo-experimental.runtime.dev.js
 BENCH_FILE 1782981	node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js
 BENCH_FILE 1782547	node_modules/next/dist/compiled/next-server/app-page-turbo.runtime.dev.js
+BENCH_FILE 1776319	node_modules/next/dist/compiled/next-server/dev-validation-worker.runtime.dev.js.map
 BENCH_NATIVE
 BENCH_FILE 90428680	node_modules/@next/swc-linux-arm64-musl/next-swc.linux-arm64-musl.node
 BENCH_FILE 18712760	node_modules/@img/sharp-libvips-linuxmusl-arm64/lib/libvips-cpp.so.8.18.7
@@ -170,46 +171,46 @@ BENCH_FILE 48693	node_modules/next/dist/compiled/source-map08/mappings.wasm
 ```text
 BENCH_METRIC bundler=webpack
 BENCH_METRIC router=app
-BENCH_METRIC build_seconds=27.189
-BENCH_METRIC output_bytes=19564609
-BENCH_METRIC cache_bytes=396553443
+BENCH_METRIC build_seconds=11.176
+BENCH_METRIC output_bytes=3331734
+BENCH_METRIC cache_bytes=80450940
 BENCH_METRIC standalone_bytes=0
-BENCH_METRIC static_bytes=2393670
+BENCH_METRIC static_bytes=836468
 BENCH_METRIC static_html_count=0
 BENCH_METRIC dynamic_html_count=0
 BENCH_METRIC standalone_server=missing
 BENCH_METRIC native_bytes=0
 
 # runtime image
-BENCH_METRIC app_bytes=353002731
+BENCH_METRIC app_bytes=336769862
 BENCH_METRIC native_bytes=157638028
-BENCH_METRIC file_count=11612
+BENCH_METRIC file_count=9358
 BENCH_DIRS
 BENCH_DIR 140861682	node_modules/next
 BENCH_DIR 137092008	node_modules/@next
 BENCH_DIR 23625066	node_modules/typescript
 BENCH_DIR 19139746	node_modules/@img
-BENCH_DIR 13473193	.next/server
 BENCH_DIR 8063782	node_modules/react-dom
-BENCH_DIR 2393670	.next/static
-BENCH_DIR 2031896	.next/types
+BENCH_DIR 1865711	.next/server
 BENCH_DIR 1546386	node_modules/caniuse-lite
-BENCH_DIR 1359089	.next/trace
 BENCH_DIR 1032395	node_modules/styled-jsx
 BENCH_DIR 962168	node_modules/sharp
+BENCH_DIR 836468	.next/static
+BENCH_DIR 317324	.next/trace
 BENCH_DIR 234327	node_modules/@swc
+BENCH_DIR 219431	.next/types
 BENCH_DIR 196517	node_modules/postcss
 BENCH_DIR 178663	node_modules/react
-BENCH_DIR 150463	.next/app-build-manifest.json
 BENCH_DIR 142723	node_modules/source-map-js
 BENCH_DIR 96108	node_modules/semver
 BENCH_DIR 90359	node_modules/tslib
 BENCH_DIR 82659	node_modules/scheduler
-BENCH_DIR 74133	.next/routes-manifest.json
 BENCH_DIR 43192	.next/next-server.js.nft.json
 BENCH_DIR 26437	node_modules/detect-libc
 BENCH_DIR 25679	node_modules/nanoid
 BENCH_DIR 19538	node_modules/.bin
+BENCH_DIR 15997	.next/app-build-manifest.json
+BENCH_DIR 12321	node_modules/.package-lock.json
 BENCH_LARGEST
 BENCH_FILE 137079728	node_modules/@next/swc-linux-arm64-musl/next-swc.linux-arm64-musl.node
 BENCH_FILE 18712760	node_modules/@img/sharp-libvips-linuxmusl-arm64/lib/libvips-cpp.so.8.18.7
@@ -245,39 +246,36 @@ BENCH_FILE 48693	node_modules/next/dist/compiled/source-map08/mappings.wasm
 ```text
 BENCH_METRIC bundler=webpack
 BENCH_METRIC router=pages
-BENCH_METRIC build_seconds=13.076
-BENCH_METRIC output_bytes=8868497
-BENCH_METRIC cache_bytes=92070726
+BENCH_METRIC build_seconds=9.460
+BENCH_METRIC output_bytes=1689447
+BENCH_METRIC cache_bytes=24914997
 BENCH_METRIC standalone_bytes=0
-BENCH_METRIC static_bytes=740498
+BENCH_METRIC static_bytes=498358
 BENCH_METRIC static_html_count=0
 BENCH_METRIC dynamic_html_count=0
 BENCH_METRIC standalone_server=missing
 BENCH_METRIC native_bytes=0
 
 # runtime image
-BENCH_METRIC app_bytes=323675018
+BENCH_METRIC app_bytes=316495968
 BENCH_METRIC native_bytes=111031103
-BENCH_METRIC file_count=11896
+BENCH_METRIC file_count=10543
 BENCH_DIRS
 BENCH_DIR 192287675	node_modules/next
 BENCH_DIR 90441126	node_modules/@next
 BENCH_DIR 19139746	node_modules/@img
 BENCH_DIR 8063782	node_modules/react-dom
-BENCH_DIR 6078190	.next/server
-BENCH_DIR 1556585	.next/trace
 BENCH_DIR 1546386	node_modules/caniuse-lite
 BENCH_DIR 1032395	node_modules/styled-jsx
 BENCH_DIR 962168	node_modules/sharp
-BENCH_DIR 740498	.next/static
+BENCH_DIR 820427	.next/server
+BENCH_DIR 498358	.next/static
 BENCH_DIR 282322	node_modules/@swc
+BENCH_DIR 234055	.next/trace
 BENCH_DIR 216017	node_modules/postcss
 BENCH_DIR 178663	node_modules/react
-BENCH_DIR 158580	.next/types
 BENCH_DIR 142723	node_modules/source-map-js
-BENCH_DIR 135724	.next/routes-manifest.json
 BENCH_DIR 133053	node_modules/baseline-browser-mapping
-BENCH_DIR 120506	.next/build-manifest.json
 BENCH_DIR 96108	node_modules/semver
 BENCH_DIR 90359	node_modules/tslib
 BENCH_DIR 82659	node_modules/scheduler
@@ -285,6 +283,9 @@ BENCH_DIR 46572	.next/next-server.js.nft.json
 BENCH_DIR 37396	node_modules/.bin
 BENCH_DIR 26437	node_modules/detect-libc
 BENCH_DIR 25679	node_modules/nanoid
+BENCH_DIR 23234	.next/types
+BENCH_DIR 21811	.next/routes-manifest.json
+BENCH_DIR 13153	.next/build-manifest.json
 BENCH_LARGEST
 BENCH_FILE 90428680	node_modules/@next/swc-linux-arm64-musl/next-swc.linux-arm64-musl.node
 BENCH_FILE 18712760	node_modules/@img/sharp-libvips-linuxmusl-arm64/lib/libvips-cpp.so.8.18.7
@@ -321,46 +322,46 @@ BENCH_FILE 48693	node_modules/next/dist/compiled/source-map08/mappings.wasm
 ```text
 BENCH_METRIC bundler=webpack
 BENCH_METRIC router=pages
-BENCH_METRIC build_seconds=13.353
-BENCH_METRIC output_bytes=6893350
-BENCH_METRIC cache_bytes=91352583
+BENCH_METRIC build_seconds=8.353
+BENCH_METRIC output_bytes=1441368
+BENCH_METRIC cache_bytes=24244347
 BENCH_METRIC standalone_bytes=0
-BENCH_METRIC static_bytes=731779
+BENCH_METRIC static_bytes=490025
 BENCH_METRIC static_html_count=0
 BENCH_METRIC dynamic_html_count=0
 BENCH_METRIC standalone_server=missing
 BENCH_METRIC native_bytes=0
 
 # runtime image
-BENCH_METRIC app_bytes=340330937
+BENCH_METRIC app_bytes=334878955
 BENCH_METRIC native_bytes=157638028
-BENCH_METRIC file_count=10588
+BENCH_METRIC file_count=9235
 BENCH_DIRS
 BENCH_DIR 140861682	node_modules/next
 BENCH_DIR 137092008	node_modules/@next
 BENCH_DIR 23625066	node_modules/typescript
 BENCH_DIR 19139746	node_modules/@img
 BENCH_DIR 8063782	node_modules/react-dom
-BENCH_DIR 4136651	.next/server
-BENCH_DIR 1555898	.next/trace
 BENCH_DIR 1546386	node_modules/caniuse-lite
 BENCH_DIR 1032395	node_modules/styled-jsx
 BENCH_DIR 962168	node_modules/sharp
-BENCH_DIR 731779	.next/static
+BENCH_DIR 604121	.next/server
+BENCH_DIR 490025	.next/static
 BENCH_DIR 234327	node_modules/@swc
+BENCH_DIR 232455	.next/trace
 BENCH_DIR 196517	node_modules/postcss
 BENCH_DIR 178663	node_modules/react
-BENCH_DIR 152434	.next/types
 BENCH_DIR 142723	node_modules/source-map-js
-BENCH_DIR 134622	.next/routes-manifest.json
-BENCH_DIR 120550	.next/build-manifest.json
 BENCH_DIR 96108	node_modules/semver
 BENCH_DIR 90359	node_modules/tslib
 BENCH_DIR 82659	node_modules/scheduler
 BENCH_DIR 43192	.next/next-server.js.nft.json
 BENCH_DIR 26437	node_modules/detect-libc
 BENCH_DIR 25679	node_modules/nanoid
+BENCH_DIR 21713	.next/routes-manifest.json
 BENCH_DIR 19538	node_modules/.bin
+BENCH_DIR 18441	.next/types
+BENCH_DIR 13197	.next/build-manifest.json
 BENCH_LARGEST
 BENCH_FILE 137079728	node_modules/@next/swc-linux-arm64-musl/next-swc.linux-arm64-musl.node
 BENCH_FILE 18712760	node_modules/@img/sharp-libvips-linuxmusl-arm64/lib/libvips-cpp.so.8.18.7
@@ -379,9 +380,9 @@ BENCH_FILE 2754762	node_modules/next/dist/compiled/next-server/app-page-turbo.ru
 BENCH_FILE 2582639	node_modules/next/dist/compiled/webpack/bundle5.js
 BENCH_FILE 2449181	node_modules/next/dist/compiled/next-devtools/index.js.map
 BENCH_FILE 1874901	node_modules/typescript/lib/lib.dom.d.ts
-BENCH_FILE 1555898	.next/trace
 BENCH_FILE 1538674	node_modules/next/dist/compiled/babel-packages/packages-bundle.js
 BENCH_FILE 1378357	node_modules/next/dist/compiled/@vercel/og/resvg.wasm
+BENCH_FILE 1364845	node_modules/next/dist/compiled/next-server/app-page-turbo-experimental.runtime.dev.js
 BENCH_NATIVE
 BENCH_FILE 137079728	node_modules/@next/swc-linux-arm64-musl/next-swc.linux-arm64-musl.node
 BENCH_FILE 18712760	node_modules/@img/sharp-libvips-linuxmusl-arm64/lib/libvips-cpp.so.8.18.7
@@ -396,46 +397,46 @@ BENCH_FILE 48693	node_modules/next/dist/compiled/source-map08/mappings.wasm
 ```text
 BENCH_METRIC bundler=turbopack
 BENCH_METRIC router=app
-BENCH_METRIC build_seconds=7.367
-BENCH_METRIC output_bytes=23377655
-BENCH_METRIC cache_bytes=91964252
+BENCH_METRIC build_seconds=3.735
+BENCH_METRIC output_bytes=6228202
+BENCH_METRIC cache_bytes=28061573
 BENCH_METRIC standalone_bytes=0
-BENCH_METRIC static_bytes=568796
+BENCH_METRIC static_bytes=568792
 BENCH_METRIC static_html_count=0
 BENCH_METRIC dynamic_html_count=0
 BENCH_METRIC standalone_server=missing
 BENCH_METRIC native_bytes=0
 
 # runtime image
-BENCH_METRIC app_bytes=338184697
+BENCH_METRIC app_bytes=321035250
 BENCH_METRIC native_bytes=111031103
-BENCH_METRIC file_count=17992
+BENCH_METRIC file_count=11227
 BENCH_DIRS
 BENCH_DIR 192287675	node_modules/next
 BENCH_DIR 90441126	node_modules/@next
-BENCH_DIR 21666628	.next/server
 BENCH_DIR 19139746	node_modules/@img
 BENCH_DIR 8063782	node_modules/react-dom
+BENCH_DIR 5409335	.next/server
 BENCH_DIR 1546386	node_modules/caniuse-lite
 BENCH_DIR 1032395	node_modules/styled-jsx
 BENCH_DIR 962168	node_modules/sharp
-BENCH_DIR 568796	.next/static
-BENCH_DIR 451523	.next/types
+BENCH_DIR 568792	.next/static
 BENCH_DIR 282322	node_modules/@swc
 BENCH_DIR 216017	node_modules/postcss
 BENCH_DIR 178663	node_modules/react
-BENCH_DIR 178581	.next/diagnostics
-BENCH_DIR 170623	.next/trace
 BENCH_DIR 142723	node_modules/source-map-js
 BENCH_DIR 133053	node_modules/baseline-browser-mapping
-BENCH_DIR 121455	.next/build-manifest.json
 BENCH_DIR 96108	node_modules/semver
 BENCH_DIR 90359	node_modules/tslib
 BENCH_DIR 90042	.next/next-server.js.nft.json
 BENCH_DIR 82659	node_modules/scheduler
-BENCH_DIR 74387	.next/routes-manifest.json
+BENCH_DIR 55033	.next/types
 BENCH_DIR 37396	node_modules/.bin
 BENCH_DIR 26437	node_modules/detect-libc
+BENCH_DIR 25679	node_modules/nanoid
+BENCH_DIR 22383	.next/trace
+BENCH_DIR 18694	.next/diagnostics
+BENCH_DIR 13433	.next/build-manifest.json
 BENCH_LARGEST
 BENCH_FILE 90428680	node_modules/@next/swc-linux-arm64-musl/next-swc.linux-arm64-musl.node
 BENCH_FILE 18712760	node_modules/@img/sharp-libvips-linuxmusl-arm64/lib/libvips-cpp.so.8.18.7
@@ -472,46 +473,46 @@ BENCH_FILE 48693	node_modules/next/dist/compiled/source-map08/mappings.wasm
 ```text
 BENCH_METRIC bundler=turbopack
 BENCH_METRIC router=app
-BENCH_METRIC build_seconds=46.299
-BENCH_METRIC output_bytes=53738664
-BENCH_METRIC cache_bytes=181994
+BENCH_METRIC build_seconds=12.978
+BENCH_METRIC output_bytes=8724487
+BENCH_METRIC cache_bytes=116909
 BENCH_METRIC standalone_bytes=0
-BENCH_METRIC static_bytes=922228
+BENCH_METRIC static_bytes=904944
 BENCH_METRIC static_html_count=0
 BENCH_METRIC dynamic_html_count=0
 BENCH_METRIC standalone_server=missing
 BENCH_METRIC native_bytes=0
 
 # runtime image
-BENCH_METRIC app_bytes=387176786
+BENCH_METRIC app_bytes=342162615
 BENCH_METRIC native_bytes=157638028
-BENCH_METRIC file_count=16200
+BENCH_METRIC file_count=9886
 BENCH_DIRS
 BENCH_DIR 140861682	node_modules/next
 BENCH_DIR 137092008	node_modules/@next
-BENCH_DIR 52197265	.next/server
 BENCH_DIR 23625066	node_modules/typescript
 BENCH_DIR 19139746	node_modules/@img
 BENCH_DIR 8063782	node_modules/react-dom
+BENCH_DIR 7686069	.next/server
 BENCH_DIR 1546386	node_modules/caniuse-lite
 BENCH_DIR 1032395	node_modules/styled-jsx
 BENCH_DIR 962168	node_modules/sharp
-BENCH_DIR 922228	.next/static
+BENCH_DIR 904944	.next/static
 BENCH_DIR 234327	node_modules/@swc
 BENCH_DIR 196517	node_modules/postcss
 BENCH_DIR 178663	node_modules/react
-BENCH_DIR 170614	.next/trace
-BENCH_DIR 162796	.next/types
 BENCH_DIR 142723	node_modules/source-map-js
-BENCH_DIR 129173	.next/app-build-manifest.json
 BENCH_DIR 96108	node_modules/semver
 BENCH_DIR 90359	node_modules/tslib
 BENCH_DIR 82659	node_modules/scheduler
-BENCH_DIR 74133	.next/routes-manifest.json
 BENCH_DIR 43192	.next/next-server.js.nft.json
 BENCH_DIR 26437	node_modules/detect-libc
 BENCH_DIR 25679	node_modules/nanoid
+BENCH_DIR 22444	.next/trace
+BENCH_DIR 20452	.next/types
 BENCH_DIR 19538	node_modules/.bin
+BENCH_DIR 13484	.next/app-build-manifest.json
+BENCH_DIR 12321	node_modules/.package-lock.json
 BENCH_LARGEST
 BENCH_FILE 137079728	node_modules/@next/swc-linux-arm64-musl/next-swc.linux-arm64-musl.node
 BENCH_FILE 18712760	node_modules/@img/sharp-libvips-linuxmusl-arm64/lib/libvips-cpp.so.8.18.7
@@ -547,39 +548,34 @@ BENCH_FILE 48693	node_modules/next/dist/compiled/source-map08/mappings.wasm
 ```text
 BENCH_METRIC bundler=turbopack
 BENCH_METRIC router=pages
-BENCH_METRIC build_seconds=5.815
-BENCH_METRIC output_bytes=13307322
-BENCH_METRIC cache_bytes=60188379
+BENCH_METRIC build_seconds=3.227
+BENCH_METRIC output_bytes=2645660
+BENCH_METRIC cache_bytes=15383704
 BENCH_METRIC standalone_bytes=0
-BENCH_METRIC static_bytes=762388
+BENCH_METRIC static_bytes=410895
 BENCH_METRIC static_html_count=0
 BENCH_METRIC dynamic_html_count=0
 BENCH_METRIC standalone_server=missing
 BENCH_METRIC native_bytes=0
 
 # runtime image
-BENCH_METRIC app_bytes=328113843
+BENCH_METRIC app_bytes=317452181
 BENCH_METRIC native_bytes=111031103
-BENCH_METRIC file_count=16446
+BENCH_METRIC file_count=11036
 BENCH_DIRS
 BENCH_DIR 192287675	node_modules/next
 BENCH_DIR 90441126	node_modules/@next
 BENCH_DIR 19139746	node_modules/@img
-BENCH_DIR 11658121	.next/server
 BENCH_DIR 8063782	node_modules/react-dom
+BENCH_DIR 2011011	.next/server
 BENCH_DIR 1546386	node_modules/caniuse-lite
 BENCH_DIR 1032395	node_modules/styled-jsx
 BENCH_DIR 962168	node_modules/sharp
-BENCH_DIR 762388	.next/static
+BENCH_DIR 410895	.next/static
 BENCH_DIR 282322	node_modules/@swc
 BENCH_DIR 216017	node_modules/postcss
 BENCH_DIR 178663	node_modules/react
-BENCH_DIR 170102	.next/trace
-BENCH_DIR 158580	.next/types
-BENCH_DIR 155390	.next/diagnostics
-BENCH_DIR 142782	.next/build-manifest.json
 BENCH_DIR 142723	node_modules/source-map-js
-BENCH_DIR 134720	.next/routes-manifest.json
 BENCH_DIR 133053	node_modules/baseline-browser-mapping
 BENCH_DIR 96108	node_modules/semver
 BENCH_DIR 90359	node_modules/tslib
@@ -587,6 +583,11 @@ BENCH_DIR 90042	.next/next-server.js.nft.json
 BENCH_DIR 82659	node_modules/scheduler
 BENCH_DIR 37396	node_modules/.bin
 BENCH_DIR 26437	node_modules/detect-libc
+BENCH_DIR 25679	node_modules/nanoid
+BENCH_DIR 23234	.next/types
+BENCH_DIR 21898	.next/trace
+BENCH_DIR 21651	.next/routes-manifest.json
+BENCH_DIR 16249	.next/diagnostics
 BENCH_LARGEST
 BENCH_FILE 90428680	node_modules/@next/swc-linux-arm64-musl/next-swc.linux-arm64-musl.node
 BENCH_FILE 18712760	node_modules/@img/sharp-libvips-linuxmusl-arm64/lib/libvips-cpp.so.8.18.7
@@ -623,46 +624,46 @@ BENCH_FILE 48693	node_modules/next/dist/compiled/source-map08/mappings.wasm
 ```text
 BENCH_METRIC bundler=turbopack
 BENCH_METRIC router=pages
-BENCH_METRIC build_seconds=26.621
-BENCH_METRIC output_bytes=20508347
-BENCH_METRIC cache_bytes=181551
+BENCH_METRIC build_seconds=9.095
+BENCH_METRIC output_bytes=3338869
+BENCH_METRIC cache_bytes=116938
 BENCH_METRIC standalone_bytes=0
-BENCH_METRIC static_bytes=12719421
+BENCH_METRIC static_bytes=1648469
 BENCH_METRIC static_html_count=0
 BENCH_METRIC dynamic_html_count=0
 BENCH_METRIC standalone_server=missing
 BENCH_METRIC native_bytes=0
 
 # runtime image
-BENCH_METRIC app_bytes=353945934
+BENCH_METRIC app_bytes=336776456
 BENCH_METRIC native_bytes=157638028
-BENCH_METRIC file_count=15642
+BENCH_METRIC file_count=9779
 BENCH_DIRS
 BENCH_DIR 140861682	node_modules/next
 BENCH_DIR 137092008	node_modules/@next
 BENCH_DIR 23625066	node_modules/typescript
 BENCH_DIR 19139746	node_modules/@img
-BENCH_DIR 12719421	.next/static
 BENCH_DIR 8063782	node_modules/react-dom
-BENCH_DIR 7185330	.next/server
+BENCH_DIR 1648469	.next/static
+BENCH_DIR 1557715	.next/server
 BENCH_DIR 1546386	node_modules/caniuse-lite
 BENCH_DIR 1032395	node_modules/styled-jsx
 BENCH_DIR 962168	node_modules/sharp
 BENCH_DIR 234327	node_modules/@swc
 BENCH_DIR 196517	node_modules/postcss
 BENCH_DIR 178663	node_modules/react
-BENCH_DIR 169904	.next/trace
-BENCH_DIR 152434	.next/types
 BENCH_DIR 142723	node_modules/source-map-js
-BENCH_DIR 135626	.next/routes-manifest.json
 BENCH_DIR 96108	node_modules/semver
 BENCH_DIR 90359	node_modules/tslib
-BENCH_DIR 83799	.next/build-manifest.json
 BENCH_DIR 82659	node_modules/scheduler
 BENCH_DIR 43192	.next/next-server.js.nft.json
 BENCH_DIR 26437	node_modules/detect-libc
 BENCH_DIR 25679	node_modules/nanoid
+BENCH_DIR 21707	.next/trace
+BENCH_DIR 21553	.next/routes-manifest.json
 BENCH_DIR 19538	node_modules/.bin
+BENCH_DIR 18441	.next/types
+BENCH_DIR 12327	node_modules/.package-lock.json
 BENCH_LARGEST
 BENCH_FILE 137079728	node_modules/@next/swc-linux-arm64-musl/next-swc.linux-arm64-musl.node
 BENCH_FILE 18712760	node_modules/@img/sharp-libvips-linuxmusl-arm64/lib/libvips-cpp.so.8.18.7

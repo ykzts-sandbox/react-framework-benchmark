@@ -4,7 +4,7 @@
 # previous .next or Vite build directory.
 #
 # Usage: bench.sh [all|next-15|no-standalone]
-#   all            Next.js 16, Next.js 15, and React Router, 500 static routes.
+#   all            Next.js 16, Next.js 15, and React Router.
 #   next-15        Next.js 15 only. Writes results/next-15.md.
 #   no-standalone  Next.js with webpack and Turbopack, without output:
 #                  "standalone".
@@ -26,6 +26,8 @@ case "$scope" in
 esac
 
 node_image=${NODE_IMAGE:-node:24.21.0-alpine}
+static_routes=${STATIC_ROUTES:-20}
+dynamic_routes=${DYNAMIC_ROUTES:-30}
 cachebust=$(date +%s)
 if [ "$scope" = "next-15" ]; then
   base_metrics="$root/results/next-15.md"
@@ -157,7 +159,8 @@ base_size=$(image_size "$node_image")
   echo "- Node.js image: ${node_image} (${node_version})"
   echo "- npm in image: ${npm_version}"
   echo "- Base image size: ${base_size} bytes ($(bytes_mib "$base_size") MiB)"
-  echo "- Static route modules: 500"
+  echo "- Static route modules: ${static_routes}"
+  echo "- Dynamic route modules: ${dynamic_routes}, each reading ids 1 to 1000 of its own kind from Laravel"
   echo "- Image size metric: \`docker image inspect --format '{{.Size}}'\`, the local uncompressed image size, including the shared base image"
   echo "- Added size: image size minus the base image size"
   echo "- Compressed size: config blob plus layer blobs of the linux platform manifest after \`docker push\` to a temporary registry. This is the \`docker pull\` transfer size. Attestation manifests are excluded."
@@ -191,21 +194,21 @@ pages_rspack_15_ok=0
 
 if [ "$run_v16" -eq 1 ]; then
   build_next apps/next/Dockerfile benchmark-next:webpack results/next-webpack.log \
-    --build-arg BUNDLER=webpack --build-arg STATIC_ROUTES=500
+    --build-arg BUNDLER=webpack --build-arg STATIC_ROUTES="$static_routes" --build-arg DYNAMIC_ROUTES="$dynamic_routes"
   build_next apps/next/Dockerfile benchmark-next:turbopack results/next-turbopack.log \
-    --build-arg BUNDLER=turbopack --build-arg STATIC_ROUTES=500
+    --build-arg BUNDLER=turbopack --build-arg STATIC_ROUTES="$static_routes" --build-arg DYNAMIC_ROUTES="$dynamic_routes"
   if build_next apps/next/Dockerfile benchmark-next:rspack results/next-rspack.log \
-    --build-arg BUNDLER=rspack --build-arg STATIC_ROUTES=500; then
+    --build-arg BUNDLER=rspack --build-arg STATIC_ROUTES="$static_routes" --build-arg DYNAMIC_ROUTES="$dynamic_routes"; then
     rspack_ok=1
   else
     echo "App Router Rspack build failed. See results/next-rspack.log." | tee -a "$base_metrics"
   fi
   build_next apps/next-pages/Dockerfile benchmark-next-pages:webpack results/next-pages-webpack.log \
-    --build-arg BUNDLER=webpack --build-arg STATIC_ROUTES=500
+    --build-arg BUNDLER=webpack --build-arg STATIC_ROUTES="$static_routes" --build-arg DYNAMIC_ROUTES="$dynamic_routes"
   build_next apps/next-pages/Dockerfile benchmark-next-pages:turbopack results/next-pages-turbopack.log \
-    --build-arg BUNDLER=turbopack --build-arg STATIC_ROUTES=500
+    --build-arg BUNDLER=turbopack --build-arg STATIC_ROUTES="$static_routes" --build-arg DYNAMIC_ROUTES="$dynamic_routes"
   if build_next apps/next-pages/Dockerfile benchmark-next-pages:rspack results/next-pages-rspack.log \
-    --build-arg BUNDLER=rspack --build-arg STATIC_ROUTES=500; then
+    --build-arg BUNDLER=rspack --build-arg STATIC_ROUTES="$static_routes" --build-arg DYNAMIC_ROUTES="$dynamic_routes"; then
     pages_rspack_ok=1
   else
     echo "Pages Router Rspack build failed. See results/next-pages-rspack.log." | tee -a "$base_metrics"
@@ -214,21 +217,21 @@ fi
 
 if [ "$run_v15" -eq 1 ]; then
   build_next apps/next-15/Dockerfile benchmark-next-15:webpack results/next-15-webpack.log \
-    --build-arg BUNDLER=webpack --build-arg STATIC_ROUTES=500
+    --build-arg BUNDLER=webpack --build-arg STATIC_ROUTES="$static_routes" --build-arg DYNAMIC_ROUTES="$dynamic_routes"
   build_next apps/next-15/Dockerfile benchmark-next-15:turbopack results/next-15-turbopack.log \
-    --build-arg BUNDLER=turbopack --build-arg STATIC_ROUTES=500
+    --build-arg BUNDLER=turbopack --build-arg STATIC_ROUTES="$static_routes" --build-arg DYNAMIC_ROUTES="$dynamic_routes"
   if build_next apps/next-15/Dockerfile benchmark-next-15:rspack results/next-15-rspack.log \
-    --build-arg BUNDLER=rspack --build-arg STATIC_ROUTES=500; then
+    --build-arg BUNDLER=rspack --build-arg STATIC_ROUTES="$static_routes" --build-arg DYNAMIC_ROUTES="$dynamic_routes"; then
     rspack_15_ok=1
   else
     echo "Next.js 15 App Router Rspack build failed. See results/next-15-rspack.log." | tee -a "$base_metrics"
   fi
   build_next apps/next-pages-15/Dockerfile benchmark-next-pages-15:webpack results/next-pages-15-webpack.log \
-    --build-arg BUNDLER=webpack --build-arg STATIC_ROUTES=500
+    --build-arg BUNDLER=webpack --build-arg STATIC_ROUTES="$static_routes" --build-arg DYNAMIC_ROUTES="$dynamic_routes"
   build_next apps/next-pages-15/Dockerfile benchmark-next-pages-15:turbopack results/next-pages-15-turbopack.log \
-    --build-arg BUNDLER=turbopack --build-arg STATIC_ROUTES=500
+    --build-arg BUNDLER=turbopack --build-arg STATIC_ROUTES="$static_routes" --build-arg DYNAMIC_ROUTES="$dynamic_routes"
   if build_next apps/next-pages-15/Dockerfile benchmark-next-pages-15:rspack results/next-pages-15-rspack.log \
-    --build-arg BUNDLER=rspack --build-arg STATIC_ROUTES=500; then
+    --build-arg BUNDLER=rspack --build-arg STATIC_ROUTES="$static_routes" --build-arg DYNAMIC_ROUTES="$dynamic_routes"; then
     pages_rspack_15_ok=1
   else
     echo "Next.js 15 Pages Router Rspack build failed. See results/next-pages-15-rspack.log." | tee -a "$base_metrics"
@@ -237,30 +240,30 @@ fi
 
 if [ "$run_full" -eq 1 ]; then
   build_full apps/next/Dockerfile benchmark-next:webpack-full results/next-webpack-full.log \
-    --build-arg BUNDLER=webpack --build-arg STATIC_ROUTES=500
+    --build-arg BUNDLER=webpack --build-arg STATIC_ROUTES="$static_routes" --build-arg DYNAMIC_ROUTES="$dynamic_routes"
   build_full apps/next-15/Dockerfile benchmark-next-15:webpack-full results/next-15-webpack-full.log \
-    --build-arg BUNDLER=webpack --build-arg STATIC_ROUTES=500
+    --build-arg BUNDLER=webpack --build-arg STATIC_ROUTES="$static_routes" --build-arg DYNAMIC_ROUTES="$dynamic_routes"
   build_full apps/next-pages/Dockerfile benchmark-next-pages:webpack-full results/next-pages-webpack-full.log \
-    --build-arg BUNDLER=webpack --build-arg STATIC_ROUTES=500
+    --build-arg BUNDLER=webpack --build-arg STATIC_ROUTES="$static_routes" --build-arg DYNAMIC_ROUTES="$dynamic_routes"
   build_full apps/next-pages-15/Dockerfile benchmark-next-pages-15:webpack-full results/next-pages-15-webpack-full.log \
-    --build-arg BUNDLER=webpack --build-arg STATIC_ROUTES=500
+    --build-arg BUNDLER=webpack --build-arg STATIC_ROUTES="$static_routes" --build-arg DYNAMIC_ROUTES="$dynamic_routes"
   build_full apps/next/Dockerfile benchmark-next:turbopack-full results/next-turbopack-full.log \
-    --build-arg BUNDLER=turbopack --build-arg STATIC_ROUTES=500
+    --build-arg BUNDLER=turbopack --build-arg STATIC_ROUTES="$static_routes" --build-arg DYNAMIC_ROUTES="$dynamic_routes"
   build_full apps/next-15/Dockerfile benchmark-next-15:turbopack-full results/next-15-turbopack-full.log \
-    --build-arg BUNDLER=turbopack --build-arg STATIC_ROUTES=500
+    --build-arg BUNDLER=turbopack --build-arg STATIC_ROUTES="$static_routes" --build-arg DYNAMIC_ROUTES="$dynamic_routes"
   build_full apps/next-pages/Dockerfile benchmark-next-pages:turbopack-full results/next-pages-turbopack-full.log \
-    --build-arg BUNDLER=turbopack --build-arg STATIC_ROUTES=500
+    --build-arg BUNDLER=turbopack --build-arg STATIC_ROUTES="$static_routes" --build-arg DYNAMIC_ROUTES="$dynamic_routes"
   build_full apps/next-pages-15/Dockerfile benchmark-next-pages-15:turbopack-full results/next-pages-15-turbopack-full.log \
-    --build-arg BUNDLER=turbopack --build-arg STATIC_ROUTES=500
+    --build-arg BUNDLER=turbopack --build-arg STATIC_ROUTES="$static_routes" --build-arg DYNAMIC_ROUTES="$dynamic_routes"
 fi
 
 if [ "$run_router" -eq 1 ]; then
   build_app apps/react-router/Dockerfile benchmark-react-router:vite results/react-router.log \
-    --build-arg STATIC_ROUTES=500
+    --build-arg STATIC_ROUTES="$static_routes" --build-arg DYNAMIC_ROUTES="$dynamic_routes"
   build_app apps/react-router-data/Dockerfile benchmark-react-router-data:vite results/react-router-data.log \
-    --build-arg STATIC_ROUTES=500
+    --build-arg STATIC_ROUTES="$static_routes" --build-arg DYNAMIC_ROUTES="$dynamic_routes"
   build_app apps/react-router-declarative/Dockerfile benchmark-react-router-declarative:vite results/react-router-declarative.log \
-    --build-arg STATIC_ROUTES=500
+    --build-arg STATIC_ROUTES="$static_routes" --build-arg DYNAMIC_ROUTES="$dynamic_routes"
 fi
 
 {

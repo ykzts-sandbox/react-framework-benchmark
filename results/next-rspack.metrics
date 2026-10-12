@@ -1,10 +1,10 @@
 BENCH_METRIC bundler=rspack
 BENCH_METRIC router=app
-BENCH_METRIC build_seconds=22.661
-BENCH_METRIC output_bytes=79782362
-BENCH_METRIC cache_bytes=645257788
-BENCH_METRIC standalone_bytes=56181707
-BENCH_METRIC static_bytes=1014717
+BENCH_METRIC build_seconds=12.334
+BENCH_METRIC output_bytes=51704832
+BENCH_METRIC cache_bytes=38547671
+BENCH_METRIC standalone_bytes=48323844
+BENCH_METRIC static_bytes=929119
 BENCH_METRIC static_html_count=0
 BENCH_METRIC dynamic_html_count=0
 BENCH_METRIC standalone_server=standalone/server.js
@@ -20,7 +20,7 @@ BENCH_FILE 715920	.next/standalone/node_modules/next/dist/compiled/next-server/a
 BENCH_FILE 715762	.next/standalone/node_modules/next/dist/compiled/next-server/app-page-turbo-experimental.runtime.prod.js
 BENCH_FILE 704560	.next/standalone/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js
 BENCH_FILE 704400	.next/standalone/node_modules/next/dist/compiled/next-server/app-page-turbo.runtime.prod.js
-BENCH_FILE 687833	.next/standalone/.next/server/chunks/9683.js
+BENCH_FILE 686638	.next/standalone/.next/server/chunks/9683.js
 BENCH_FILE 525791	.next/standalone/node_modules/next/dist/compiled/edge-runtime/index.js
 BENCH_FILE 488742	.next/standalone/node_modules/next/dist/compiled/@next/font/dist/google/font-data.json
 BENCH_FILE 387574	.next/standalone/node_modules/next/dist/compiled/postcss-preset-env/index.cjs

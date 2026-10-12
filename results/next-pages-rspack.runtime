@@ -1,16 +1,14 @@
-BENCH_METRIC app_bytes=55186304
+BENCH_METRIC app_bytes=49416220
 BENCH_METRIC native_bytes=19042592
-BENCH_METRIC file_count=3552
+BENCH_METRIC file_count=2199
 BENCH_DIRS
 BENCH_DIR 25104705	node_modules/next
 BENCH_DIR 19091339	node_modules/@img
-BENCH_DIR 6097600	.next/server
 BENCH_DIR 2760803	node_modules/react-dom
-BENCH_DIR 749132	.next/static
+BENCH_DIR 820761	.next/server
+BENCH_DIR 497346	.next/static
 BENCH_DIR 339057	node_modules/caniuse-lite
 BENCH_DIR 229339	node_modules/sharp
-BENCH_DIR 144194	.next/build-manifest.json
-BENCH_DIR 134720	.next/routes-manifest.json
 BENCH_DIR 121917	node_modules/postcss
 BENCH_DIR 111635	node_modules/source-map-js
 BENCH_DIR 84331	node_modules/react
@@ -18,6 +16,8 @@ BENCH_DIR 68829	node_modules/semver
 BENCH_DIR 46525	node_modules/baseline-browser-mapping
 BENCH_DIR 30917	node_modules/@swc
 BENCH_DIR 22255	node_modules/styled-jsx
+BENCH_DIR 21811	.next/routes-manifest.json
+BENCH_DIR 15644	.next/build-manifest.json
 BENCH_DIR 11429	node_modules/detect-libc
 BENCH_DIR 11000	node_modules/@next
 BENCH_DIR 10637	.next/required-server-files.json

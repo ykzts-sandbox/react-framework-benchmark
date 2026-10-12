@@ -1,10 +1,10 @@
 BENCH_METRIC bundler=turbopack
 BENCH_METRIC router=pages
-BENCH_METRIC build_seconds=5.777
-BENCH_METRIC output_bytes=39961594
-BENCH_METRIC cache_bytes=62411720
-BENCH_METRIC standalone_bytes=26640825
-BENCH_METRIC static_bytes=762388
+BENCH_METRIC build_seconds=3.304
+BENCH_METRIC output_bytes=21267203
+BENCH_METRIC cache_bytes=17357843
+BENCH_METRIC standalone_bytes=18608105
+BENCH_METRIC static_bytes=410895
 BENCH_METRIC static_html_count=0
 BENCH_METRIC dynamic_html_count=0
 BENCH_METRIC standalone_server=standalone/server.js
@@ -28,4 +28,4 @@ BENCH_FILE 159969	.next/standalone/node_modules/next/dist/server/use-cache/use-c
 BENCH_FILE 157171	.next/standalone/node_modules/next/dist/compiled/comment-json/index.js
 BENCH_FILE 150256	.next/standalone/node_modules/next/dist/client/components/segment-cache/cache.js
 BENCH_FILE 143364	.next/standalone/node_modules/next/dist/compiled/conf/index.js
-BENCH_FILE 142814	.next/standalone/.next/server/middleware-build-manifest.js
+BENCH_FILE 126913	.next/standalone/node_modules/next/dist/compiled/next-server/pages-turbo.runtime.prod.js

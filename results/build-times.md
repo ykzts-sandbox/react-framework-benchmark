@@ -2,44 +2,44 @@
 
 Measured by `scripts/bench-repeat.sh`. Each run starts a fresh container from the variant's `source` stage and runs the same timed build as `scripts/bench.sh`. Variants run round-robin. Raw runs are in `results/build-times.csv`.
 
-- First run finished: 2026-10-12T03:51:07Z
-- Last run finished: 2026-10-12T06:04:31Z
+- First run finished: 2026-10-12T07:38:20Z
+- Last run finished: 2026-10-12T08:33:58Z
 - Host: Mac mini (Apple M4, 16 GB RAM), Dev Container with Docker in Docker
 
 | Framework / Bundler | Runs | Median (s) | Mean (s) | Stdev (s) | Min (s) | P25 (s) | P75 (s) | Max (s) |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| Next.js 16 App Router / webpack / sharp | 10 | 26.445 | 26.793 | 1.030 | 25.795 | 26.094 | 27.053 | 29.142 |
-| Next.js 16 App Router / webpack / no sharp | 10 | 25.892 | 26.171 | 1.058 | 25.006 | 25.785 | 26.367 | 28.808 |
-| Next.js 16 App Router / webpack / sharp / no standalone | 10 | 23.541 | 23.686 | 1.002 | 22.909 | 23.141 | 23.728 | 26.380 |
-| Next.js 16 App Router / Turbopack / sharp | 10 | 6.565 | 6.704 | 0.344 | 6.404 | 6.475 | 6.820 | 7.307 |
-| Next.js 16 App Router / Turbopack / no sharp | 10 | 6.522 | 6.553 | 0.248 | 6.311 | 6.376 | 6.585 | 7.103 |
-| Next.js 16 App Router / Turbopack / sharp / no standalone | 10 | 6.544 | 6.663 | 0.421 | 6.240 | 6.486 | 6.696 | 7.771 |
-| Next.js 16 App Router / Rspack / sharp | 10 | 21.688 | 21.719 | 0.258 | 21.381 | 21.587 | 21.801 | 22.322 |
-| Next.js 16 App Router / Rspack / no sharp | 10 | 20.673 | 21.501 | 2.860 | 20.148 | 20.389 | 20.899 | 29.599 |
-| Next.js 16 Pages Router / webpack / sharp | 10 | 15.485 | 15.819 | 0.896 | 15.265 | 15.466 | 15.696 | 18.317 |
-| Next.js 16 Pages Router / webpack / no sharp | 10 | 15.020 | 15.367 | 0.870 | 14.903 | 14.921 | 15.252 | 17.690 |
-| Next.js 16 Pages Router / webpack / sharp / no standalone | 10 | 11.950 | 12.115 | 0.711 | 11.674 | 11.811 | 12.008 | 14.093 |
-| Next.js 16 Pages Router / Turbopack / sharp | 10 | 5.261 | 5.319 | 0.293 | 5.095 | 5.124 | 5.356 | 6.089 |
-| Next.js 16 Pages Router / Turbopack / no sharp | 10 | 5.152 | 5.261 | 0.479 | 4.895 | 5.059 | 5.237 | 6.583 |
-| Next.js 16 Pages Router / Turbopack / sharp / no standalone | 10 | 5.029 | 5.171 | 0.467 | 4.858 | 4.938 | 5.085 | 6.415 |
-| Next.js 16 Pages Router / Rspack / sharp | 10 | 13.685 | 13.721 | 0.393 | 13.203 | 13.576 | 13.806 | 14.644 |
-| Next.js 16 Pages Router / Rspack / no sharp | 10 | 13.395 | 13.427 | 0.276 | 13.057 | 13.268 | 13.482 | 13.926 |
-| Next.js 15 App Router / webpack / sharp | 10 | 29.594 | 30.103 | 0.942 | 29.303 | 29.495 | 30.618 | 32.149 |
-| Next.js 15 App Router / webpack / no sharp | 10 | 29.293 | 29.785 | 1.154 | 28.617 | 29.066 | 30.212 | 32.390 |
-| Next.js 15 App Router / webpack / sharp / no standalone | 10 | 26.220 | 26.278 | 0.627 | 25.407 | 25.934 | 26.472 | 27.472 |
-| Next.js 15 App Router / Turbopack / sharp | 10 | 50.130 | 50.525 | 1.842 | 48.513 | 49.720 | 50.646 | 55.370 |
-| Next.js 15 App Router / Turbopack / no sharp | 10 | 50.239 | 50.459 | 1.794 | 48.557 | 49.109 | 51.055 | 54.427 |
-| Next.js 15 App Router / Turbopack / sharp / no standalone | 10 | 46.013 | 46.074 | 0.916 | 44.228 | 45.635 | 46.790 | 47.302 |
-| Next.js 15 App Router / Rspack / sharp | 10 | 24.256 | 24.325 | 0.835 | 23.329 | 23.960 | 24.453 | 26.324 |
-| Next.js 15 App Router / Rspack / no sharp | 10 | 23.787 | 23.768 | 0.609 | 22.960 | 23.283 | 24.115 | 24.822 |
-| Next.js 15 Pages Router / webpack / sharp | 10 | 17.169 | 17.316 | 0.359 | 16.961 | 17.054 | 17.494 | 18.026 |
-| Next.js 15 Pages Router / webpack / no sharp | 10 | 16.829 | 16.956 | 0.423 | 16.570 | 16.719 | 16.923 | 17.855 |
-| Next.js 15 Pages Router / webpack / sharp / no standalone | 10 | 12.163 | 12.234 | 0.331 | 11.898 | 12.005 | 12.270 | 12.981 |
-| Next.js 15 Pages Router / Turbopack / sharp | 10 | 29.653 | 29.907 | 0.802 | 29.012 | 29.494 | 30.012 | 31.913 |
-| Next.js 15 Pages Router / Turbopack / no sharp | 10 | 30.212 | 30.038 | 0.723 | 28.394 | 29.930 | 30.394 | 31.057 |
-| Next.js 15 Pages Router / Turbopack / sharp / no standalone | 10 | 25.473 | 25.534 | 0.653 | 24.702 | 25.008 | 25.983 | 26.759 |
-| Next.js 15 Pages Router / Rspack / sharp | 10 | 14.957 | 14.999 | 0.494 | 14.474 | 14.588 | 15.257 | 15.963 |
-| Next.js 15 Pages Router / Rspack / no sharp | 10 | 14.456 | 14.578 | 0.374 | 14.161 | 14.369 | 14.814 | 15.314 |
-| React Router Framework / Vite + Rolldown | 10 | 1.661 | 1.699 | 0.106 | 1.613 | 1.637 | 1.698 | 1.936 |
-| React Router Data / Vite + Rolldown | 10 | 0.316 | 0.321 | 0.021 | 0.302 | 0.305 | 0.330 | 0.362 |
-| React Router Declarative / Vite + Rolldown | 10 | 0.310 | 0.311 | 0.021 | 0.278 | 0.303 | 0.316 | 0.360 |
+| Next.js 16 App Router / webpack / sharp | 10 | 13.184 | 13.186 | 0.343 | 12.647 | 13.041 | 13.306 | 13.873 |
+| Next.js 16 App Router / webpack / no sharp | 10 | 12.535 | 12.674 | 0.389 | 12.309 | 12.431 | 12.755 | 13.622 |
+| Next.js 16 App Router / webpack / sharp / no standalone | 10 | 9.483 | 9.533 | 0.278 | 9.221 | 9.385 | 9.575 | 10.244 |
+| Next.js 16 App Router / Turbopack / sharp | 10 | 3.126 | 3.171 | 0.163 | 2.959 | 3.088 | 3.210 | 3.563 |
+| Next.js 16 App Router / Turbopack / no sharp | 10 | 3.133 | 3.144 | 0.083 | 2.991 | 3.120 | 3.155 | 3.292 |
+| Next.js 16 App Router / Turbopack / sharp / no standalone | 10 | 2.933 | 2.939 | 0.067 | 2.798 | 2.905 | 2.997 | 3.011 |
+| Next.js 16 App Router / Rspack / sharp | 10 | 11.354 | 11.485 | 0.434 | 11.205 | 11.310 | 11.391 | 12.691 |
+| Next.js 16 App Router / Rspack / no sharp | 10 | 11.244 | 11.351 | 0.349 | 11.044 | 11.184 | 11.340 | 12.245 |
+| Next.js 16 Pages Router / webpack / sharp | 10 | 11.018 | 11.006 | 0.218 | 10.696 | 10.832 | 11.138 | 11.382 |
+| Next.js 16 Pages Router / webpack / no sharp | 10 | 10.597 | 10.647 | 0.155 | 10.396 | 10.579 | 10.731 | 10.911 |
+| Next.js 16 Pages Router / webpack / sharp / no standalone | 10 | 7.540 | 7.534 | 0.101 | 7.353 | 7.492 | 7.597 | 7.705 |
+| Next.js 16 Pages Router / Turbopack / sharp | 10 | 2.689 | 2.703 | 0.059 | 2.636 | 2.659 | 2.733 | 2.820 |
+| Next.js 16 Pages Router / Turbopack / no sharp | 10 | 2.607 | 2.619 | 0.082 | 2.495 | 2.585 | 2.624 | 2.812 |
+| Next.js 16 Pages Router / Turbopack / sharp / no standalone | 10 | 2.428 | 2.445 | 0.093 | 2.350 | 2.410 | 2.438 | 2.685 |
+| Next.js 16 Pages Router / Rspack / sharp | 10 | 10.023 | 10.069 | 0.170 | 9.859 | 9.932 | 10.234 | 10.301 |
+| Next.js 16 Pages Router / Rspack / no sharp | 10 | 9.979 | 9.974 | 0.147 | 9.724 | 9.876 | 10.064 | 10.230 |
+| Next.js 15 App Router / webpack / sharp | 10 | 14.456 | 14.475 | 0.320 | 14.049 | 14.262 | 14.483 | 15.122 |
+| Next.js 15 App Router / webpack / no sharp | 10 | 14.069 | 14.010 | 0.222 | 13.741 | 13.796 | 14.143 | 14.397 |
+| Next.js 15 App Router / webpack / sharp / no standalone | 10 | 9.725 | 9.723 | 0.108 | 9.584 | 9.625 | 9.813 | 9.873 |
+| Next.js 15 App Router / Turbopack / sharp | 10 | 17.105 | 17.207 | 0.470 | 16.574 | 16.921 | 17.372 | 18.099 |
+| Next.js 15 App Router / Turbopack / no sharp | 10 | 17.013 | 17.049 | 0.182 | 16.826 | 16.962 | 17.053 | 17.485 |
+| Next.js 15 App Router / Turbopack / sharp / no standalone | 10 | 12.404 | 12.403 | 0.192 | 12.090 | 12.304 | 12.435 | 12.778 |
+| Next.js 15 App Router / Rspack / sharp | 10 | 12.473 | 12.457 | 0.205 | 12.072 | 12.338 | 12.528 | 12.755 |
+| Next.js 15 App Router / Rspack / no sharp | 10 | 12.091 | 12.193 | 0.281 | 11.891 | 12.032 | 12.287 | 12.823 |
+| Next.js 15 Pages Router / webpack / sharp | 10 | 12.199 | 12.326 | 0.331 | 11.968 | 12.181 | 12.454 | 12.931 |
+| Next.js 15 Pages Router / webpack / no sharp | 10 | 11.916 | 11.966 | 0.232 | 11.711 | 11.769 | 12.119 | 12.375 |
+| Next.js 15 Pages Router / webpack / sharp / no standalone | 10 | 7.403 | 7.500 | 0.215 | 7.321 | 7.353 | 7.597 | 7.954 |
+| Next.js 15 Pages Router / Turbopack / sharp | 10 | 13.036 | 13.080 | 0.179 | 12.887 | 12.944 | 13.216 | 13.375 |
+| Next.js 15 Pages Router / Turbopack / no sharp | 10 | 12.745 | 12.756 | 0.225 | 12.389 | 12.656 | 12.912 | 13.119 |
+| Next.js 15 Pages Router / Turbopack / sharp / no standalone | 10 | 8.296 | 8.288 | 0.155 | 8.012 | 8.190 | 8.365 | 8.517 |
+| Next.js 15 Pages Router / Rspack / sharp | 10 | 10.931 | 10.909 | 0.137 | 10.702 | 10.803 | 11.026 | 11.072 |
+| Next.js 15 Pages Router / Rspack / no sharp | 10 | 10.658 | 10.706 | 0.262 | 10.434 | 10.516 | 10.760 | 11.249 |
+| React Router Framework / Vite + Rolldown | 10 | 0.726 | 0.762 | 0.128 | 0.605 | 0.690 | 0.807 | 1.047 |
+| React Router Data / Vite + Rolldown | 10 | 0.237 | 0.238 | 0.021 | 0.217 | 0.227 | 0.242 | 0.289 |
+| React Router Declarative / Vite + Rolldown | 10 | 0.224 | 0.224 | 0.009 | 0.209 | 0.220 | 0.230 | 0.237 |

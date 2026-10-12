@@ -1,351 +1,351 @@
 round,label,seconds,finished_at
-1,Next.js 16 App Router / webpack / sharp,29.142,2026-10-12T03:51:07Z
-1,Next.js 16 App Router / webpack / no sharp,28.808,2026-10-12T03:51:37Z
-1,Next.js 16 App Router / Turbopack / sharp,7.307,2026-10-12T03:51:45Z
-1,Next.js 16 App Router / Turbopack / no sharp,7.103,2026-10-12T03:51:53Z
-1,Next.js 16 App Router / Rspack / sharp,21.880,2026-10-12T03:52:50Z
-1,Next.js 16 App Router / Rspack / no sharp,20.781,2026-10-12T03:53:12Z
-1,Next.js 16 Pages Router / webpack / sharp,15.469,2026-10-12T03:53:28Z
-1,Next.js 16 Pages Router / webpack / no sharp,15.086,2026-10-12T03:53:43Z
-1,Next.js 16 Pages Router / webpack / sharp / no standalone,12.165,2026-10-12T03:53:56Z
-1,Next.js 16 Pages Router / Turbopack / sharp,5.345,2026-10-12T03:54:02Z
-1,Next.js 16 Pages Router / Turbopack / no sharp,5.288,2026-10-12T03:54:08Z
-1,Next.js 16 Pages Router / Rspack / sharp,13.933,2026-10-12T03:54:22Z
-1,Next.js 16 Pages Router / Rspack / no sharp,13.926,2026-10-12T03:54:36Z
-1,Next.js 15 App Router / webpack / sharp,31.082,2026-10-12T03:55:08Z
-1,Next.js 15 App Router / webpack / no sharp,29.641,2026-10-12T03:55:39Z
-1,Next.js 15 App Router / Turbopack / sharp,49.959,2026-10-12T03:56:30Z
-1,Next.js 15 App Router / Turbopack / no sharp,50.121,2026-10-12T03:57:21Z
-1,Next.js 15 App Router / Rspack / sharp,24.494,2026-10-12T03:57:46Z
-1,Next.js 15 App Router / Rspack / no sharp,24.455,2026-10-12T03:58:11Z
-1,Next.js 15 Pages Router / webpack / sharp,17.786,2026-10-12T03:58:30Z
-1,Next.js 15 Pages Router / webpack / no sharp,17.571,2026-10-12T03:58:48Z
-1,Next.js 15 Pages Router / webpack / sharp / no standalone,12.582,2026-10-12T03:59:00Z
-1,Next.js 15 Pages Router / Turbopack / sharp,29.569,2026-10-12T03:59:31Z
-1,Next.js 15 Pages Router / Turbopack / no sharp,29.855,2026-10-12T04:00:01Z
-1,Next.js 15 Pages Router / Rspack / sharp,15.963,2026-10-12T04:00:18Z
-1,Next.js 15 Pages Router / Rspack / no sharp,14.898,2026-10-12T04:00:33Z
-1,React Router Framework / Vite + Rolldown,1.843,2026-10-12T04:00:35Z
-1,React Router Data / Vite + Rolldown,0.362,2026-10-12T04:00:36Z
-1,React Router Declarative / Vite + Rolldown,0.318,2026-10-12T04:00:36Z
-2,Next.js 16 App Router / webpack / sharp,26.729,2026-10-12T04:01:04Z
-2,Next.js 16 App Router / webpack / no sharp,26.320,2026-10-12T04:01:31Z
-2,Next.js 16 App Router / Turbopack / sharp,7.300,2026-10-12T04:01:40Z
-2,Next.js 16 App Router / Turbopack / no sharp,6.823,2026-10-12T04:01:47Z
-2,Next.js 16 App Router / Rspack / sharp,21.584,2026-10-12T04:02:10Z
-2,Next.js 16 App Router / Rspack / no sharp,20.938,2026-10-12T04:02:32Z
-2,Next.js 16 Pages Router / webpack / sharp,15.932,2026-10-12T04:02:48Z
-2,Next.js 16 Pages Router / webpack / no sharp,15.307,2026-10-12T04:03:04Z
-2,Next.js 16 Pages Router / webpack / sharp / no standalone,11.932,2026-10-12T04:03:16Z
-2,Next.js 16 Pages Router / Turbopack / sharp,5.391,2026-10-12T04:03:22Z
-2,Next.js 16 Pages Router / Turbopack / no sharp,5.166,2026-10-12T04:03:28Z
-2,Next.js 16 Pages Router / Rspack / sharp,13.827,2026-10-12T04:03:42Z
-2,Next.js 16 Pages Router / Rspack / no sharp,13.293,2026-10-12T04:03:56Z
-2,Next.js 15 App Router / webpack / sharp,30.091,2026-10-12T04:04:27Z
-2,Next.js 15 App Router / webpack / no sharp,30.402,2026-10-12T04:04:58Z
-2,Next.js 15 App Router / Turbopack / sharp,51.019,2026-10-12T04:05:50Z
-2,Next.js 15 App Router / Turbopack / no sharp,51.179,2026-10-12T04:06:42Z
-2,Next.js 15 App Router / Rspack / sharp,24.799,2026-10-12T04:07:08Z
-2,Next.js 15 App Router / Rspack / no sharp,23.955,2026-10-12T04:07:32Z
-2,Next.js 15 Pages Router / webpack / sharp,18.026,2026-10-12T04:07:51Z
-2,Next.js 15 Pages Router / webpack / no sharp,17.855,2026-10-12T04:08:09Z
-2,Next.js 15 Pages Router / webpack / sharp / no standalone,12.981,2026-10-12T04:08:23Z
-2,Next.js 15 Pages Router / Turbopack / sharp,31.913,2026-10-12T04:08:55Z
-2,Next.js 15 Pages Router / Turbopack / no sharp,30.305,2026-10-12T04:09:26Z
-2,Next.js 15 Pages Router / Rspack / sharp,15.541,2026-10-12T04:09:42Z
-2,Next.js 15 Pages Router / Rspack / no sharp,14.989,2026-10-12T04:09:58Z
-2,React Router Framework / Vite + Rolldown,1.642,2026-10-12T04:10:00Z
-2,React Router Data / Vite + Rolldown,0.350,2026-10-12T04:10:00Z
-2,React Router Declarative / Vite + Rolldown,0.360,2026-10-12T04:10:01Z
-3,Next.js 16 App Router / webpack / sharp,27.894,2026-10-12T04:10:30Z
-3,Next.js 16 App Router / webpack / no sharp,26.644,2026-10-12T04:10:57Z
-3,Next.js 16 App Router / Turbopack / sharp,6.892,2026-10-12T04:11:05Z
-3,Next.js 16 App Router / Turbopack / no sharp,6.391,2026-10-12T04:11:12Z
-3,Next.js 16 App Router / Rspack / sharp,21.824,2026-10-12T04:11:34Z
-3,Next.js 16 App Router / Rspack / no sharp,20.771,2026-10-12T04:11:56Z
-3,Next.js 16 Pages Router / webpack / sharp,15.265,2026-10-12T04:12:12Z
-3,Next.js 16 Pages Router / webpack / no sharp,14.916,2026-10-12T04:12:27Z
-3,Next.js 16 Pages Router / webpack / sharp / no standalone,11.827,2026-10-12T04:12:39Z
-3,Next.js 16 Pages Router / Turbopack / sharp,5.186,2026-10-12T04:12:45Z
-3,Next.js 16 Pages Router / Turbopack / no sharp,5.059,2026-10-12T04:12:51Z
-3,Next.js 16 Pages Router / Rspack / sharp,13.563,2026-10-12T04:13:05Z
-3,Next.js 16 Pages Router / Rspack / no sharp,13.165,2026-10-12T04:13:18Z
-3,Next.js 15 App Router / webpack / sharp,29.617,2026-10-12T04:13:48Z
-3,Next.js 15 App Router / webpack / no sharp,29.005,2026-10-12T04:14:18Z
-3,Next.js 15 App Router / Turbopack / sharp,49.426,2026-10-12T04:15:09Z
-3,Next.js 15 App Router / Turbopack / no sharp,48.557,2026-10-12T04:15:58Z
-3,Next.js 15 App Router / Rspack / sharp,24.208,2026-10-12T04:16:23Z
-3,Next.js 15 App Router / Rspack / no sharp,24.168,2026-10-12T04:16:48Z
-3,Next.js 15 Pages Router / webpack / sharp,17.350,2026-10-12T04:17:05Z
-3,Next.js 15 Pages Router / webpack / no sharp,16.600,2026-10-12T04:17:22Z
-3,Next.js 15 Pages Router / webpack / sharp / no standalone,11.958,2026-10-12T04:17:35Z
-3,Next.js 15 Pages Router / Turbopack / sharp,30.040,2026-10-12T04:18:05Z
-3,Next.js 15 Pages Router / Turbopack / no sharp,28.394,2026-10-12T04:18:34Z
-3,Next.js 15 Pages Router / Rspack / sharp,15.081,2026-10-12T04:18:50Z
-3,Next.js 15 Pages Router / Rspack / no sharp,14.355,2026-10-12T04:19:05Z
-3,React Router Framework / Vite + Rolldown,1.667,2026-10-12T04:19:07Z
-3,React Router Data / Vite + Rolldown,0.317,2026-10-12T04:19:07Z
-3,React Router Declarative / Vite + Rolldown,0.301,2026-10-12T04:19:08Z
-4,Next.js 16 App Router / webpack / sharp,25.795,2026-10-12T04:19:34Z
-4,Next.js 16 App Router / webpack / no sharp,25.144,2026-10-12T04:20:00Z
-4,Next.js 16 App Router / Turbopack / sharp,6.404,2026-10-12T04:20:07Z
-4,Next.js 16 App Router / Turbopack / no sharp,6.311,2026-10-12T04:20:14Z
-4,Next.js 16 App Router / Rspack / sharp,21.594,2026-10-12T04:20:36Z
-4,Next.js 16 App Router / Rspack / no sharp,29.599,2026-10-12T04:21:07Z
-4,Next.js 16 Pages Router / webpack / sharp,18.317,2026-10-12T04:21:26Z
-4,Next.js 16 Pages Router / webpack / no sharp,17.690,2026-10-12T04:21:45Z
-4,Next.js 16 Pages Router / webpack / sharp / no standalone,14.093,2026-10-12T04:21:59Z
-4,Next.js 16 Pages Router / Turbopack / sharp,6.089,2026-10-12T04:22:06Z
-4,Next.js 16 Pages Router / Turbopack / no sharp,6.583,2026-10-12T04:22:13Z
-4,Next.js 16 Pages Router / Rspack / sharp,13.727,2026-10-12T04:22:28Z
-4,Next.js 16 Pages Router / Rspack / no sharp,13.846,2026-10-12T04:22:42Z
-4,Next.js 15 App Router / webpack / sharp,32.149,2026-10-12T04:23:15Z
-4,Next.js 15 App Router / webpack / no sharp,32.390,2026-10-12T04:23:48Z
-4,Next.js 15 App Router / Turbopack / sharp,55.370,2026-10-12T04:24:45Z
-4,Next.js 15 App Router / Turbopack / no sharp,54.427,2026-10-12T04:25:40Z
-4,Next.js 15 App Router / Rspack / sharp,26.324,2026-10-12T04:26:07Z
-4,Next.js 15 App Router / Rspack / no sharp,24.822,2026-10-12T04:26:33Z
-4,Next.js 15 Pages Router / webpack / sharp,17.542,2026-10-12T04:26:51Z
-4,Next.js 15 Pages Router / webpack / no sharp,16.710,2026-10-12T04:27:08Z
-4,Next.js 15 Pages Router / webpack / sharp / no standalone,12.167,2026-10-12T04:27:20Z
-4,Next.js 15 Pages Router / Turbopack / sharp,29.737,2026-10-12T04:27:51Z
-4,Next.js 15 Pages Router / Turbopack / no sharp,30.425,2026-10-12T04:28:22Z
-4,Next.js 15 Pages Router / Rspack / sharp,14.856,2026-10-12T04:28:37Z
-4,Next.js 15 Pages Router / Rspack / no sharp,14.563,2026-10-12T04:28:52Z
-4,React Router Framework / Vite + Rolldown,1.656,2026-10-12T04:28:54Z
-4,React Router Data / Vite + Rolldown,0.315,2026-10-12T04:28:55Z
-4,React Router Declarative / Vite + Rolldown,0.311,2026-10-12T04:28:55Z
-5,Next.js 16 App Router / webpack / sharp,26.026,2026-10-12T04:29:22Z
-5,Next.js 16 App Router / webpack / no sharp,25.006,2026-10-12T04:29:47Z
-5,Next.js 16 App Router / Turbopack / sharp,6.513,2026-10-12T04:29:55Z
-5,Next.js 16 App Router / Turbopack / no sharp,6.587,2026-10-12T04:30:02Z
-5,Next.js 16 App Router / Rspack / sharp,22.322,2026-10-12T04:30:25Z
-5,Next.js 16 App Router / Rspack / no sharp,21.068,2026-10-12T04:30:47Z
-5,Next.js 16 Pages Router / webpack / sharp,15.614,2026-10-12T04:31:03Z
-5,Next.js 16 Pages Router / webpack / no sharp,15.885,2026-10-12T04:31:20Z
-5,Next.js 16 Pages Router / webpack / sharp / no standalone,11.806,2026-10-12T04:31:32Z
-5,Next.js 16 Pages Router / Turbopack / sharp,5.304,2026-10-12T04:31:38Z
-5,Next.js 16 Pages Router / Turbopack / no sharp,5.173,2026-10-12T04:31:43Z
-5,Next.js 16 Pages Router / Rspack / sharp,13.203,2026-10-12T04:31:57Z
-5,Next.js 16 Pages Router / Rspack / no sharp,13.259,2026-10-12T04:32:11Z
-5,Next.js 15 App Router / webpack / sharp,29.563,2026-10-12T04:32:41Z
-5,Next.js 15 App Router / webpack / no sharp,29.220,2026-10-12T04:33:11Z
-5,Next.js 15 App Router / Turbopack / sharp,48.513,2026-10-12T04:34:01Z
-5,Next.js 15 App Router / Turbopack / no sharp,48.775,2026-10-12T04:34:51Z
-5,Next.js 15 App Router / Rspack / sharp,23.904,2026-10-12T04:35:15Z
-5,Next.js 15 App Router / Rspack / no sharp,22.960,2026-10-12T04:35:38Z
-5,Next.js 15 Pages Router / webpack / sharp,17.148,2026-10-12T04:35:56Z
-5,Next.js 15 Pages Router / webpack / no sharp,16.771,2026-10-12T04:36:13Z
-5,Next.js 15 Pages Router / webpack / sharp / no standalone,12.159,2026-10-12T04:36:26Z
-5,Next.js 15 Pages Router / Turbopack / sharp,29.929,2026-10-12T04:36:57Z
-5,Next.js 15 Pages Router / Turbopack / no sharp,30.208,2026-10-12T04:37:27Z
-5,Next.js 15 Pages Router / Rspack / sharp,14.508,2026-10-12T04:37:42Z
-5,Next.js 15 Pages Router / Rspack / no sharp,14.411,2026-10-12T04:37:57Z
-5,React Router Framework / Vite + Rolldown,1.619,2026-10-12T04:37:59Z
-5,React Router Data / Vite + Rolldown,0.302,2026-10-12T04:37:59Z
-5,React Router Declarative / Vite + Rolldown,0.311,2026-10-12T04:38:00Z
-6,Next.js 16 App Router / webpack / sharp,26.040,2026-10-12T04:38:27Z
-6,Next.js 16 App Router / webpack / no sharp,25.870,2026-10-12T04:38:53Z
-6,Next.js 16 App Router / Turbopack / sharp,6.462,2026-10-12T04:39:01Z
-6,Next.js 16 App Router / Turbopack / no sharp,6.508,2026-10-12T04:39:08Z
-6,Next.js 16 App Router / Rspack / sharp,21.381,2026-10-12T04:39:30Z
-6,Next.js 16 App Router / Rspack / no sharp,20.346,2026-10-12T04:39:51Z
-6,Next.js 16 Pages Router / webpack / sharp,15.465,2026-10-12T04:40:07Z
-6,Next.js 16 Pages Router / webpack / no sharp,15.076,2026-10-12T04:40:22Z
-6,Next.js 16 Pages Router / webpack / sharp / no standalone,11.674,2026-10-12T04:40:34Z
-6,Next.js 16 Pages Router / Turbopack / sharp,5.219,2026-10-12T04:40:40Z
-6,Next.js 16 Pages Router / Turbopack / no sharp,5.059,2026-10-12T04:40:46Z
-6,Next.js 16 Pages Router / Rspack / sharp,13.741,2026-10-12T04:41:00Z
-6,Next.js 16 Pages Router / Rspack / no sharp,13.436,2026-10-12T04:41:14Z
-6,Next.js 15 App Router / webpack / sharp,29.303,2026-10-12T04:41:44Z
-6,Next.js 15 App Router / webpack / no sharp,28.617,2026-10-12T04:42:13Z
-6,Next.js 15 App Router / Turbopack / sharp,50.749,2026-10-12T04:43:05Z
-6,Next.js 15 App Router / Turbopack / no sharp,50.357,2026-10-12T04:43:56Z
-6,Next.js 15 App Router / Rspack / sharp,23.329,2026-10-12T04:44:20Z
-6,Next.js 15 App Router / Rspack / no sharp,23.236,2026-10-12T04:44:44Z
-6,Next.js 15 Pages Router / webpack / sharp,16.961,2026-10-12T04:45:01Z
-6,Next.js 15 Pages Router / webpack / no sharp,16.923,2026-10-12T04:45:18Z
-6,Next.js 15 Pages Router / webpack / sharp / no standalone,11.920,2026-10-12T04:45:31Z
-6,Next.js 15 Pages Router / Turbopack / sharp,29.488,2026-10-12T04:46:01Z
-6,Next.js 15 Pages Router / Turbopack / no sharp,31.057,2026-10-12T04:46:33Z
-6,Next.js 15 Pages Router / Rspack / sharp,15.316,2026-10-12T04:46:49Z
-6,Next.js 15 Pages Router / Rspack / no sharp,15.314,2026-10-12T04:47:04Z
-6,React Router Framework / Vite + Rolldown,1.936,2026-10-12T04:47:06Z
-6,React Router Data / Vite + Rolldown,0.333,2026-10-12T04:47:07Z
-6,React Router Declarative / Vite + Rolldown,0.320,2026-10-12T04:47:08Z
-7,Next.js 16 App Router / webpack / sharp,27.161,2026-10-12T04:47:35Z
-7,Next.js 16 App Router / webpack / no sharp,25.915,2026-10-12T04:48:02Z
-7,Next.js 16 App Router / Turbopack / sharp,6.602,2026-10-12T04:48:09Z
-7,Next.js 16 App Router / Turbopack / no sharp,6.581,2026-10-12T04:48:17Z
-7,Next.js 16 App Router / Rspack / sharp,21.733,2026-10-12T04:48:39Z
-7,Next.js 16 App Router / Rspack / no sharp,20.518,2026-10-12T04:49:01Z
-7,Next.js 16 Pages Router / webpack / sharp,15.486,2026-10-12T04:49:17Z
-7,Next.js 16 Pages Router / webpack / no sharp,14.964,2026-10-12T04:49:32Z
-7,Next.js 16 Pages Router / webpack / sharp / no standalone,12.017,2026-10-12T04:49:44Z
-7,Next.js 16 Pages Router / Turbopack / sharp,5.103,2026-10-12T04:49:50Z
-7,Next.js 16 Pages Router / Turbopack / no sharp,4.895,2026-10-12T04:49:55Z
-7,Next.js 16 Pages Router / Rspack / sharp,13.311,2026-10-12T04:50:09Z
-7,Next.js 16 Pages Router / Rspack / no sharp,13.380,2026-10-12T04:50:23Z
-7,Next.js 15 App Router / webpack / sharp,29.390,2026-10-12T04:50:53Z
-7,Next.js 15 App Router / webpack / no sharp,29.239,2026-10-12T04:51:23Z
-7,Next.js 15 App Router / Turbopack / sharp,49.930,2026-10-12T04:52:14Z
-7,Next.js 15 App Router / Turbopack / no sharp,49.036,2026-10-12T04:53:04Z
-7,Next.js 15 App Router / Rspack / sharp,24.330,2026-10-12T04:53:29Z
-7,Next.js 15 App Router / Rspack / no sharp,23.424,2026-10-12T04:53:53Z
-7,Next.js 15 Pages Router / webpack / sharp,17.010,2026-10-12T04:54:11Z
-7,Next.js 15 Pages Router / webpack / no sharp,16.747,2026-10-12T04:54:28Z
-7,Next.js 15 Pages Router / webpack / sharp / no standalone,12.274,2026-10-12T04:54:40Z
-7,Next.js 15 Pages Router / Turbopack / sharp,29.511,2026-10-12T04:55:11Z
-7,Next.js 15 Pages Router / Turbopack / no sharp,29.343,2026-10-12T04:55:41Z
-7,Next.js 15 Pages Router / Rspack / sharp,14.580,2026-10-12T04:55:56Z
-7,Next.js 15 Pages Router / Rspack / no sharp,14.161,2026-10-12T04:56:10Z
-7,React Router Framework / Vite + Rolldown,1.706,2026-10-12T04:56:12Z
-7,React Router Data / Vite + Rolldown,0.303,2026-10-12T04:56:13Z
-7,React Router Declarative / Vite + Rolldown,0.309,2026-10-12T04:56:13Z
-8,Next.js 16 App Router / webpack / sharp,26.450,2026-10-12T04:56:40Z
-8,Next.js 16 App Router / webpack / no sharp,25.862,2026-10-12T04:57:07Z
-8,Next.js 16 App Router / Turbopack / sharp,6.591,2026-10-12T04:57:14Z
-8,Next.js 16 App Router / Turbopack / no sharp,6.371,2026-10-12T04:57:22Z
-8,Next.js 16 App Router / Rspack / sharp,21.499,2026-10-12T04:57:44Z
-8,Next.js 16 App Router / Rspack / no sharp,20.269,2026-10-12T04:58:05Z
-8,Next.js 16 Pages Router / webpack / sharp,15.723,2026-10-12T04:58:21Z
-8,Next.js 16 Pages Router / webpack / no sharp,14.922,2026-10-12T04:58:36Z
-8,Next.js 16 Pages Router / webpack / sharp / no standalone,11.967,2026-10-12T04:58:49Z
-8,Next.js 16 Pages Router / Turbopack / sharp,5.095,2026-10-12T04:58:54Z
-8,Next.js 16 Pages Router / Turbopack / no sharp,5.258,2026-10-12T04:59:00Z
-8,Next.js 16 Pages Router / Rspack / sharp,13.643,2026-10-12T04:59:14Z
-8,Next.js 16 Pages Router / Rspack / no sharp,13.057,2026-10-12T04:59:28Z
-8,Next.js 15 App Router / webpack / sharp,29.571,2026-10-12T04:59:58Z
-8,Next.js 15 App Router / webpack / no sharp,29.347,2026-10-12T05:00:28Z
-8,Next.js 15 App Router / Turbopack / sharp,49.650,2026-10-12T05:01:19Z
-8,Next.js 15 App Router / Turbopack / no sharp,50.683,2026-10-12T05:02:10Z
-8,Next.js 15 App Router / Rspack / sharp,23.432,2026-10-12T05:02:34Z
-8,Next.js 15 App Router / Rspack / no sharp,23.658,2026-10-12T05:02:59Z
-8,Next.js 15 Pages Router / webpack / sharp,17.113,2026-10-12T05:03:16Z
-8,Next.js 15 Pages Router / webpack / no sharp,16.570,2026-10-12T05:03:33Z
-8,Next.js 15 Pages Router / webpack / sharp / no standalone,12.257,2026-10-12T05:03:46Z
-8,Next.js 15 Pages Router / Turbopack / sharp,29.012,2026-10-12T05:04:15Z
-8,Next.js 15 Pages Router / Turbopack / no sharp,30.217,2026-10-12T05:04:46Z
-8,Next.js 15 Pages Router / Rspack / sharp,14.474,2026-10-12T05:05:01Z
-8,Next.js 15 Pages Router / Rspack / no sharp,14.477,2026-10-12T05:05:16Z
-8,React Router Framework / Vite + Rolldown,1.635,2026-10-12T05:05:18Z
-8,React Router Data / Vite + Rolldown,0.304,2026-10-12T05:05:18Z
-8,React Router Declarative / Vite + Rolldown,0.296,2026-10-12T05:05:19Z
-9,Next.js 16 App Router / webpack / sharp,26.441,2026-10-12T05:05:46Z
-9,Next.js 16 App Router / webpack / no sharp,25.759,2026-10-12T05:06:13Z
-9,Next.js 16 App Router / Turbopack / sharp,6.539,2026-10-12T05:06:20Z
-9,Next.js 16 App Router / Turbopack / no sharp,6.318,2026-10-12T05:06:27Z
-9,Next.js 16 App Router / Rspack / sharp,21.656,2026-10-12T05:06:49Z
-9,Next.js 16 App Router / Rspack / no sharp,20.148,2026-10-12T05:07:10Z
-9,Next.js 16 Pages Router / webpack / sharp,15.484,2026-10-12T05:07:26Z
-9,Next.js 16 Pages Router / webpack / no sharp,14.921,2026-10-12T05:07:41Z
-9,Next.js 16 Pages Router / webpack / sharp / no standalone,11.685,2026-10-12T05:07:53Z
-9,Next.js 16 Pages Router / Turbopack / sharp,5.097,2026-10-12T05:07:59Z
-9,Next.js 16 Pages Router / Turbopack / no sharp,4.994,2026-10-12T05:08:05Z
-9,Next.js 16 Pages Router / Rspack / sharp,14.644,2026-10-12T05:08:20Z
-9,Next.js 16 Pages Router / Rspack / no sharp,13.409,2026-10-12T05:08:34Z
-9,Next.js 15 App Router / webpack / sharp,30.794,2026-10-12T05:09:05Z
-9,Next.js 15 App Router / webpack / no sharp,30.979,2026-10-12T05:09:37Z
-9,Next.js 15 App Router / Turbopack / sharp,50.301,2026-10-12T05:10:28Z
-9,Next.js 15 App Router / Turbopack / no sharp,49.330,2026-10-12T05:11:19Z
-9,Next.js 15 App Router / Rspack / sharp,24.128,2026-10-12T05:11:44Z
-9,Next.js 15 App Router / Rspack / no sharp,23.082,2026-10-12T05:12:07Z
-9,Next.js 15 Pages Router / webpack / sharp,17.034,2026-10-12T05:12:25Z
-9,Next.js 15 Pages Router / webpack / no sharp,16.887,2026-10-12T05:12:42Z
-9,Next.js 15 Pages Router / webpack / sharp / no standalone,12.147,2026-10-12T05:12:54Z
-9,Next.js 15 Pages Router / Turbopack / sharp,30.418,2026-10-12T05:13:26Z
-9,Next.js 15 Pages Router / Turbopack / no sharp,30.155,2026-10-12T05:13:56Z
-9,Next.js 15 Pages Router / Rspack / sharp,14.611,2026-10-12T05:14:11Z
-9,Next.js 15 Pages Router / Rspack / no sharp,14.434,2026-10-12T05:14:26Z
-9,React Router Framework / Vite + Rolldown,1.613,2026-10-12T05:14:28Z
-9,React Router Data / Vite + Rolldown,0.307,2026-10-12T05:14:29Z
-9,React Router Declarative / Vite + Rolldown,0.278,2026-10-12T05:14:29Z
-10,Next.js 16 App Router / webpack / sharp,26.255,2026-10-12T05:14:56Z
-10,Next.js 16 App Router / webpack / no sharp,26.382,2026-10-12T05:15:23Z
-10,Next.js 16 App Router / Turbopack / sharp,6.426,2026-10-12T05:15:30Z
-10,Next.js 16 App Router / Turbopack / no sharp,6.537,2026-10-12T05:15:38Z
-10,Next.js 16 App Router / Rspack / sharp,21.721,2026-10-12T05:16:00Z
-10,Next.js 16 App Router / Rspack / no sharp,20.575,2026-10-12T05:16:21Z
-10,Next.js 16 Pages Router / webpack / sharp,15.439,2026-10-12T05:16:37Z
-10,Next.js 16 Pages Router / webpack / no sharp,14.903,2026-10-12T05:16:53Z
-10,Next.js 16 Pages Router / webpack / sharp / no standalone,11.982,2026-10-12T05:17:05Z
-10,Next.js 16 Pages Router / Turbopack / sharp,5.360,2026-10-12T05:17:11Z
-10,Next.js 16 Pages Router / Turbopack / no sharp,5.139,2026-10-12T05:17:17Z
-10,Next.js 16 Pages Router / Rspack / sharp,13.614,2026-10-12T05:17:31Z
-10,Next.js 16 Pages Router / Rspack / no sharp,13.497,2026-10-12T05:17:45Z
-10,Next.js 15 App Router / webpack / sharp,29.473,2026-10-12T05:18:15Z
-10,Next.js 15 App Router / webpack / no sharp,29.014,2026-10-12T05:18:45Z
-10,Next.js 15 App Router / Turbopack / sharp,50.336,2026-10-12T05:19:36Z
-10,Next.js 15 App Router / Turbopack / no sharp,52.126,2026-10-12T05:20:29Z
-10,Next.js 15 App Router / Rspack / sharp,24.305,2026-10-12T05:20:54Z
-10,Next.js 15 App Router / Rspack / no sharp,23.915,2026-10-12T05:21:19Z
-10,Next.js 15 Pages Router / webpack / sharp,17.191,2026-10-12T05:21:36Z
-10,Next.js 15 Pages Router / webpack / no sharp,16.922,2026-10-12T05:21:54Z
-10,Next.js 15 Pages Router / webpack / sharp / no standalone,11.898,2026-10-12T05:22:06Z
-10,Next.js 15 Pages Router / Turbopack / sharp,29.453,2026-10-12T05:22:36Z
-10,Next.js 15 Pages Router / Turbopack / no sharp,30.424,2026-10-12T05:23:07Z
-10,Next.js 15 Pages Router / Rspack / sharp,15.059,2026-10-12T05:23:23Z
-10,Next.js 15 Pages Router / Rspack / no sharp,14.175,2026-10-12T05:23:37Z
-10,React Router Framework / Vite + Rolldown,1.673,2026-10-12T05:23:39Z
-10,React Router Data / Vite + Rolldown,0.320,2026-10-12T05:23:40Z
-10,React Router Declarative / Vite + Rolldown,0.309,2026-10-12T05:23:40Z
-1,Next.js 16 App Router / webpack / sharp / no standalone,26.380,2026-10-12T05:27:17Z
-1,Next.js 15 App Router / webpack / sharp / no standalone,27.472,2026-10-12T05:27:45Z
-2,Next.js 16 App Router / webpack / sharp / no standalone,23.751,2026-10-12T05:28:10Z
-2,Next.js 15 App Router / webpack / sharp / no standalone,25.407,2026-10-12T05:28:36Z
-3,Next.js 16 App Router / webpack / sharp / no standalone,23.500,2026-10-12T05:29:00Z
-3,Next.js 15 App Router / webpack / sharp / no standalone,25.946,2026-10-12T05:29:27Z
-4,Next.js 16 App Router / webpack / sharp / no standalone,23.658,2026-10-12T05:29:51Z
-4,Next.js 15 App Router / webpack / sharp / no standalone,26.240,2026-10-12T05:30:18Z
-5,Next.js 16 App Router / webpack / sharp / no standalone,23.241,2026-10-12T05:30:42Z
-5,Next.js 15 App Router / webpack / sharp / no standalone,26.200,2026-10-12T05:31:10Z
-6,Next.js 16 App Router / webpack / sharp / no standalone,22.909,2026-10-12T05:31:33Z
-6,Next.js 15 App Router / webpack / sharp / no standalone,25.624,2026-10-12T05:32:00Z
-7,Next.js 16 App Router / webpack / sharp / no standalone,23.108,2026-10-12T05:32:23Z
-7,Next.js 15 App Router / webpack / sharp / no standalone,25.930,2026-10-12T05:32:50Z
-8,Next.js 16 App Router / webpack / sharp / no standalone,22.921,2026-10-12T05:33:14Z
-8,Next.js 15 App Router / webpack / sharp / no standalone,26.499,2026-10-12T05:33:41Z
-9,Next.js 16 App Router / webpack / sharp / no standalone,23.583,2026-10-12T05:34:05Z
-9,Next.js 15 App Router / webpack / sharp / no standalone,27.068,2026-10-12T05:34:33Z
-10,Next.js 16 App Router / webpack / sharp / no standalone,23.806,2026-10-12T05:34:57Z
-10,Next.js 15 App Router / webpack / sharp / no standalone,26.390,2026-10-12T05:35:25Z
-1,Next.js 16 App Router / Turbopack / sharp / no standalone,7.771,2026-10-12T05:50:21Z
-1,Next.js 16 Pages Router / Turbopack / sharp / no standalone,5.442,2026-10-12T05:50:27Z
-1,Next.js 15 App Router / Turbopack / sharp / no standalone,46.797,2026-10-12T05:51:14Z
-1,Next.js 15 Pages Router / Turbopack / sharp / no standalone,25.229,2026-10-12T05:51:40Z
-2,Next.js 16 App Router / Turbopack / sharp / no standalone,6.715,2026-10-12T05:51:47Z
-2,Next.js 16 Pages Router / Turbopack / sharp / no standalone,5.081,2026-10-12T05:51:53Z
-2,Next.js 15 App Router / Turbopack / sharp / no standalone,46.935,2026-10-12T05:52:41Z
-2,Next.js 15 Pages Router / Turbopack / sharp / no standalone,25.724,2026-10-12T05:53:07Z
-3,Next.js 16 App Router / Turbopack / sharp / no standalone,6.638,2026-10-12T05:53:14Z
-3,Next.js 16 Pages Router / Turbopack / sharp / no standalone,6.415,2026-10-12T05:53:21Z
-3,Next.js 15 App Router / Turbopack / sharp / no standalone,45.838,2026-10-12T05:54:08Z
-3,Next.js 15 Pages Router / Turbopack / sharp / no standalone,26.759,2026-10-12T05:54:35Z
-4,Next.js 16 App Router / Turbopack / sharp / no standalone,6.807,2026-10-12T05:54:42Z
-4,Next.js 16 Pages Router / Turbopack / sharp / no standalone,5.030,2026-10-12T05:54:48Z
-4,Next.js 15 App Router / Turbopack / sharp / no standalone,46.188,2026-10-12T05:55:35Z
-4,Next.js 15 Pages Router / Turbopack / sharp / no standalone,24.852,2026-10-12T05:56:00Z
-5,Next.js 16 App Router / Turbopack / sharp / no standalone,6.479,2026-10-12T05:56:07Z
-5,Next.js 16 Pages Router / Turbopack / sharp / no standalone,5.027,2026-10-12T05:56:13Z
-5,Next.js 15 App Router / Turbopack / sharp / no standalone,45.634,2026-10-12T05:56:59Z
-5,Next.js 15 Pages Router / Turbopack / sharp / no standalone,26.121,2026-10-12T05:57:26Z
-6,Next.js 16 App Router / Turbopack / sharp / no standalone,6.240,2026-10-12T05:57:33Z
-6,Next.js 16 Pages Router / Turbopack / sharp / no standalone,5.086,2026-10-12T05:57:38Z
-6,Next.js 15 App Router / Turbopack / sharp / no standalone,46.771,2026-10-12T05:58:26Z
-6,Next.js 15 Pages Router / Turbopack / sharp / no standalone,26.070,2026-10-12T05:58:52Z
-7,Next.js 16 App Router / Turbopack / sharp / no standalone,6.522,2026-10-12T05:59:00Z
-7,Next.js 16 Pages Router / Turbopack / sharp / no standalone,4.858,2026-10-12T05:59:05Z
-7,Next.js 15 App Router / Turbopack / sharp / no standalone,44.228,2026-10-12T05:59:50Z
-7,Next.js 15 Pages Router / Turbopack / sharp / no standalone,25.635,2026-10-12T06:00:16Z
-8,Next.js 16 App Router / Turbopack / sharp / no standalone,6.566,2026-10-12T06:00:23Z
-8,Next.js 16 Pages Router / Turbopack / sharp / no standalone,4.883,2026-10-12T06:00:29Z
-8,Next.js 15 App Router / Turbopack / sharp / no standalone,45.410,2026-10-12T06:01:15Z
-8,Next.js 15 Pages Router / Turbopack / sharp / no standalone,25.310,2026-10-12T06:01:41Z
-9,Next.js 16 App Router / Turbopack / sharp / no standalone,6.506,2026-10-12T06:01:48Z
-9,Next.js 16 Pages Router / Turbopack / sharp / no standalone,4.930,2026-10-12T06:01:53Z
-9,Next.js 15 App Router / Turbopack / sharp / no standalone,47.302,2026-10-12T06:02:41Z
-9,Next.js 15 Pages Router / Turbopack / sharp / no standalone,24.934,2026-10-12T06:03:07Z
-10,Next.js 16 App Router / Turbopack / sharp / no standalone,6.386,2026-10-12T06:03:14Z
-10,Next.js 16 Pages Router / Turbopack / sharp / no standalone,4.961,2026-10-12T06:03:19Z
-10,Next.js 15 App Router / Turbopack / sharp / no standalone,45.638,2026-10-12T06:04:05Z
-10,Next.js 15 Pages Router / Turbopack / sharp / no standalone,24.702,2026-10-12T06:04:31Z
+1,Next.js 16 App Router / webpack / sharp,13.873,2026-10-12T07:38:20Z
+1,Next.js 16 App Router / webpack / no sharp,13.622,2026-10-12T07:38:35Z
+1,Next.js 16 App Router / webpack / sharp / no standalone,10.244,2026-10-12T07:38:46Z
+1,Next.js 16 App Router / Turbopack / sharp,3.172,2026-10-12T07:38:49Z
+1,Next.js 16 App Router / Turbopack / no sharp,3.088,2026-10-12T07:38:53Z
+1,Next.js 16 App Router / Turbopack / sharp / no standalone,2.904,2026-10-12T07:38:56Z
+1,Next.js 16 App Router / Rspack / sharp,11.389,2026-10-12T07:39:08Z
+1,Next.js 16 App Router / Rspack / no sharp,11.353,2026-10-12T07:39:19Z
+1,Next.js 16 Pages Router / webpack / sharp,11.216,2026-10-12T07:39:31Z
+1,Next.js 16 Pages Router / webpack / no sharp,10.576,2026-10-12T07:39:42Z
+1,Next.js 16 Pages Router / webpack / sharp / no standalone,7.518,2026-10-12T07:39:50Z
+1,Next.js 16 Pages Router / Turbopack / sharp,2.658,2026-10-12T07:39:53Z
+1,Next.js 16 Pages Router / Turbopack / no sharp,2.495,2026-10-12T07:39:56Z
+1,Next.js 16 Pages Router / Turbopack / sharp / no standalone,2.350,2026-10-12T07:39:58Z
+1,Next.js 16 Pages Router / Rspack / sharp,10.258,2026-10-12T07:40:09Z
+1,Next.js 16 Pages Router / Rspack / no sharp,9.864,2026-10-12T07:40:19Z
+1,Next.js 15 App Router / webpack / sharp,15.122,2026-10-12T07:40:35Z
+1,Next.js 15 App Router / webpack / no sharp,14.186,2026-10-12T07:40:49Z
+1,Next.js 15 App Router / webpack / sharp / no standalone,9.778,2026-10-12T07:41:00Z
+1,Next.js 15 App Router / Turbopack / sharp,17.841,2026-10-12T07:41:18Z
+1,Next.js 15 App Router / Turbopack / no sharp,16.826,2026-10-12T07:41:35Z
+1,Next.js 15 App Router / Turbopack / sharp / no standalone,12.621,2026-10-12T07:41:48Z
+1,Next.js 15 App Router / Rspack / sharp,12.726,2026-10-12T07:42:01Z
+1,Next.js 15 App Router / Rspack / no sharp,12.492,2026-10-12T07:42:14Z
+1,Next.js 15 Pages Router / webpack / sharp,12.834,2026-10-12T07:42:27Z
+1,Next.js 15 Pages Router / webpack / no sharp,12.109,2026-10-12T07:42:40Z
+1,Next.js 15 Pages Router / webpack / sharp / no standalone,7.423,2026-10-12T07:42:47Z
+1,Next.js 15 Pages Router / Turbopack / sharp,13.098,2026-10-12T07:43:01Z
+1,Next.js 15 Pages Router / Turbopack / no sharp,12.744,2026-10-12T07:43:14Z
+1,Next.js 15 Pages Router / Turbopack / sharp / no standalone,8.370,2026-10-12T07:43:23Z
+1,Next.js 15 Pages Router / Rspack / sharp,11.030,2026-10-12T07:43:34Z
+1,Next.js 15 Pages Router / Rspack / no sharp,11.032,2026-10-12T07:43:46Z
+1,React Router Framework / Vite + Rolldown,0.879,2026-10-12T07:43:47Z
+1,React Router Data / Vite + Rolldown,0.246,2026-10-12T07:43:47Z
+1,React Router Declarative / Vite + Rolldown,0.237,2026-10-12T07:43:48Z
+2,Next.js 16 App Router / webpack / sharp,13.115,2026-10-12T07:44:01Z
+2,Next.js 16 App Router / webpack / no sharp,12.777,2026-10-12T07:44:14Z
+2,Next.js 16 App Router / webpack / sharp / no standalone,9.501,2026-10-12T07:44:24Z
+2,Next.js 16 App Router / Turbopack / sharp,3.563,2026-10-12T07:44:28Z
+2,Next.js 16 App Router / Turbopack / no sharp,3.292,2026-10-12T07:44:32Z
+2,Next.js 16 App Router / Turbopack / sharp / no standalone,2.798,2026-10-12T07:44:35Z
+2,Next.js 16 App Router / Rspack / sharp,11.392,2026-10-12T07:44:47Z
+2,Next.js 16 App Router / Rspack / no sharp,11.264,2026-10-12T07:44:58Z
+2,Next.js 16 Pages Router / webpack / sharp,11.382,2026-10-12T07:45:10Z
+2,Next.js 16 Pages Router / webpack / no sharp,10.600,2026-10-12T07:45:21Z
+2,Next.js 16 Pages Router / webpack / sharp / no standalone,7.503,2026-10-12T07:45:29Z
+2,Next.js 16 Pages Router / Turbopack / sharp,2.662,2026-10-12T07:45:32Z
+2,Next.js 16 Pages Router / Turbopack / no sharp,2.608,2026-10-12T07:45:35Z
+2,Next.js 16 Pages Router / Turbopack / sharp / no standalone,2.434,2026-10-12T07:45:38Z
+2,Next.js 16 Pages Router / Rspack / sharp,10.162,2026-10-12T07:45:48Z
+2,Next.js 16 Pages Router / Rspack / no sharp,10.082,2026-10-12T07:45:58Z
+2,Next.js 15 App Router / webpack / sharp,14.907,2026-10-12T07:46:14Z
+2,Next.js 15 App Router / webpack / no sharp,14.149,2026-10-12T07:46:28Z
+2,Next.js 15 App Router / webpack / sharp / no standalone,9.805,2026-10-12T07:46:39Z
+2,Next.js 15 App Router / Turbopack / sharp,17.211,2026-10-12T07:46:56Z
+2,Next.js 15 App Router / Turbopack / no sharp,17.205,2026-10-12T07:47:14Z
+2,Next.js 15 App Router / Turbopack / sharp / no standalone,12.090,2026-10-12T07:47:26Z
+2,Next.js 15 App Router / Rspack / sharp,12.480,2026-10-12T07:47:39Z
+2,Next.js 15 App Router / Rspack / no sharp,12.112,2026-10-12T07:47:52Z
+2,Next.js 15 Pages Router / webpack / sharp,12.288,2026-10-12T07:48:04Z
+2,Next.js 15 Pages Router / webpack / no sharp,11.884,2026-10-12T07:48:17Z
+2,Next.js 15 Pages Router / webpack / sharp / no standalone,7.474,2026-10-12T07:48:24Z
+2,Next.js 15 Pages Router / Turbopack / sharp,13.312,2026-10-12T07:48:38Z
+2,Next.js 15 Pages Router / Turbopack / no sharp,12.862,2026-10-12T07:48:51Z
+2,Next.js 15 Pages Router / Turbopack / sharp / no standalone,8.307,2026-10-12T07:49:00Z
+2,Next.js 15 Pages Router / Rspack / sharp,10.874,2026-10-12T07:49:11Z
+2,Next.js 15 Pages Router / Rspack / no sharp,10.769,2026-10-12T07:49:22Z
+2,React Router Framework / Vite + Rolldown,0.786,2026-10-12T07:49:23Z
+2,React Router Data / Vite + Rolldown,0.243,2026-10-12T07:49:24Z
+2,React Router Declarative / Vite + Rolldown,0.217,2026-10-12T07:49:24Z
+3,Next.js 16 App Router / webpack / sharp,13.275,2026-10-12T07:49:38Z
+3,Next.js 16 App Router / webpack / no sharp,12.691,2026-10-12T07:49:51Z
+3,Next.js 16 App Router / webpack / sharp / no standalone,9.589,2026-10-12T07:50:01Z
+3,Next.js 16 App Router / Turbopack / sharp,3.223,2026-10-12T07:50:04Z
+3,Next.js 16 App Router / Turbopack / no sharp,3.141,2026-10-12T07:50:08Z
+3,Next.js 16 App Router / Turbopack / sharp / no standalone,2.998,2026-10-12T07:50:11Z
+3,Next.js 16 App Router / Rspack / sharp,12.691,2026-10-12T07:50:24Z
+3,Next.js 16 App Router / Rspack / no sharp,12.245,2026-10-12T07:50:37Z
+3,Next.js 16 Pages Router / webpack / sharp,11.150,2026-10-12T07:50:49Z
+3,Next.js 16 Pages Router / webpack / no sharp,10.520,2026-10-12T07:51:00Z
+3,Next.js 16 Pages Router / webpack / sharp / no standalone,7.592,2026-10-12T07:51:08Z
+3,Next.js 16 Pages Router / Turbopack / sharp,2.820,2026-10-12T07:51:11Z
+3,Next.js 16 Pages Router / Turbopack / no sharp,2.604,2026-10-12T07:51:14Z
+3,Next.js 16 Pages Router / Turbopack / sharp / no standalone,2.368,2026-10-12T07:51:16Z
+3,Next.js 16 Pages Router / Rspack / sharp,10.013,2026-10-12T07:51:27Z
+3,Next.js 16 Pages Router / Rspack / no sharp,9.724,2026-10-12T07:51:37Z
+3,Next.js 15 App Router / webpack / sharp,14.319,2026-10-12T07:51:51Z
+3,Next.js 15 App Router / webpack / no sharp,14.125,2026-10-12T07:52:06Z
+3,Next.js 15 App Router / webpack / sharp / no standalone,9.636,2026-10-12T07:52:16Z
+3,Next.js 15 App Router / Turbopack / sharp,17.411,2026-10-12T07:52:34Z
+3,Next.js 15 App Router / Turbopack / no sharp,17.485,2026-10-12T07:52:52Z
+3,Next.js 15 App Router / Turbopack / sharp / no standalone,12.413,2026-10-12T07:53:04Z
+3,Next.js 15 App Router / Rspack / sharp,12.524,2026-10-12T07:53:17Z
+3,Next.js 15 App Router / Rspack / no sharp,12.111,2026-10-12T07:53:30Z
+3,Next.js 15 Pages Router / webpack / sharp,12.179,2026-10-12T07:53:42Z
+3,Next.js 15 Pages Router / webpack / no sharp,12.123,2026-10-12T07:53:55Z
+3,Next.js 15 Pages Router / webpack / sharp / no standalone,7.954,2026-10-12T07:54:03Z
+3,Next.js 15 Pages Router / Turbopack / sharp,13.254,2026-10-12T07:54:17Z
+3,Next.js 15 Pages Router / Turbopack / no sharp,12.389,2026-10-12T07:54:30Z
+3,Next.js 15 Pages Router / Turbopack / sharp / no standalone,8.286,2026-10-12T07:54:38Z
+3,Next.js 15 Pages Router / Rspack / sharp,10.780,2026-10-12T07:54:49Z
+3,Next.js 15 Pages Router / Rspack / no sharp,10.434,2026-10-12T07:55:00Z
+3,React Router Framework / Vite + Rolldown,0.687,2026-10-12T07:55:01Z
+3,React Router Data / Vite + Rolldown,0.217,2026-10-12T07:55:01Z
+3,React Router Declarative / Vite + Rolldown,0.220,2026-10-12T07:55:02Z
+4,Next.js 16 App Router / webpack / sharp,13.131,2026-10-12T07:55:15Z
+4,Next.js 16 App Router / webpack / no sharp,12.378,2026-10-12T07:55:28Z
+4,Next.js 16 App Router / webpack / sharp / no standalone,9.465,2026-10-12T07:55:38Z
+4,Next.js 16 App Router / Turbopack / sharp,3.284,2026-10-12T07:55:42Z
+4,Next.js 16 App Router / Turbopack / no sharp,3.154,2026-10-12T07:55:45Z
+4,Next.js 16 App Router / Turbopack / sharp / no standalone,2.954,2026-10-12T07:55:48Z
+4,Next.js 16 App Router / Rspack / sharp,11.353,2026-10-12T07:56:00Z
+4,Next.js 16 App Router / Rspack / no sharp,11.224,2026-10-12T07:56:12Z
+4,Next.js 16 Pages Router / webpack / sharp,10.696,2026-10-12T07:56:23Z
+4,Next.js 16 Pages Router / webpack / no sharp,10.856,2026-10-12T07:56:34Z
+4,Next.js 16 Pages Router / webpack / sharp / no standalone,7.603,2026-10-12T07:56:42Z
+4,Next.js 16 Pages Router / Turbopack / sharp,2.681,2026-10-12T07:56:45Z
+4,Next.js 16 Pages Router / Turbopack / no sharp,2.606,2026-10-12T07:56:48Z
+4,Next.js 16 Pages Router / Turbopack / sharp / no standalone,2.408,2026-10-12T07:56:50Z
+4,Next.js 16 Pages Router / Rspack / sharp,9.859,2026-10-12T07:57:01Z
+4,Next.js 16 Pages Router / Rspack / no sharp,10.011,2026-10-12T07:57:11Z
+4,Next.js 15 App Router / webpack / sharp,14.049,2026-10-12T07:57:26Z
+4,Next.js 15 App Router / webpack / no sharp,14.102,2026-10-12T07:57:40Z
+4,Next.js 15 App Router / webpack / sharp / no standalone,9.833,2026-10-12T07:57:50Z
+4,Next.js 15 App Router / Turbopack / sharp,16.906,2026-10-12T07:58:08Z
+4,Next.js 15 App Router / Turbopack / no sharp,17.027,2026-10-12T07:58:25Z
+4,Next.js 15 App Router / Turbopack / sharp / no standalone,12.299,2026-10-12T07:58:38Z
+4,Next.js 15 App Router / Rspack / sharp,12.529,2026-10-12T07:58:51Z
+4,Next.js 15 App Router / Rspack / no sharp,11.891,2026-10-12T07:59:03Z
+4,Next.js 15 Pages Router / webpack / sharp,12.212,2026-10-12T07:59:15Z
+4,Next.js 15 Pages Router / webpack / no sharp,11.712,2026-10-12T07:59:28Z
+4,Next.js 15 Pages Router / webpack / sharp / no standalone,7.638,2026-10-12T07:59:35Z
+4,Next.js 15 Pages Router / Turbopack / sharp,12.973,2026-10-12T07:59:49Z
+4,Next.js 15 Pages Router / Turbopack / no sharp,12.928,2026-10-12T08:00:02Z
+4,Next.js 15 Pages Router / Turbopack / sharp / no standalone,8.517,2026-10-12T08:00:11Z
+4,Next.js 15 Pages Router / Rspack / sharp,10.945,2026-10-12T08:00:22Z
+4,Next.js 15 Pages Router / Rspack / no sharp,10.733,2026-10-12T08:00:33Z
+4,React Router Framework / Vite + Rolldown,0.814,2026-10-12T08:00:34Z
+4,React Router Data / Vite + Rolldown,0.240,2026-10-12T08:00:35Z
+4,React Router Declarative / Vite + Rolldown,0.231,2026-10-12T08:00:35Z
+5,Next.js 16 App Router / webpack / sharp,13.238,2026-10-12T08:00:49Z
+5,Next.js 16 App Router / webpack / no sharp,12.309,2026-10-12T08:01:02Z
+5,Next.js 16 App Router / webpack / sharp / no standalone,9.531,2026-10-12T08:01:12Z
+5,Next.js 16 App Router / Turbopack / sharp,3.104,2026-10-12T08:01:15Z
+5,Next.js 16 App Router / Turbopack / no sharp,3.155,2026-10-12T08:01:18Z
+5,Next.js 16 App Router / Turbopack / sharp / no standalone,2.901,2026-10-12T08:01:22Z
+5,Next.js 16 App Router / Rspack / sharp,11.272,2026-10-12T08:01:33Z
+5,Next.js 16 App Router / Rspack / no sharp,11.597,2026-10-12T08:01:45Z
+5,Next.js 16 Pages Router / webpack / sharp,10.744,2026-10-12T08:01:56Z
+5,Next.js 16 Pages Router / webpack / no sharp,10.682,2026-10-12T08:02:07Z
+5,Next.js 16 Pages Router / webpack / sharp / no standalone,7.562,2026-10-12T08:02:15Z
+5,Next.js 16 Pages Router / Turbopack / sharp,2.654,2026-10-12T08:02:18Z
+5,Next.js 16 Pages Router / Turbopack / no sharp,2.567,2026-10-12T08:02:21Z
+5,Next.js 16 Pages Router / Turbopack / sharp / no standalone,2.439,2026-10-12T08:02:24Z
+5,Next.js 16 Pages Router / Rspack / sharp,10.301,2026-10-12T08:02:34Z
+5,Next.js 16 Pages Router / Rspack / no sharp,10.230,2026-10-12T08:02:45Z
+5,Next.js 15 App Router / webpack / sharp,14.448,2026-10-12T08:03:00Z
+5,Next.js 15 App Router / webpack / no sharp,14.397,2026-10-12T08:03:15Z
+5,Next.js 15 App Router / webpack / sharp / no standalone,9.873,2026-10-12T08:03:25Z
+5,Next.js 15 App Router / Turbopack / sharp,17.253,2026-10-12T08:03:43Z
+5,Next.js 15 App Router / Turbopack / no sharp,16.956,2026-10-12T08:04:00Z
+5,Next.js 15 App Router / Turbopack / sharp / no standalone,12.778,2026-10-12T08:04:13Z
+5,Next.js 15 App Router / Rspack / sharp,12.755,2026-10-12T08:04:26Z
+5,Next.js 15 App Router / Rspack / no sharp,12.823,2026-10-12T08:04:40Z
+5,Next.js 15 Pages Router / webpack / sharp,12.931,2026-10-12T08:04:53Z
+5,Next.js 15 Pages Router / webpack / no sharp,12.375,2026-10-12T08:05:06Z
+5,Next.js 15 Pages Router / webpack / sharp / no standalone,7.762,2026-10-12T08:05:14Z
+5,Next.js 15 Pages Router / Turbopack / sharp,13.375,2026-10-12T08:05:28Z
+5,Next.js 15 Pages Router / Turbopack / no sharp,13.119,2026-10-12T08:05:41Z
+5,Next.js 15 Pages Router / Turbopack / sharp / no standalone,8.491,2026-10-12T08:05:50Z
+5,Next.js 15 Pages Router / Rspack / sharp,11.072,2026-10-12T08:06:01Z
+5,Next.js 15 Pages Router / Rspack / no sharp,11.249,2026-10-12T08:06:13Z
+5,React Router Framework / Vite + Rolldown,1.047,2026-10-12T08:06:14Z
+5,React Router Data / Vite + Rolldown,0.289,2026-10-12T08:06:15Z
+5,React Router Declarative / Vite + Rolldown,0.237,2026-10-12T08:06:15Z
+6,Next.js 16 App Router / webpack / sharp,13.317,2026-10-12T08:06:29Z
+6,Next.js 16 App Router / webpack / no sharp,12.981,2026-10-12T08:06:42Z
+6,Next.js 16 App Router / webpack / sharp / no standalone,9.221,2026-10-12T08:06:52Z
+6,Next.js 16 App Router / Turbopack / sharp,3.131,2026-10-12T08:06:55Z
+6,Next.js 16 App Router / Turbopack / no sharp,3.119,2026-10-12T08:06:59Z
+6,Next.js 16 App Router / Turbopack / sharp / no standalone,2.911,2026-10-12T08:07:02Z
+6,Next.js 16 App Router / Rspack / sharp,11.564,2026-10-12T08:07:14Z
+6,Next.js 16 App Router / Rspack / no sharp,11.301,2026-10-12T08:07:26Z
+6,Next.js 16 Pages Router / webpack / sharp,11.101,2026-10-12T08:07:37Z
+6,Next.js 16 Pages Router / webpack / no sharp,10.747,2026-10-12T08:07:49Z
+6,Next.js 16 Pages Router / webpack / sharp / no standalone,7.705,2026-10-12T08:07:56Z
+6,Next.js 16 Pages Router / Turbopack / sharp,2.771,2026-10-12T08:08:00Z
+6,Next.js 16 Pages Router / Turbopack / no sharp,2.669,2026-10-12T08:08:03Z
+6,Next.js 16 Pages Router / Turbopack / sharp / no standalone,2.685,2026-10-12T08:08:06Z
+6,Next.js 16 Pages Router / Rspack / sharp,10.279,2026-10-12T08:08:16Z
+6,Next.js 16 Pages Router / Rspack / no sharp,9.844,2026-10-12T08:08:26Z
+6,Next.js 15 App Router / webpack / sharp,14.473,2026-10-12T08:08:41Z
+6,Next.js 15 App Router / webpack / no sharp,13.741,2026-10-12T08:08:56Z
+6,Next.js 15 App Router / webpack / sharp / no standalone,9.816,2026-10-12T08:09:06Z
+6,Next.js 15 App Router / Turbopack / sharp,18.099,2026-10-12T08:09:24Z
+6,Next.js 15 App Router / Turbopack / no sharp,16.982,2026-10-12T08:09:42Z
+6,Next.js 15 App Router / Turbopack / sharp / no standalone,12.321,2026-10-12T08:09:54Z
+6,Next.js 15 App Router / Rspack / sharp,12.271,2026-10-12T08:10:07Z
+6,Next.js 15 App Router / Rspack / no sharp,12.346,2026-10-12T08:10:20Z
+6,Next.js 15 Pages Router / webpack / sharp,12.510,2026-10-12T08:10:33Z
+6,Next.js 15 Pages Router / webpack / no sharp,12.229,2026-10-12T08:10:45Z
+6,Next.js 15 Pages Router / webpack / sharp / no standalone,7.326,2026-10-12T08:10:53Z
+6,Next.js 15 Pages Router / Turbopack / sharp,12.887,2026-10-12T08:11:06Z
+6,Next.js 15 Pages Router / Turbopack / no sharp,12.717,2026-10-12T08:11:19Z
+6,Next.js 15 Pages Router / Turbopack / sharp / no standalone,8.185,2026-10-12T08:11:28Z
+6,Next.js 15 Pages Router / Rspack / sharp,11.013,2026-10-12T08:11:39Z
+6,Next.js 15 Pages Router / Rspack / no sharp,10.669,2026-10-12T08:11:50Z
+6,React Router Framework / Vite + Rolldown,0.728,2026-10-12T08:11:51Z
+6,React Router Data / Vite + Rolldown,0.228,2026-10-12T08:11:51Z
+6,React Router Declarative / Vite + Rolldown,0.225,2026-10-12T08:11:52Z
+7,Next.js 16 App Router / webpack / sharp,13.016,2026-10-12T08:12:05Z
+7,Next.js 16 App Router / webpack / no sharp,12.406,2026-10-12T08:12:18Z
+7,Next.js 16 App Router / webpack / sharp / no standalone,9.640,2026-10-12T08:12:28Z
+7,Next.js 16 App Router / Turbopack / sharp,3.083,2026-10-12T08:12:32Z
+7,Next.js 16 App Router / Turbopack / no sharp,3.255,2026-10-12T08:12:35Z
+7,Next.js 16 App Router / Turbopack / sharp / no standalone,2.992,2026-10-12T08:12:39Z
+7,Next.js 16 App Router / Rspack / sharp,11.205,2026-10-12T08:12:50Z
+7,Next.js 16 App Router / Rspack / no sharp,11.089,2026-10-12T08:13:02Z
+7,Next.js 16 Pages Router / webpack / sharp,10.799,2026-10-12T08:13:13Z
+7,Next.js 16 Pages Router / webpack / no sharp,10.594,2026-10-12T08:13:24Z
+7,Next.js 16 Pages Router / webpack / sharp / no standalone,7.353,2026-10-12T08:13:31Z
+7,Next.js 16 Pages Router / Turbopack / sharp,2.696,2026-10-12T08:13:34Z
+7,Next.js 16 Pages Router / Turbopack / no sharp,2.579,2026-10-12T08:13:37Z
+7,Next.js 16 Pages Router / Turbopack / sharp / no standalone,2.423,2026-10-12T08:13:40Z
+7,Next.js 16 Pages Router / Rspack / sharp,9.874,2026-10-12T08:13:50Z
+7,Next.js 16 Pages Router / Rspack / no sharp,9.971,2026-10-12T08:14:01Z
+7,Next.js 15 App Router / webpack / sharp,14.243,2026-10-12T08:14:15Z
+7,Next.js 15 App Router / webpack / no sharp,14.036,2026-10-12T08:14:30Z
+7,Next.js 15 App Router / webpack / sharp / no standalone,9.672,2026-10-12T08:14:40Z
+7,Next.js 15 App Router / Turbopack / sharp,16.998,2026-10-12T08:14:57Z
+7,Next.js 15 App Router / Turbopack / no sharp,16.917,2026-10-12T08:15:15Z
+7,Next.js 15 App Router / Turbopack / sharp / no standalone,12.395,2026-10-12T08:15:27Z
+7,Next.js 15 App Router / Rspack / sharp,12.072,2026-10-12T08:15:40Z
+7,Next.js 15 App Router / Rspack / no sharp,12.072,2026-10-12T08:15:52Z
+7,Next.js 15 Pages Router / webpack / sharp,11.968,2026-10-12T08:16:05Z
+7,Next.js 15 Pages Router / webpack / no sharp,11.751,2026-10-12T08:16:17Z
+7,Next.js 15 Pages Router / webpack / sharp / no standalone,7.321,2026-10-12T08:16:24Z
+7,Next.js 15 Pages Router / Turbopack / sharp,12.903,2026-10-12T08:16:38Z
+7,Next.js 15 Pages Router / Turbopack / no sharp,12.456,2026-10-12T08:16:50Z
+7,Next.js 15 Pages Router / Turbopack / sharp / no standalone,8.012,2026-10-12T08:16:59Z
+7,Next.js 15 Pages Router / Rspack / sharp,10.716,2026-10-12T08:17:10Z
+7,Next.js 15 Pages Router / Rspack / no sharp,10.487,2026-10-12T08:17:21Z
+7,React Router Framework / Vite + Rolldown,0.605,2026-10-12T08:17:21Z
+7,React Router Data / Vite + Rolldown,0.227,2026-10-12T08:17:22Z
+7,React Router Declarative / Vite + Rolldown,0.209,2026-10-12T08:17:22Z
+8,Next.js 16 App Router / webpack / sharp,12.647,2026-10-12T08:17:35Z
+8,Next.js 16 App Router / webpack / no sharp,12.505,2026-10-12T08:17:48Z
+8,Next.js 16 App Router / webpack / sharp / no standalone,9.377,2026-10-12T08:17:58Z
+8,Next.js 16 App Router / Turbopack / sharp,3.121,2026-10-12T08:18:01Z
+8,Next.js 16 App Router / Turbopack / no sharp,2.991,2026-10-12T08:18:05Z
+8,Next.js 16 App Router / Turbopack / sharp / no standalone,3.009,2026-10-12T08:18:08Z
+8,Next.js 16 App Router / Rspack / sharp,11.355,2026-10-12T08:18:20Z
+8,Next.js 16 App Router / Rspack / no sharp,11.215,2026-10-12T08:18:31Z
+8,Next.js 16 Pages Router / webpack / sharp,10.932,2026-10-12T08:18:43Z
+8,Next.js 16 Pages Router / webpack / no sharp,10.590,2026-10-12T08:18:54Z
+8,Next.js 16 Pages Router / webpack / sharp / no standalone,7.421,2026-10-12T08:19:01Z
+8,Next.js 16 Pages Router / Turbopack / sharp,2.636,2026-10-12T08:19:04Z
+8,Next.js 16 Pages Router / Turbopack / no sharp,2.620,2026-10-12T08:19:07Z
+8,Next.js 16 Pages Router / Turbopack / sharp / no standalone,2.495,2026-10-12T08:19:10Z
+8,Next.js 16 Pages Router / Rspack / sharp,10.032,2026-10-12T08:19:20Z
+8,Next.js 16 Pages Router / Rspack / no sharp,9.910,2026-10-12T08:19:31Z
+8,Next.js 15 App Router / webpack / sharp,14.463,2026-10-12T08:19:46Z
+8,Next.js 15 App Router / webpack / no sharp,13.798,2026-10-12T08:20:00Z
+8,Next.js 15 App Router / webpack / sharp / no standalone,9.616,2026-10-12T08:20:10Z
+8,Next.js 15 App Router / Turbopack / sharp,16.968,2026-10-12T08:20:27Z
+8,Next.js 15 App Router / Turbopack / no sharp,17.017,2026-10-12T08:20:45Z
+8,Next.js 15 App Router / Turbopack / sharp / no standalone,12.242,2026-10-12T08:20:57Z
+8,Next.js 15 App Router / Rspack / sharp,12.303,2026-10-12T08:21:10Z
+8,Next.js 15 App Router / Rspack / no sharp,12.031,2026-10-12T08:21:22Z
+8,Next.js 15 Pages Router / webpack / sharp,11.971,2026-10-12T08:21:35Z
+8,Next.js 15 Pages Router / webpack / no sharp,11.822,2026-10-12T08:21:47Z
+8,Next.js 15 Pages Router / webpack / sharp / no standalone,7.374,2026-10-12T08:21:54Z
+8,Next.js 15 Pages Router / Turbopack / sharp,13.102,2026-10-12T08:22:08Z
+8,Next.js 15 Pages Router / Turbopack / no sharp,12.960,2026-10-12T08:22:21Z
+8,Next.js 15 Pages Router / Turbopack / sharp / no standalone,8.350,2026-10-12T08:22:30Z
+8,Next.js 15 Pages Router / Rspack / sharp,10.918,2026-10-12T08:22:41Z
+8,Next.js 15 Pages Router / Rspack / no sharp,10.646,2026-10-12T08:22:52Z
+8,React Router Framework / Vite + Rolldown,0.698,2026-10-12T08:22:53Z
+8,React Router Data / Vite + Rolldown,0.217,2026-10-12T08:22:53Z
+8,React Router Declarative / Vite + Rolldown,0.220,2026-10-12T08:22:54Z
+9,Next.js 16 App Router / webpack / sharp,12.789,2026-10-12T08:23:07Z
+9,Next.js 16 App Router / webpack / no sharp,12.522,2026-10-12T08:23:20Z
+9,Next.js 16 App Router / webpack / sharp / no standalone,9.409,2026-10-12T08:23:30Z
+9,Next.js 16 App Router / Turbopack / sharp,2.959,2026-10-12T08:23:33Z
+9,Next.js 16 App Router / Turbopack / no sharp,3.125,2026-10-12T08:23:37Z
+9,Next.js 16 App Router / Turbopack / sharp / no standalone,3.011,2026-10-12T08:23:40Z
+9,Next.js 16 App Router / Rspack / sharp,11.320,2026-10-12T08:23:52Z
+9,Next.js 16 App Router / Rspack / no sharp,11.173,2026-10-12T08:24:03Z
+9,Next.js 16 Pages Router / webpack / sharp,11.014,2026-10-12T08:24:15Z
+9,Next.js 16 Pages Router / webpack / no sharp,10.911,2026-10-12T08:24:26Z
+9,Next.js 16 Pages Router / webpack / sharp / no standalone,7.599,2026-10-12T08:24:34Z
+9,Next.js 16 Pages Router / Turbopack / sharp,2.739,2026-10-12T08:24:37Z
+9,Next.js 16 Pages Router / Turbopack / no sharp,2.812,2026-10-12T08:24:40Z
+9,Next.js 16 Pages Router / Turbopack / sharp / no standalone,2.416,2026-10-12T08:24:43Z
+9,Next.js 16 Pages Router / Rspack / sharp,10.007,2026-10-12T08:24:53Z
+9,Next.js 16 Pages Router / Rspack / no sharp,9.986,2026-10-12T08:25:03Z
+9,Next.js 15 App Router / webpack / sharp,14.242,2026-10-12T08:25:18Z
+9,Next.js 15 App Router / webpack / no sharp,13.795,2026-10-12T08:25:32Z
+9,Next.js 15 App Router / webpack / sharp / no standalone,9.584,2026-10-12T08:25:42Z
+9,Next.js 15 App Router / Turbopack / sharp,16.574,2026-10-12T08:25:59Z
+9,Next.js 15 App Router / Turbopack / no sharp,17.009,2026-10-12T08:26:17Z
+9,Next.js 15 App Router / Turbopack / sharp / no standalone,12.437,2026-10-12T08:26:29Z
+9,Next.js 15 App Router / Rspack / sharp,12.465,2026-10-12T08:26:42Z
+9,Next.js 15 App Router / Rspack / no sharp,12.036,2026-10-12T08:26:55Z
+9,Next.js 15 Pages Router / webpack / sharp,12.185,2026-10-12T08:27:07Z
+9,Next.js 15 Pages Router / webpack / no sharp,11.711,2026-10-12T08:27:19Z
+9,Next.js 15 Pages Router / webpack / sharp / no standalone,7.346,2026-10-12T08:27:27Z
+9,Next.js 15 Pages Router / Turbopack / sharp,12.951,2026-10-12T08:27:40Z
+9,Next.js 15 Pages Router / Turbopack / no sharp,12.747,2026-10-12T08:27:53Z
+9,Next.js 15 Pages Router / Turbopack / sharp / no standalone,8.153,2026-10-12T08:28:02Z
+9,Next.js 15 Pages Router / Rspack / sharp,10.702,2026-10-12T08:28:13Z
+9,Next.js 15 Pages Router / Rspack / no sharp,10.435,2026-10-12T08:28:24Z
+9,React Router Framework / Vite + Rolldown,0.652,2026-10-12T08:28:24Z
+9,React Router Data / Vite + Rolldown,0.236,2026-10-12T08:28:25Z
+9,React Router Declarative / Vite + Rolldown,0.222,2026-10-12T08:28:25Z
+10,Next.js 16 App Router / webpack / sharp,13.463,2026-10-12T08:28:39Z
+10,Next.js 16 App Router / webpack / no sharp,12.547,2026-10-12T08:28:52Z
+10,Next.js 16 App Router / webpack / sharp / no standalone,9.356,2026-10-12T08:29:02Z
+10,Next.js 16 App Router / Turbopack / sharp,3.072,2026-10-12T08:29:05Z
+10,Next.js 16 App Router / Turbopack / no sharp,3.121,2026-10-12T08:29:09Z
+10,Next.js 16 App Router / Turbopack / sharp / no standalone,2.907,2026-10-12T08:29:12Z
+10,Next.js 16 App Router / Rspack / sharp,11.307,2026-10-12T08:29:24Z
+10,Next.js 16 App Router / Rspack / no sharp,11.044,2026-10-12T08:29:35Z
+10,Next.js 16 Pages Router / webpack / sharp,11.021,2026-10-12T08:29:46Z
+10,Next.js 16 Pages Router / webpack / no sharp,10.396,2026-10-12T08:29:57Z
+10,Next.js 16 Pages Router / webpack / sharp / no standalone,7.489,2026-10-12T08:30:05Z
+10,Next.js 16 Pages Router / Turbopack / sharp,2.715,2026-10-12T08:30:08Z
+10,Next.js 16 Pages Router / Turbopack / no sharp,2.625,2026-10-12T08:30:11Z
+10,Next.js 16 Pages Router / Turbopack / sharp / no standalone,2.433,2026-10-12T08:30:14Z
+10,Next.js 16 Pages Router / Rspack / sharp,9.907,2026-10-12T08:30:24Z
+10,Next.js 16 Pages Router / Rspack / no sharp,10.117,2026-10-12T08:30:34Z
+10,Next.js 15 App Router / webpack / sharp,14.487,2026-10-12T08:30:49Z
+10,Next.js 15 App Router / webpack / no sharp,13.769,2026-10-12T08:31:04Z
+10,Next.js 15 App Router / webpack / sharp / no standalone,9.622,2026-10-12T08:31:14Z
+10,Next.js 15 App Router / Turbopack / sharp,16.809,2026-10-12T08:31:31Z
+10,Next.js 15 App Router / Turbopack / no sharp,17.061,2026-10-12T08:31:48Z
+10,Next.js 15 App Router / Turbopack / sharp / no standalone,12.430,2026-10-12T08:32:01Z
+10,Next.js 15 App Router / Rspack / sharp,12.441,2026-10-12T08:32:14Z
+10,Next.js 15 App Router / Rspack / no sharp,12.018,2026-10-12T08:32:26Z
+10,Next.js 15 Pages Router / webpack / sharp,12.186,2026-10-12T08:32:39Z
+10,Next.js 15 Pages Router / webpack / no sharp,11.949,2026-10-12T08:32:51Z
+10,Next.js 15 Pages Router / webpack / sharp / no standalone,7.383,2026-10-12T08:32:59Z
+10,Next.js 15 Pages Router / Turbopack / sharp,12.941,2026-10-12T08:33:12Z
+10,Next.js 15 Pages Router / Turbopack / no sharp,12.636,2026-10-12T08:33:25Z
+10,Next.js 15 Pages Router / Turbopack / sharp / no standalone,8.206,2026-10-12T08:33:34Z
+10,Next.js 15 Pages Router / Rspack / sharp,11.039,2026-10-12T08:33:45Z
+10,Next.js 15 Pages Router / Rspack / no sharp,10.603,2026-10-12T08:33:56Z
+10,React Router Framework / Vite + Rolldown,0.723,2026-10-12T08:33:57Z
+10,React Router Data / Vite + Rolldown,0.239,2026-10-12T08:33:57Z
+10,React Router Declarative / Vite + Rolldown,0.225,2026-10-12T08:33:58Z

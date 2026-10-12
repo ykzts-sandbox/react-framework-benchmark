@@ -1,19 +1,19 @@
-BENCH_METRIC app_bytes=47215804
+BENCH_METRIC app_bytes=38832595
 BENCH_METRIC native_bytes=19042592
-BENCH_METRIC file_count=6703
+BENCH_METRIC file_count=1743
 BENCH_DIRS
 BENCH_DIR 19102200	node_modules/@img
 BENCH_DIR 14532101	node_modules/next
-BENCH_DIR 8901001	.next/server
 BENCH_DIR 2760687	node_modules/react-dom
-BENCH_DIR 762388	.next/static
+BENCH_DIR 1109649	.next/server
 BENCH_DIR 631459	node_modules/sharp
-BENCH_DIR 142782	.next/build-manifest.json
-BENCH_DIR 134720	.next/routes-manifest.json
+BENCH_DIR 410895	.next/static
 BENCH_DIR 84331	node_modules/react
 BENCH_DIR 68746	node_modules/semver
 BENCH_DIR 30691	node_modules/@swc
 BENCH_DIR 22255	node_modules/styled-jsx
+BENCH_DIR 21651	.next/routes-manifest.json
+BENCH_DIR 15487	.next/build-manifest.json
 BENCH_DIR 11429	node_modules/detect-libc
 BENCH_DIR 11000	node_modules/@next
 BENCH_DIR 10454	.next/required-server-files.json
@@ -35,7 +35,7 @@ BENCH_FILE 452252	node_modules/react-dom/cjs/react-dom-server.edge.development.j
 BENCH_FILE 451470	node_modules/react-dom/cjs/react-dom-server.browser.development.js
 BENCH_FILE 421786	node_modules/react-dom/cjs/react-dom-server-legacy.browser.development.js
 BENCH_FILE 386098	node_modules/next/dist/server/app-render/app-render.js
-BENCH_FILE 336977	.next/static/chunks/3m4kzwpxzeecz.js
+BENCH_FILE 336558	.next/static/chunks/233hddxuiajsp.js
 BENCH_FILE 329832	node_modules/@img/sharp-linuxmusl-arm64/lib/sharp-linuxmusl-arm64-0.35.5.node
 BENCH_FILE 308356	node_modules/next/dist/compiled/compression/index.js
 BENCH_FILE 300544	node_modules/react-dom/cjs/react-dom-server.node.production.js

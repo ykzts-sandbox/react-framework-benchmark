@@ -1,32 +1,32 @@
-BENCH_METRIC app_bytes=353945934
+BENCH_METRIC app_bytes=336776456
 BENCH_METRIC native_bytes=157638028
-BENCH_METRIC file_count=15642
+BENCH_METRIC file_count=9779
 BENCH_DIRS
 BENCH_DIR 140861682	node_modules/next
 BENCH_DIR 137092008	node_modules/@next
 BENCH_DIR 23625066	node_modules/typescript
 BENCH_DIR 19139746	node_modules/@img
-BENCH_DIR 12719421	.next/static
 BENCH_DIR 8063782	node_modules/react-dom
-BENCH_DIR 7185330	.next/server
+BENCH_DIR 1648469	.next/static
+BENCH_DIR 1557715	.next/server
 BENCH_DIR 1546386	node_modules/caniuse-lite
 BENCH_DIR 1032395	node_modules/styled-jsx
 BENCH_DIR 962168	node_modules/sharp
 BENCH_DIR 234327	node_modules/@swc
 BENCH_DIR 196517	node_modules/postcss
 BENCH_DIR 178663	node_modules/react
-BENCH_DIR 169904	.next/trace
-BENCH_DIR 152434	.next/types
 BENCH_DIR 142723	node_modules/source-map-js
-BENCH_DIR 135626	.next/routes-manifest.json
 BENCH_DIR 96108	node_modules/semver
 BENCH_DIR 90359	node_modules/tslib
-BENCH_DIR 83799	.next/build-manifest.json
 BENCH_DIR 82659	node_modules/scheduler
 BENCH_DIR 43192	.next/next-server.js.nft.json
 BENCH_DIR 26437	node_modules/detect-libc
 BENCH_DIR 25679	node_modules/nanoid
+BENCH_DIR 21707	.next/trace
+BENCH_DIR 21553	.next/routes-manifest.json
 BENCH_DIR 19538	node_modules/.bin
+BENCH_DIR 18441	.next/types
+BENCH_DIR 12327	node_modules/.package-lock.json
 BENCH_LARGEST
 BENCH_FILE 137079728	node_modules/@next/swc-linux-arm64-musl/next-swc.linux-arm64-musl.node
 BENCH_FILE 18712760	node_modules/@img/sharp-libvips-linuxmusl-arm64/lib/libvips-cpp.so.8.18.7

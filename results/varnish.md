@@ -10,10 +10,10 @@ static html 1
   status: 200
   x-cache: MISS
   content-type: text/html; charset=utf-8
-  cache-control: s-maxage=31536000
+  cache-control: public, s-maxage=31536000
   vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding
   location: <none>
-  body-bytes: 5578
+  body-bytes: 5548
   body-kind: html
   h1: Page 1
 static html 2
@@ -21,10 +21,10 @@ static html 2
   status: 200
   x-cache: HIT
   content-type: text/html; charset=utf-8
-  cache-control: s-maxage=31536000
+  cache-control: public, s-maxage=31536000
   vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding
   location: <none>
-  body-bytes: 5578
+  body-bytes: 5548
   body-kind: html
   h1: Page 1
 static rsc header 1
@@ -32,7 +32,7 @@ static rsc header 1
   status: 307
   x-cache: PASS
   content-type: <none>
-  cache-control: <none>
+  cache-control: public, s-maxage=31536000
   vary: <none>
   location: /static/1?_rsc
   body-bytes: 0
@@ -42,30 +42,30 @@ static rsc redirect 1
   status: 200
   x-cache: MISS
   content-type: text/x-component
-  cache-control: s-maxage=31536000
+  cache-control: public, s-maxage=31536000
   vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding
   location: <none>
-  body-bytes: 3764
+  body-bytes: 3596
   body-kind: rsc
 static rsc redirect 2
   url: http://127.0.0.1:8080/static/1?_rsc
   status: 200
   x-cache: HIT
   content-type: text/x-component
-  cache-control: s-maxage=31536000
+  cache-control: public, s-maxage=31536000
   vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding
   location: <none>
-  body-bytes: 3764
+  body-bytes: 3596
   body-kind: rsc
 static html after rsc
   url: http://127.0.0.1:8080/static/1
   status: 200
   x-cache: HIT
   content-type: text/html; charset=utf-8
-  cache-control: s-maxage=31536000
+  cache-control: public, s-maxage=31536000
   vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding
   location: <none>
-  body-bytes: 5578
+  body-bytes: 5548
   body-kind: html
   h1: Page 1
 static prefetch 1
@@ -73,7 +73,7 @@ static prefetch 1
   status: 307
   x-cache: PASS
   content-type: <none>
-  cache-control: <none>
+  cache-control: public, s-maxage=31536000
   vary: <none>
   location: /static/1?_rsc=HEAvJdHAQJrUAe2K
   body-bytes: 0
@@ -83,30 +83,30 @@ static prefetch redirect 1
   status: 200
   x-cache: MISS
   content-type: text/x-component
-  cache-control: s-maxage=31536000
+  cache-control: public, s-maxage=31536000
   vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding
   location: <none>
-  body-bytes: 3764
-  body-kind: rsc
+  body-bytes: 265
+  body-kind: other
 static prefetch redirect 2
   url: http://127.0.0.1:8080/static/1?_rsc=HEAvJdHAQJrUAe2K
   status: 200
   x-cache: HIT
   content-type: text/x-component
-  cache-control: s-maxage=31536000
+  cache-control: public, s-maxage=31536000
   vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding
   location: <none>
-  body-bytes: 3764
-  body-kind: rsc
+  body-bytes: 265
+  body-kind: other
 static html after prefetch
   url: http://127.0.0.1:8080/static/1
   status: 200
   x-cache: HIT
   content-type: text/html; charset=utf-8
-  cache-control: s-maxage=31536000
+  cache-control: public, s-maxage=31536000
   vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding
   location: <none>
-  body-bytes: 5578
+  body-bytes: 5548
   body-kind: html
   h1: Page 1
 static page 2 html 1
@@ -114,10 +114,10 @@ static page 2 html 1
   status: 200
   x-cache: MISS
   content-type: text/html; charset=utf-8
-  cache-control: s-maxage=31536000
+  cache-control: public, s-maxage=31536000
   vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding
   location: <none>
-  body-bytes: 5578
+  body-bytes: 5548
   body-kind: html
   h1: Page 2
 static page 2 html 2
@@ -125,160 +125,160 @@ static page 2 html 2
   status: 200
   x-cache: HIT
   content-type: text/html; charset=utf-8
-  cache-control: s-maxage=31536000
+  cache-control: public, s-maxage=31536000
   vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding
   location: <none>
-  body-bytes: 5578
+  body-bytes: 5548
   body-kind: html
   h1: Page 2
-static page 500 html 1
-  url: http://127.0.0.1:8080/static/500
+static page 20 html 1
+  url: http://127.0.0.1:8080/static/20
   status: 200
   x-cache: MISS
   content-type: text/html; charset=utf-8
-  cache-control: s-maxage=31536000
+  cache-control: public, s-maxage=31536000
   vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding
   location: <none>
-  body-bytes: 5590
+  body-bytes: 5554
   body-kind: html
-  h1: Page 500
-static page 500 html 2
-  url: http://127.0.0.1:8080/static/500
+  h1: Page 20
+static page 20 html 2
+  url: http://127.0.0.1:8080/static/20
   status: 200
   x-cache: HIT
   content-type: text/html; charset=utf-8
-  cache-control: s-maxage=31536000
+  cache-control: public, s-maxage=31536000
   vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding
   location: <none>
-  body-bytes: 5590
+  body-bytes: 5554
   body-kind: html
-  h1: Page 500
+  h1: Page 20
 dynamic html 1
-  url: http://127.0.0.1:8080/dynamic/1
+  url: http://127.0.0.1:8080/dynamic/1/1
   status: 200
   x-cache: MISS
   content-type: text/html; charset=utf-8
   cache-control: public, s-maxage=60
   vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding
   location: <none>
-  body-bytes: 5605
+  body-bytes: 6092
   body-kind: html
-  h1: Page 1
+  h1: Page 1-1
 dynamic html 2
-  url: http://127.0.0.1:8080/dynamic/1
+  url: http://127.0.0.1:8080/dynamic/1/1
   status: 200
   x-cache: HIT
   content-type: text/html; charset=utf-8
   cache-control: public, s-maxage=60
   vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding
   location: <none>
-  body-bytes: 5605
+  body-bytes: 6092
   body-kind: html
-  h1: Page 1
+  h1: Page 1-1
 dynamic rsc header 1
-  url: http://127.0.0.1:8080/dynamic/1
+  url: http://127.0.0.1:8080/dynamic/1/1
   status: 307
   x-cache: PASS
   content-type: <none>
   cache-control: public, s-maxage=60
   vary: <none>
-  location: /dynamic/1?_rsc
+  location: /dynamic/1/1?_rsc
   body-bytes: 0
   body-kind: empty
 dynamic rsc redirect 1
-  url: http://127.0.0.1:8080/dynamic/1?_rsc
+  url: http://127.0.0.1:8080/dynamic/1/1?_rsc
   status: 200
   x-cache: MISS
   content-type: text/x-component
   cache-control: public, s-maxage=60
   vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding
   location: <none>
-  body-bytes: 3637
+  body-bytes: 4039
   body-kind: rsc
 dynamic rsc redirect 2
-  url: http://127.0.0.1:8080/dynamic/1?_rsc
+  url: http://127.0.0.1:8080/dynamic/1/1?_rsc
   status: 200
   x-cache: HIT
   content-type: text/x-component
   cache-control: public, s-maxage=60
   vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding
   location: <none>
-  body-bytes: 3637
+  body-bytes: 4039
   body-kind: rsc
 dynamic html after rsc
-  url: http://127.0.0.1:8080/dynamic/1
+  url: http://127.0.0.1:8080/dynamic/1/1
   status: 200
   x-cache: HIT
   content-type: text/html; charset=utf-8
   cache-control: public, s-maxage=60
   vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding
   location: <none>
-  body-bytes: 5605
+  body-bytes: 6092
   body-kind: html
-  h1: Page 1
+  h1: Page 1-1
 dynamic page 2 html 1
-  url: http://127.0.0.1:8080/dynamic/2
+  url: http://127.0.0.1:8080/dynamic/1/2
   status: 200
   x-cache: MISS
   content-type: text/html; charset=utf-8
   cache-control: public, s-maxage=60
   vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding
   location: <none>
-  body-bytes: 5605
+  body-bytes: 6092
   body-kind: html
-  h1: Page 2
+  h1: Page 1-2
 dynamic page 2 html 2
-  url: http://127.0.0.1:8080/dynamic/2
+  url: http://127.0.0.1:8080/dynamic/1/2
   status: 200
   x-cache: HIT
   content-type: text/html; charset=utf-8
   cache-control: public, s-maxage=60
   vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding
   location: <none>
-  body-bytes: 5605
+  body-bytes: 6092
   body-kind: html
-  h1: Page 2
+  h1: Page 1-2
 dynamic html after other page
-  url: http://127.0.0.1:8080/dynamic/1
+  url: http://127.0.0.1:8080/dynamic/1/1
   status: 200
   x-cache: HIT
   content-type: text/html; charset=utf-8
   cache-control: public, s-maxage=60
   vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding
   location: <none>
-  body-bytes: 5605
+  body-bytes: 6092
   body-kind: html
-  h1: Page 1
-dynamic page 500
-  url: http://127.0.0.1:8080/dynamic/500
+  h1: Page 1-1
+dynamic kind 30 page 1000
+  url: http://127.0.0.1:8080/dynamic/30/1000
   status: 200
   x-cache: MISS
   content-type: text/html; charset=utf-8
   cache-control: public, s-maxage=60
   vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding
   location: <none>
-  body-bytes: 5617
+  body-bytes: 6116
   body-kind: html
-  h1: Page 500
+  h1: Page 30-1000
 dynamic missing 1
-  url: http://127.0.0.1:8080/dynamic/501
+  url: http://127.0.0.1:8080/dynamic/30/1001
   status: 404
   x-cache: MISS
   content-type: text/html; charset=utf-8
   cache-control: public, s-maxage=60
   vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding
   location: <none>
-  body-bytes: 5403
+  body-bytes: 5886
   body-kind: html
 dynamic missing 2
-  url: http://127.0.0.1:8080/dynamic/501
+  url: http://127.0.0.1:8080/dynamic/30/1001
   status: 404
   x-cache: HIT
   content-type: text/html; charset=utf-8
   cache-control: public, s-maxage=60
   vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding
   location: <none>
-  body-bytes: 5403
+  body-bytes: 5886
   body-kind: html
 ```
 
