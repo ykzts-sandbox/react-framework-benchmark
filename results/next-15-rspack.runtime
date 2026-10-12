@@ -1,10 +1,10 @@
-BENCH_METRIC app_bytes=73013254
+BENCH_METRIC app_bytes=73013250
 BENCH_METRIC native_bytes=19042592
 BENCH_METRIC file_count=3958
 BENCH_DIRS
 BENCH_DIR 26258420	node_modules/next
 BENCH_DIR 19091339	node_modules/@img
-BENCH_DIR 13622641	.next/server
+BENCH_DIR 13622637	.next/server
 BENCH_DIR 9116192	node_modules/typescript
 BENCH_DIR 2760803	node_modules/react-dom
 BENCH_DIR 918697	.next/static

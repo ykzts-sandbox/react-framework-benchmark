@@ -1,0 +1,58 @@
+BENCH_METRIC app_bytes=328113843
+BENCH_METRIC native_bytes=111031103
+BENCH_METRIC file_count=16446
+BENCH_DIRS
+BENCH_DIR 192287675	node_modules/next
+BENCH_DIR 90441126	node_modules/@next
+BENCH_DIR 19139746	node_modules/@img
+BENCH_DIR 11658121	.next/server
+BENCH_DIR 8063782	node_modules/react-dom
+BENCH_DIR 1546386	node_modules/caniuse-lite
+BENCH_DIR 1032395	node_modules/styled-jsx
+BENCH_DIR 962168	node_modules/sharp
+BENCH_DIR 762388	.next/static
+BENCH_DIR 282322	node_modules/@swc
+BENCH_DIR 216017	node_modules/postcss
+BENCH_DIR 178663	node_modules/react
+BENCH_DIR 170102	.next/trace
+BENCH_DIR 158580	.next/types
+BENCH_DIR 155390	.next/diagnostics
+BENCH_DIR 142782	.next/build-manifest.json
+BENCH_DIR 142723	node_modules/source-map-js
+BENCH_DIR 134720	.next/routes-manifest.json
+BENCH_DIR 133053	node_modules/baseline-browser-mapping
+BENCH_DIR 96108	node_modules/semver
+BENCH_DIR 90359	node_modules/tslib
+BENCH_DIR 90042	.next/next-server.js.nft.json
+BENCH_DIR 82659	node_modules/scheduler
+BENCH_DIR 37396	node_modules/.bin
+BENCH_DIR 26437	node_modules/detect-libc
+BENCH_LARGEST
+BENCH_FILE 90428680	node_modules/@next/swc-linux-arm64-musl/next-swc.linux-arm64-musl.node
+BENCH_FILE 18712760	node_modules/@img/sharp-libvips-linuxmusl-arm64/lib/libvips-cpp.so.8.18.7
+BENCH_FILE 5494329	node_modules/next/dist/compiled/next-server/app-page-turbo-experimental.runtime.dev.js.map
+BENCH_FILE 5486978	node_modules/next/dist/compiled/next-server/app-page-experimental.runtime.dev.js.map
+BENCH_FILE 5434909	node_modules/next/dist/compiled/next-server/app-page-turbo.runtime.dev.js.map
+BENCH_FILE 5427545	node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js.map
+BENCH_FILE 4301622	node_modules/next/dist/server/capsize-font-metrics.json
+BENCH_FILE 4262490	node_modules/next/dist/compiled/next-server/app-page-experimental.runtime.prod.js.map
+BENCH_FILE 4261859	node_modules/next/dist/compiled/next-server/app-page-turbo-experimental.runtime.prod.js.map
+BENCH_FILE 4219001	node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js.map
+BENCH_FILE 4218348	node_modules/next/dist/compiled/next-server/app-page-turbo.runtime.prod.js.map
+BENCH_FILE 3036901	node_modules/next/dist/compiled/next-devtools/index.js.map
+BENCH_FILE 2582707	node_modules/next/dist/compiled/webpack/bundle5.js
+BENCH_FILE 1811707	node_modules/next/dist/compiled/next-server/dev-validation-worker-experimental.runtime.dev.js.map
+BENCH_FILE 1811428	node_modules/next/dist/compiled/next-server/dev-validation-worker-turbo-experimental.runtime.dev.js.map
+BENCH_FILE 1809280	node_modules/next/dist/compiled/next-server/app-page-experimental.runtime.dev.js
+BENCH_FILE 1808820	node_modules/next/dist/compiled/next-server/app-page-turbo-experimental.runtime.dev.js
+BENCH_FILE 1782981	node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js
+BENCH_FILE 1782547	node_modules/next/dist/compiled/next-server/app-page-turbo.runtime.dev.js
+BENCH_FILE 1776319	node_modules/next/dist/compiled/next-server/dev-validation-worker.runtime.dev.js.map
+BENCH_NATIVE
+BENCH_FILE 90428680	node_modules/@next/swc-linux-arm64-musl/next-swc.linux-arm64-musl.node
+BENCH_FILE 18712760	node_modules/@img/sharp-libvips-linuxmusl-arm64/lib/libvips-cpp.so.8.18.7
+BENCH_FILE 1378357	node_modules/next/dist/compiled/@vercel/og/resvg.wasm
+BENCH_FILE 329832	node_modules/@img/sharp-linuxmusl-arm64/lib/sharp-linuxmusl-arm64-0.35.5.node
+BENCH_FILE 71736	node_modules/next/dist/compiled/@vercel/og/yoga.wasm
+BENCH_FILE 61045	node_modules/next/dist/compiled/@mswjs/interceptors/ClientRequest/llhttp/llhttp.wasm
+BENCH_FILE 48693	node_modules/next/dist/compiled/source-map08/mappings.wasm

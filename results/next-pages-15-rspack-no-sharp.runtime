@@ -1,18 +1,18 @@
-BENCH_METRIC app_bytes=40906978
+BENCH_METRIC app_bytes=44154973
 BENCH_METRIC native_bytes=0
 BENCH_METRIC file_count=3364
 BENCH_DIRS
 BENCH_DIR 26255948	node_modules/next
 BENCH_DIR 9116192	node_modules/typescript
+BENCH_DIR 4226127	.next/server
 BENCH_DIR 2760803	node_modules/react-dom
-BENCH_DIR 1048416	.next/server
-BENCH_DIR 789654	.next/static
+BENCH_DIR 799154	.next/static
 BENCH_DIR 339057	node_modules/caniuse-lite
 BENCH_DIR 144238	.next/build-manifest.json
+BENCH_DIR 134622	.next/routes-manifest.json
 BENCH_DIR 111635	node_modules/source-map-js
 BENCH_DIR 105233	node_modules/postcss
 BENCH_DIR 84331	node_modules/react
-BENCH_DIR 73838	.next/routes-manifest.json
 BENCH_DIR 22255	node_modules/styled-jsx
 BENCH_DIR 20531	node_modules/@swc
 BENCH_DIR 10847	node_modules/@next
