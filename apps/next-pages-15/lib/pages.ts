@@ -1,8 +1,7 @@
-import { notFound } from "next/navigation";
-
-interface PageRecord {
+export interface PageRecord {
   body: string;
   id: number;
+  kind: number;
   title: string;
 }
 
@@ -13,28 +12,38 @@ const isPageRecord = (value: unknown): value is PageRecord => {
     return false;
   }
 
-  const record = value as { body?: unknown; id?: unknown; title?: unknown };
+  const record = value as {
+    body?: unknown;
+    id?: unknown;
+    kind?: unknown;
+    title?: unknown;
+  };
 
   return (
     typeof record.body === "string" &&
     typeof record.id === "number" &&
+    typeof record.kind === "number" &&
     typeof record.title === "string"
   );
 };
 
-const canonicalId = (id: string) => /^[1-9]\d*$/u.test(id);
+const canonicalId = (id: unknown): id is string =>
+  typeof id === "string" && /^[1-9]\d*$/u.test(id);
 
-const Page = async ({ params }: { params: Promise<{ id: string }> }) => {
-  const { id } = await params;
-
+// Every generated dynamic route reads its rows through this function. It
+// returns null for a non-canonical id and for a row Laravel does not have.
+export const loadPage = async (
+  kind: number,
+  id: unknown
+): Promise<PageRecord | null> => {
   if (!canonicalId(id)) {
-    notFound();
+    return null;
   }
 
-  const response = await fetch(`${laravelOrigin}/api/pages/${id}`);
+  const response = await fetch(`${laravelOrigin}/api/pages/${kind}/${id}`);
 
   if (response.status === 404) {
-    notFound();
+    return null;
   }
 
   if (!response.ok) {
@@ -47,12 +56,5 @@ const Page = async ({ params }: { params: Promise<{ id: string }> }) => {
     throw new Error("Laravel returned an unexpected page");
   }
 
-  return (
-    <main>
-      <h1>{page.title}</h1>
-      <p>{page.body}</p>
-    </main>
-  );
+  return page;
 };
-
-export default Page;

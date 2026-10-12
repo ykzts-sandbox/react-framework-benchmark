@@ -43,79 +43,79 @@
 <text class="tick" x="854" y="474" text-anchor="middle">150 MiB</text>
 <line class="reference" x1="539.1753921508789" y1="90" x2="539.1753921508789" y2="458"/>
 <text class="reference-label" x="543.1753921508789" y="86">ベースのnode:24.21.0-alpine 59.2 MiB</text>
-<g><title>Next.js 16 App Router: 73.8 MiB</title>
+<g><title>Next.js 16 App Router: 73.7 MiB</title>
 <text class="label" x="322" y="108" text-anchor="end">Next.js 16 App Router</text>
-<path class="next16" d="M334,96 H585.8979494730631 Q589.8979494730631,96 589.8979494730631,100 V108 Q589.8979494730631,112 585.8979494730631,112 H334 Z"/>
-<text class="value" x="595.8979494730631" y="108">73.8 MiB</text>
+<path class="next16" d="M334,96 H585.3606071472168 Q589.3606071472168,96 589.3606071472168,100 V108 Q589.3606071472168,112 585.3606071472168,112 H334 Z"/>
+<text class="value" x="595.3606071472168" y="108">73.7 MiB</text>
 </g>
-<g><title>Next.js 16 App Router (sharpなし): 65.4 MiB</title>
+<g><title>Next.js 16 App Router (sharpなし): 65.2 MiB</title>
 <text class="label" x="322" y="130" text-anchor="end">Next.js 16 App Router (sharpなし)</text>
-<path class="next16" d="M334,118 H556.6907697041829 Q560.6907697041829,118 560.6907697041829,122 V130 Q560.6907697041829,134 556.6907697041829,134 H334 Z"/>
-<text class="value" x="566.6907697041829" y="130">65.4 MiB</text>
+<path class="next16" d="M334,118 H556.1649258931477 Q560.1649258931477,118 560.1649258931477,122 V130 Q560.1649258931477,134 556.1649258931477,134 H334 Z"/>
+<text class="value" x="566.1649258931477" y="130">65.2 MiB</text>
 </g>
-<g><title>Next.js 16 App Router (standaloneなし): 144.4 MiB</title>
+<g><title>Next.js 16 App Router (standaloneなし): 144.0 MiB</title>
 <text class="label" x="322" y="152" text-anchor="end">Next.js 16 App Router (standaloneなし)</text>
-<path class="next16" d="M334,140 H830.6979278564454 Q834.6979278564454,140 834.6979278564454,144 V152 Q834.6979278564454,156 830.6979278564454,156 H334 Z"/>
-<text class="value" x="840.6979278564454" y="152">144.4 MiB</text>
+<path class="next16" d="M334,140 H829.0558420817058 Q833.0558420817058,140 833.0558420817058,144 V152 Q833.0558420817058,156 829.0558420817058,156 H334 Z"/>
+<text class="value" x="839.0558420817058" y="152">144.0 MiB</text>
 </g>
-<g><title>Next.js 16 Pages Router: 73.7 MiB</title>
+<g><title>Next.js 16 Pages Router: 73.6 MiB</title>
 <text class="label" x="322" y="182" text-anchor="end">Next.js 16 Pages Router</text>
-<path class="next16" d="M334,170 H585.6330505371094 Q589.6330505371094,170 589.6330505371094,174 V182 Q589.6330505371094,186 585.6330505371094,186 H334 Z"/>
-<text class="value" x="595.6330505371094" y="182">73.7 MiB</text>
+<path class="next16" d="M334,170 H585.201806640625 Q589.201806640625,170 589.201806640625,174 V182 Q589.201806640625,186 585.201806640625,186 H334 Z"/>
+<text class="value" x="595.201806640625" y="182">73.6 MiB</text>
 </g>
-<g><title>Next.js 16 Pages Router (sharpなし): 65.3 MiB</title>
+<g><title>Next.js 16 Pages Router (sharpなし): 65.2 MiB</title>
 <text class="label" x="322" y="204" text-anchor="end">Next.js 16 Pages Router (sharpなし)</text>
-<path class="next16" d="M334,192 H556.4294049580892 Q560.4294049580892,192 560.4294049580892,196 V204 Q560.4294049580892,208 556.4294049580892,208 H334 Z"/>
-<text class="value" x="566.4294049580892" y="204">65.3 MiB</text>
+<path class="next16" d="M334,192 H555.9983098347982 Q559.9983098347982,192 559.9983098347982,196 V204 Q559.9983098347982,208 555.9983098347982,208 H334 Z"/>
+<text class="value" x="565.9983098347982" y="204">65.2 MiB</text>
 </g>
-<g><title>Next.js 16 Pages Router (standaloneなし): 143.9 MiB</title>
+<g><title>Next.js 16 Pages Router (standaloneなし): 143.7 MiB</title>
 <text class="label" x="322" y="226" text-anchor="end">Next.js 16 Pages Router (standaloneなし)</text>
-<path class="next16" d="M334,214 H828.7846450805664 Q832.7846450805664,214 832.7846450805664,218 V226 Q832.7846450805664,230 828.7846450805664,230 H334 Z"/>
-<text class="value" x="838.7846450805664" y="226">143.9 MiB</text>
+<path class="next16" d="M334,214 H828.0144131978352 Q832.0144131978352,214 832.0144131978352,218 V226 Q832.0144131978352,230 828.0144131978352,230 H334 Z"/>
+<text class="value" x="838.0144131978352" y="226">143.7 MiB</text>
 </g>
-<g><title>Next.js 15 App Router: 75.8 MiB</title>
+<g><title>Next.js 15 App Router: 75.6 MiB</title>
 <text class="label" x="322" y="256" text-anchor="end">Next.js 15 App Router</text>
-<path class="next15" d="M334,244 H592.60789159139 Q596.60789159139,244 596.60789159139,248 V256 Q596.60789159139,260 592.60789159139,260 H334 Z"/>
-<text class="value" x="602.60789159139" y="256">75.8 MiB</text>
+<path class="next15" d="M334,244 H591.9153821309408 Q595.9153821309408,244 595.9153821309408,248 V256 Q595.9153821309408,260 591.9153821309408,260 H334 Z"/>
+<text class="value" x="601.9153821309408" y="256">75.6 MiB</text>
 </g>
-<g><title>Next.js 15 App Router (sharpなし): 67.3 MiB</title>
+<g><title>Next.js 15 App Router (sharpなし): 67.1 MiB</title>
 <text class="label" x="322" y="278" text-anchor="end">Next.js 15 App Router (sharpなし)</text>
-<path class="next15" d="M334,266 H563.4142700195313 Q567.4142700195313,266 567.4142700195313,270 V278 Q567.4142700195313,282 563.4142700195313,282 H334 Z"/>
-<text class="value" x="573.4142700195313" y="278">67.3 MiB</text>
+<path class="next15" d="M334,266 H562.7194727579753 Q566.7194727579753,266 566.7194727579753,270 V278 Q566.7194727579753,282 562.7194727579753,282 H334 Z"/>
+<text class="value" x="572.7194727579753" y="278">67.1 MiB</text>
 </g>
-<g><title>Next.js 15 App Router (standaloneなし): 147.3 MiB</title>
+<g><title>Next.js 15 App Router (standaloneなし): 147.0 MiB</title>
 <text class="label" x="322" y="300" text-anchor="end">Next.js 15 App Router (standaloneなし)</text>
-<path class="next15" d="M334,288 H840.7387959798177 Q844.7387959798177,288 844.7387959798177,292 V300 Q844.7387959798177,304 840.7387959798177,304 H334 Z"/>
-<text class="value" x="850.7387959798177" y="300">147.3 MiB</text>
+<path class="next15" d="M334,288 H839.6857495625813 Q843.6857495625813,288 843.6857495625813,292 V300 Q843.6857495625813,304 839.6857495625813,304 H334 Z"/>
+<text class="value" x="849.6857495625813" y="300">147.0 MiB</text>
 </g>
-<g><title>Next.js 15 Pages Router: 75.4 MiB</title>
+<g><title>Next.js 15 Pages Router: 75.3 MiB</title>
 <text class="label" x="322" y="330" text-anchor="end">Next.js 15 Pages Router</text>
-<path class="next15" d="M334,318 H591.5197909037272 Q595.5197909037272,318 595.5197909037272,322 V330 Q595.5197909037272,334 591.5197909037272,334 H334 Z"/>
-<text class="value" x="601.5197909037272" y="330">75.4 MiB</text>
+<path class="next15" d="M334,318 H591.1322664896647 Q595.1322664896647,318 595.1322664896647,322 V330 Q595.1322664896647,334 591.1322664896647,334 H334 Z"/>
+<text class="value" x="601.1322664896647" y="330">75.3 MiB</text>
 </g>
-<g><title>Next.js 15 Pages Router (sharpなし): 67.0 MiB</title>
+<g><title>Next.js 15 Pages Router (sharpなし): 66.9 MiB</title>
 <text class="label" x="322" y="352" text-anchor="end">Next.js 15 Pages Router (sharpなし)</text>
-<path class="next15" d="M334,340 H562.3234814961751 Q566.3234814961751,340 566.3234814961751,344 V352 Q566.3234814961751,356 562.3234814961751,356 H334 Z"/>
-<text class="value" x="572.3234814961751" y="352">67.0 MiB</text>
+<path class="next15" d="M334,340 H561.9477035522461 Q565.9477035522461,340 565.9477035522461,344 V352 Q565.9477035522461,356 561.9477035522461,356 H334 Z"/>
+<text class="value" x="571.9477035522461" y="352">66.9 MiB</text>
 </g>
-<g><title>Next.js 15 Pages Router (standaloneなし): 147.0 MiB</title>
+<g><title>Next.js 15 Pages Router (standaloneなし): 146.8 MiB</title>
 <text class="label" x="322" y="374" text-anchor="end">Next.js 15 Pages Router (standaloneなし)</text>
-<path class="next15" d="M334,362 H839.5770790100098 Q843.5770790100098,362 843.5770790100098,366 V374 Q843.5770790100098,378 839.5770790100098,378 H334 Z"/>
-<text class="value" x="849.5770790100098" y="374">147.0 MiB</text>
+<path class="next15" d="M334,362 H838.859321085612 Q842.859321085612,362 842.859321085612,366 V374 Q842.859321085612,378 838.859321085612,378 H334 Z"/>
+<text class="value" x="848.859321085612" y="374">146.8 MiB</text>
 </g>
 <g><title>React Router Framework: 66.6 MiB</title>
 <text class="label" x="322" y="404" text-anchor="end">React Router Framework</text>
-<path class="router" d="M334,392 H561.0532559712728 Q565.0532559712728,392 565.0532559712728,396 V404 Q565.0532559712728,408 561.0532559712728,408 H334 Z"/>
-<text class="value" x="571.0532559712728" y="404">66.6 MiB</text>
+<path class="router" d="M334,392 H560.8839057922363 Q564.8839057922363,392 564.8839057922363,396 V404 Q564.8839057922363,408 560.8839057922363,408 H334 Z"/>
+<text class="value" x="570.8839057922363" y="404">66.6 MiB</text>
 </g>
 <g><title>React Router Data: 59.3 MiB</title>
 <text class="label" x="322" y="426" text-anchor="end">React Router Data</text>
-<path class="router" d="M334,414 H535.5811032613119 Q539.5811032613119,414 539.5811032613119,418 V426 Q539.5811032613119,430 535.5811032613119,430 H334 Z"/>
-<text class="value" x="545.5811032613119" y="426">59.3 MiB</text>
+<path class="router" d="M334,414 H535.5204765319825 Q539.5204765319825,414 539.5204765319825,418 V426 Q539.5204765319825,430 535.5204765319825,430 H334 Z"/>
+<text class="value" x="545.5204765319825" y="426">59.3 MiB</text>
 </g>
 <g><title>React Router Declarative: 59.3 MiB</title>
 <text class="label" x="322" y="448" text-anchor="end">React Router Declarative</text>
-<path class="router" d="M334,436 H535.5283945719401 Q539.5283945719401,436 539.5283945719401,440 V448 Q539.5283945719401,452 535.5283945719401,452 H334 Z"/>
-<text class="value" x="545.5283945719401" y="448">59.3 MiB</text>
+<path class="router" d="M334,436 H535.4659726460775 Q539.4659726460775,436 539.4659726460775,440 V448 Q539.4659726460775,452 535.4659726460775,452 H334 Z"/>
+<text class="value" x="545.4659726460775" y="448">59.3 MiB</text>
 </g>
 </svg>

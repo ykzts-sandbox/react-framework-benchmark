@@ -1,14 +1,13 @@
-BENCH_METRIC app_bytes=39888022
+BENCH_METRIC app_bytes=39150365
 BENCH_METRIC native_bytes=0
-BENCH_METRIC file_count=1941
+BENCH_METRIC file_count=1490
 BENCH_DIRS
 BENCH_DIR 23624971	node_modules/typescript
 BENCH_DIR 8063782	node_modules/react-dom
 BENCH_DIR 2856262	node_modules/react-router
 BENCH_DIR 805224	node_modules/source-map
-BENCH_DIR 617250	build/client
-BENCH_DIR 568852	build/server
 BENCH_DIR 374851	node_modules/qs
+BENCH_DIR 373672	build/client
 BENCH_DIR 344185	node_modules/iconv-lite
 BENCH_DIR 300044	node_modules/@remix-run
 BENCH_DIR 225566	node_modules/mime-db
@@ -20,6 +19,7 @@ BENCH_DIR 85177	node_modules/source-map-support
 BENCH_DIR 82659	node_modules/scheduler
 BENCH_DIR 78135	node_modules/compression
 BENCH_DIR 76638	node_modules/express
+BENCH_DIR 74773	build/server
 BENCH_DIR 59680	node_modules/path-to-regexp
 BENCH_DIR 48820	node_modules/isbot
 BENCH_DIR 48581	node_modules/content-disposition
@@ -37,7 +37,6 @@ BENCH_FILE 699916	node_modules/react-dom/cjs/react-dom-profiling.profiling.js
 BENCH_FILE 625168	node_modules/react-dom/cjs/react-dom-client.production.js
 BENCH_FILE 609557	node_modules/typescript/lib/lib.webworker.d.ts
 BENCH_FILE 588085	node_modules/typescript/lib/typescript.d.ts
-BENCH_FILE 568852	build/server/index.js
 BENCH_FILE 458095	node_modules/react-dom/cjs/react-dom-server.node.development.js
 BENCH_FILE 452252	node_modules/react-dom/cjs/react-dom-server.edge.development.js
 BENCH_FILE 451470	node_modules/react-dom/cjs/react-dom-server.browser.development.js
@@ -48,4 +47,5 @@ BENCH_FILE 399427	node_modules/react-dom/cjs/react-dom-server.bun.development.js
 BENCH_FILE 381398	node_modules/typescript/lib/ja/diagnosticMessages.generated.json
 BENCH_FILE 346139	node_modules/typescript/lib/ko/diagnosticMessages.generated.json
 BENCH_FILE 346016	node_modules/typescript/lib/fr/diagnosticMessages.generated.json
+BENCH_FILE 344426	node_modules/typescript/lib/de/diagnosticMessages.generated.json
 BENCH_NATIVE

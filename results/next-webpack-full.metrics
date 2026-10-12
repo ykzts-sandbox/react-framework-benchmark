@@ -1,10 +1,10 @@
 BENCH_METRIC bundler=webpack
 BENCH_METRIC router=app
-BENCH_METRIC build_seconds=24.902
-BENCH_METRIC output_bytes=35310367
-BENCH_METRIC cache_bytes=218071692
+BENCH_METRIC build_seconds=11.178
+BENCH_METRIC output_bytes=3535594
+BENCH_METRIC cache_bytes=69814645
 BENCH_METRIC standalone_bytes=0
-BENCH_METRIC static_bytes=2531883
+BENCH_METRIC static_bytes=947281
 BENCH_METRIC static_html_count=0
 BENCH_METRIC dynamic_html_count=0
 BENCH_METRIC standalone_server=missing

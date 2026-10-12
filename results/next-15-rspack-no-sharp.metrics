@@ -1,10 +1,10 @@
 BENCH_METRIC bundler=rspack
 BENCH_METRIC router=app
-BENCH_METRIC build_seconds=23.864
-BENCH_METRIC output_bytes=70371748
-BENCH_METRIC cache_bytes=269949
-BENCH_METRIC standalone_bytes=52693860
-BENCH_METRIC static_bytes=918697
+BENCH_METRIC build_seconds=13.257
+BENCH_METRIC output_bytes=44085980
+BENCH_METRIC cache_bytes=126236
+BENCH_METRIC standalone_bytes=40761224
+BENCH_METRIC static_bytes=825505
 BENCH_METRIC static_html_count=0
 BENCH_METRIC dynamic_html_count=0
 BENCH_METRIC standalone_server=standalone/server.js
@@ -28,4 +28,4 @@ BENCH_FILE 449613	.next/standalone/node_modules/next/dist/compiled/@next/font/di
 BENCH_FILE 421786	.next/standalone/node_modules/react-dom/cjs/react-dom-server-legacy.browser.development.js
 BENCH_FILE 384015	.next/standalone/node_modules/next/dist/compiled/postcss-preset-env/index.cjs
 BENCH_FILE 363603	.next/standalone/node_modules/next/dist/compiled/crypto-browserify/index.js
-BENCH_FILE 362550	.next/standalone/.next/server/chunks/73321.js
+BENCH_FILE 361847	.next/standalone/.next/server/chunks/3321.js

@@ -27,7 +27,7 @@ const nextConfig: NextConfig = {
             value: "public, s-maxage=60",
           },
         ],
-        source: "/dynamic/:id",
+        source: "/dynamic/:kind/:id",
       },
       {
         headers: [

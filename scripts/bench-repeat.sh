@@ -73,7 +73,7 @@ completed() {
 }
 
 echo "$variants" | while IFS='|' read -r label dockerfile tag build_args; do
-  set -- --build-arg STATIC_ROUTES=500
+  set -- --build-arg STATIC_ROUTES="${STATIC_ROUTES:-20}" --build-arg DYNAMIC_ROUTES="${DYNAMIC_ROUTES:-30}"
   for build_arg in $build_args; do
     set -- "$@" --build-arg "$build_arg"
   done

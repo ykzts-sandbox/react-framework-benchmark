@@ -5,26 +5,20 @@
 -   ReqHeader      User-Agent: curl/8.14.1
 -   ReqHeader      Accept: */*
 -   ReqHeader      X-Forwarded-For: 172.19.0.1
--   ReqHeader      Via: 1.1 5020d0f3926b (Varnish/7.7)
+-   ReqHeader      Via: 1.1 0b2b5531d0c0 (Varnish/7.7)
 -   VCL_call       RECV
 -   VCL_call       HASH
 -   VCL_call       MISS
 -   RespStatus     200
+-   RespHeader     Cache-Control: public, s-maxage=31536000
 -   RespHeader     Vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding
--   RespHeader     x-nextjs-cache: HIT
--   RespHeader     x-nextjs-prerender: 1
--   RespHeader     x-nextjs-prerender: 1
--   RespHeader     x-nextjs-stale-time: 300
 -   RespHeader     X-Powered-By: Next.js
--   RespHeader     Cache-Control: s-maxage=31536000
--   RespHeader     ETag: "17kddgmvd6v4ay"
 -   RespHeader     Content-Type: text/html; charset=utf-8
 -   RespHeader     Content-Encoding: gzip
--   RespHeader     Date: Sun, 11 Oct 2026 14:16:14 GMT
+-   RespHeader     Date: Mon, 12 Oct 2026 07:23:24 GMT
 -   RespHeader     X-Varnish: 32770
 -   RespHeader     Age: 0
--   RespHeader     Via: 1.1 5020d0f3926b (Varnish/7.7)
--   RespHeader     ETag: W/"17kddgmvd6v4ay"
+-   RespHeader     Via: 1.1 0b2b5531d0c0 (Varnish/7.7)
 -   RespHeader     Accept-Ranges: bytes
 -   VCL_call       DELIVER
 -   RespHeader     X-Cache: MISS
@@ -43,32 +37,26 @@
 -   ReqHeader      User-Agent: curl/8.14.1
 -   ReqHeader      Accept: */*
 -   ReqHeader      X-Forwarded-For: 172.19.0.1
--   ReqHeader      Via: 1.1 5020d0f3926b (Varnish/7.7)
+-   ReqHeader      Via: 1.1 0b2b5531d0c0 (Varnish/7.7)
 -   VCL_call       RECV
 -   VCL_call       HASH
--   Hit            32771 31535999.979831 10.000000 0.000000
+-   Hit            32771 31535999.981689 10.000000 0.000000
 -   VCL_call       HIT
 -   RespStatus     200
+-   RespHeader     Cache-Control: public, s-maxage=31536000
 -   RespHeader     Vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding
--   RespHeader     x-nextjs-cache: HIT
--   RespHeader     x-nextjs-prerender: 1
--   RespHeader     x-nextjs-prerender: 1
--   RespHeader     x-nextjs-stale-time: 300
 -   RespHeader     X-Powered-By: Next.js
--   RespHeader     Cache-Control: s-maxage=31536000
--   RespHeader     ETag: "17kddgmvd6v4ay"
 -   RespHeader     Content-Type: text/html; charset=utf-8
 -   RespHeader     Content-Encoding: gzip
--   RespHeader     Date: Sun, 11 Oct 2026 14:16:14 GMT
+-   RespHeader     Date: Mon, 12 Oct 2026 07:23:24 GMT
 -   RespHeader     X-Varnish: 5 32771
 -   RespHeader     Age: 0
--   RespHeader     Via: 1.1 5020d0f3926b (Varnish/7.7)
--   RespHeader     ETag: W/"17kddgmvd6v4ay"
+-   RespHeader     Via: 1.1 0b2b5531d0c0 (Varnish/7.7)
 -   RespHeader     Accept-Ranges: bytes
 -   VCL_call       DELIVER
 -   RespHeader     X-Cache: HIT
 -   RespHeader     X-Cache-Hits: 1
--   RespHeader     Content-Length: 5578
+-   RespHeader     Content-Length: 5548
 -   RespHeader     Connection: keep-alive
 
 *   << Request  >> 32773     
@@ -79,16 +67,17 @@
 -   ReqHeader      Accept: */*
 -   ReqHeader      RSC: 1
 -   ReqHeader      X-Forwarded-For: 172.19.0.1
--   ReqHeader      Via: 1.1 5020d0f3926b (Varnish/7.7)
+-   ReqHeader      Via: 1.1 0b2b5531d0c0 (Varnish/7.7)
 -   VCL_call       RECV
 -   VCL_call       HASH
 -   VCL_call       PASS
 -   RespStatus     307
+-   RespHeader     Cache-Control: public, s-maxage=31536000
 -   RespHeader     location: /static/1?_rsc
--   RespHeader     Date: Sun, 11 Oct 2026 14:16:14 GMT
+-   RespHeader     Date: Mon, 12 Oct 2026 07:23:24 GMT
 -   RespHeader     X-Varnish: 32773
 -   RespHeader     Age: 0
--   RespHeader     Via: 1.1 5020d0f3926b (Varnish/7.7)
+-   RespHeader     Via: 1.1 0b2b5531d0c0 (Varnish/7.7)
 -   VCL_call       DELIVER
 -   RespHeader     X-Cache: PASS
 -   RespHeader     X-Cache-Hits: 0
@@ -107,23 +96,19 @@
 -   ReqHeader      Accept: */*
 -   ReqHeader      RSC: 1
 -   ReqHeader      X-Forwarded-For: 172.19.0.1
--   ReqHeader      Via: 1.1 5020d0f3926b (Varnish/7.7)
+-   ReqHeader      Via: 1.1 0b2b5531d0c0 (Varnish/7.7)
 -   VCL_call       RECV
 -   VCL_call       HASH
 -   VCL_call       MISS
 -   RespStatus     200
+-   RespHeader     Cache-Control: public, s-maxage=31536000
 -   RespHeader     Vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding
--   RespHeader     x-nextjs-cache: HIT
--   RespHeader     x-nextjs-prerender: 1
--   RespHeader     x-nextjs-prerender: 1
--   RespHeader     x-nextjs-stale-time: 300
--   RespHeader     Cache-Control: s-maxage=31536000
 -   RespHeader     Content-Type: text/x-component
 -   RespHeader     Content-Encoding: gzip
--   RespHeader     Date: Sun, 11 Oct 2026 14:16:14 GMT
+-   RespHeader     Date: Mon, 12 Oct 2026 07:23:24 GMT
 -   RespHeader     X-Varnish: 7
 -   RespHeader     Age: 0
--   RespHeader     Via: 1.1 5020d0f3926b (Varnish/7.7)
+-   RespHeader     Via: 1.1 0b2b5531d0c0 (Varnish/7.7)
 -   RespHeader     Accept-Ranges: bytes
 -   VCL_call       DELIVER
 -   RespHeader     X-Cache: MISS
@@ -143,29 +128,25 @@
 -   ReqHeader      Accept: */*
 -   ReqHeader      RSC: 1
 -   ReqHeader      X-Forwarded-For: 172.19.0.1
--   ReqHeader      Via: 1.1 5020d0f3926b (Varnish/7.7)
+-   ReqHeader      Via: 1.1 0b2b5531d0c0 (Varnish/7.7)
 -   VCL_call       RECV
 -   VCL_call       HASH
--   Hit            8 31535999.989178 10.000000 0.000000
+-   Hit            8 31535999.988355 10.000000 0.000000
 -   VCL_call       HIT
 -   RespStatus     200
+-   RespHeader     Cache-Control: public, s-maxage=31536000
 -   RespHeader     Vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding
--   RespHeader     x-nextjs-cache: HIT
--   RespHeader     x-nextjs-prerender: 1
--   RespHeader     x-nextjs-prerender: 1
--   RespHeader     x-nextjs-stale-time: 300
--   RespHeader     Cache-Control: s-maxage=31536000
 -   RespHeader     Content-Type: text/x-component
 -   RespHeader     Content-Encoding: gzip
--   RespHeader     Date: Sun, 11 Oct 2026 14:16:14 GMT
+-   RespHeader     Date: Mon, 12 Oct 2026 07:23:24 GMT
 -   RespHeader     X-Varnish: 32776 8
 -   RespHeader     Age: 0
--   RespHeader     Via: 1.1 5020d0f3926b (Varnish/7.7)
+-   RespHeader     Via: 1.1 0b2b5531d0c0 (Varnish/7.7)
 -   RespHeader     Accept-Ranges: bytes
 -   VCL_call       DELIVER
 -   RespHeader     X-Cache: HIT
 -   RespHeader     X-Cache-Hits: 1
--   RespHeader     Content-Length: 3764
+-   RespHeader     Content-Length: 3596
 -   RespHeader     Connection: keep-alive
 
 *   << Request  >> 10        
@@ -175,32 +156,26 @@
 -   ReqHeader      User-Agent: curl/8.14.1
 -   ReqHeader      Accept: */*
 -   ReqHeader      X-Forwarded-For: 172.19.0.1
--   ReqHeader      Via: 1.1 5020d0f3926b (Varnish/7.7)
+-   ReqHeader      Via: 1.1 0b2b5531d0c0 (Varnish/7.7)
 -   VCL_call       RECV
 -   VCL_call       HASH
--   Hit            32771 31535999.930008 10.000000 0.000000
+-   Hit            32771 31535999.934629 10.000000 0.000000
 -   VCL_call       HIT
 -   RespStatus     200
+-   RespHeader     Cache-Control: public, s-maxage=31536000
 -   RespHeader     Vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding
--   RespHeader     x-nextjs-cache: HIT
--   RespHeader     x-nextjs-prerender: 1
--   RespHeader     x-nextjs-prerender: 1
--   RespHeader     x-nextjs-stale-time: 300
 -   RespHeader     X-Powered-By: Next.js
--   RespHeader     Cache-Control: s-maxage=31536000
--   RespHeader     ETag: "17kddgmvd6v4ay"
 -   RespHeader     Content-Type: text/html; charset=utf-8
 -   RespHeader     Content-Encoding: gzip
--   RespHeader     Date: Sun, 11 Oct 2026 14:16:14 GMT
+-   RespHeader     Date: Mon, 12 Oct 2026 07:23:24 GMT
 -   RespHeader     X-Varnish: 10 32771
 -   RespHeader     Age: 0
--   RespHeader     Via: 1.1 5020d0f3926b (Varnish/7.7)
--   RespHeader     ETag: W/"17kddgmvd6v4ay"
+-   RespHeader     Via: 1.1 0b2b5531d0c0 (Varnish/7.7)
 -   RespHeader     Accept-Ranges: bytes
 -   VCL_call       DELIVER
 -   RespHeader     X-Cache: HIT
 -   RespHeader     X-Cache-Hits: 2
--   RespHeader     Content-Length: 5578
+-   RespHeader     Content-Length: 5548
 -   RespHeader     Connection: keep-alive
 
 *   << Request  >> 32778     
@@ -212,21 +187,22 @@
 -   ReqHeader      RSC: 1
 -   ReqHeader      Next-Router-Prefetch: 1
 -   ReqHeader      X-Forwarded-For: 172.19.0.1
--   ReqHeader      Via: 1.1 5020d0f3926b (Varnish/7.7)
+-   ReqHeader      Via: 1.1 0b2b5531d0c0 (Varnish/7.7)
 -   VCL_call       RECV
 -   VCL_call       HASH
 -   VCL_call       PASS
 -   RespStatus     307
+-   RespHeader     Cache-Control: public, s-maxage=31536000
 -   RespHeader     location: /static/1?_rsc=HEAvJdHAQJrUAe2K
--   RespHeader     Date: Sun, 11 Oct 2026 14:16:14 GMT
+-   RespHeader     Date: Mon, 12 Oct 2026 07:23:25 GMT
 -   RespHeader     X-Varnish: 32778
 -   RespHeader     Age: 0
--   RespHeader     Via: 1.1 5020d0f3926b (Varnish/7.7)
+-   RespHeader     Via: 1.1 0b2b5531d0c0 (Varnish/7.7)
 -   VCL_call       DELIVER
 -   RespHeader     X-Cache: PASS
 -   RespHeader     X-Cache-Hits: 0
--   RespHeader     Content-Length: 0
 -   RespHeader     Connection: keep-alive
+-   RespHeader     Transfer-Encoding: chunked
 **  << BeReq    >> 32779     
 --  BereqURL       /static/1
 --  VCL_call       BACKEND_FETCH
@@ -241,23 +217,19 @@
 -   ReqHeader      RSC: 1
 -   ReqHeader      Next-Router-Prefetch: 1
 -   ReqHeader      X-Forwarded-For: 172.19.0.1
--   ReqHeader      Via: 1.1 5020d0f3926b (Varnish/7.7)
+-   ReqHeader      Via: 1.1 0b2b5531d0c0 (Varnish/7.7)
 -   VCL_call       RECV
 -   VCL_call       HASH
 -   VCL_call       MISS
 -   RespStatus     200
+-   RespHeader     Cache-Control: public, s-maxage=31536000
 -   RespHeader     Vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding
--   RespHeader     x-nextjs-cache: HIT
--   RespHeader     x-nextjs-prerender: 1
--   RespHeader     x-nextjs-prerender: 1
--   RespHeader     x-nextjs-stale-time: 300
--   RespHeader     Cache-Control: s-maxage=31536000
 -   RespHeader     Content-Type: text/x-component
 -   RespHeader     Content-Encoding: gzip
--   RespHeader     Date: Sun, 11 Oct 2026 14:16:14 GMT
+-   RespHeader     Date: Mon, 12 Oct 2026 07:23:25 GMT
 -   RespHeader     X-Varnish: 12
 -   RespHeader     Age: 0
--   RespHeader     Via: 1.1 5020d0f3926b (Varnish/7.7)
+-   RespHeader     Via: 1.1 0b2b5531d0c0 (Varnish/7.7)
 -   RespHeader     Accept-Ranges: bytes
 -   VCL_call       DELIVER
 -   RespHeader     X-Cache: MISS
@@ -278,29 +250,25 @@
 -   ReqHeader      RSC: 1
 -   ReqHeader      Next-Router-Prefetch: 1
 -   ReqHeader      X-Forwarded-For: 172.19.0.1
--   ReqHeader      Via: 1.1 5020d0f3926b (Varnish/7.7)
+-   ReqHeader      Via: 1.1 0b2b5531d0c0 (Varnish/7.7)
 -   VCL_call       RECV
 -   VCL_call       HASH
--   Hit            13 31535999.989156 10.000000 0.000000
+-   Hit            13 31535999.989686 10.000000 0.000000
 -   VCL_call       HIT
 -   RespStatus     200
+-   RespHeader     Cache-Control: public, s-maxage=31536000
 -   RespHeader     Vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding
--   RespHeader     x-nextjs-cache: HIT
--   RespHeader     x-nextjs-prerender: 1
--   RespHeader     x-nextjs-prerender: 1
--   RespHeader     x-nextjs-stale-time: 300
--   RespHeader     Cache-Control: s-maxage=31536000
 -   RespHeader     Content-Type: text/x-component
 -   RespHeader     Content-Encoding: gzip
--   RespHeader     Date: Sun, 11 Oct 2026 14:16:14 GMT
+-   RespHeader     Date: Mon, 12 Oct 2026 07:23:25 GMT
 -   RespHeader     X-Varnish: 32781 13
 -   RespHeader     Age: 0
--   RespHeader     Via: 1.1 5020d0f3926b (Varnish/7.7)
+-   RespHeader     Via: 1.1 0b2b5531d0c0 (Varnish/7.7)
 -   RespHeader     Accept-Ranges: bytes
 -   VCL_call       DELIVER
 -   RespHeader     X-Cache: HIT
 -   RespHeader     X-Cache-Hits: 1
--   RespHeader     Content-Length: 3764
+-   RespHeader     Content-Length: 265
 -   RespHeader     Connection: keep-alive
 
 *   << Request  >> 15        
@@ -310,32 +278,26 @@
 -   ReqHeader      User-Agent: curl/8.14.1
 -   ReqHeader      Accept: */*
 -   ReqHeader      X-Forwarded-For: 172.19.0.1
--   ReqHeader      Via: 1.1 5020d0f3926b (Varnish/7.7)
+-   ReqHeader      Via: 1.1 0b2b5531d0c0 (Varnish/7.7)
 -   VCL_call       RECV
 -   VCL_call       HASH
--   Hit            32771 31535999.881368 10.000000 0.000000
+-   Hit            32771 31535999.892531 10.000000 0.000000
 -   VCL_call       HIT
 -   RespStatus     200
+-   RespHeader     Cache-Control: public, s-maxage=31536000
 -   RespHeader     Vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding
--   RespHeader     x-nextjs-cache: HIT
--   RespHeader     x-nextjs-prerender: 1
--   RespHeader     x-nextjs-prerender: 1
--   RespHeader     x-nextjs-stale-time: 300
 -   RespHeader     X-Powered-By: Next.js
--   RespHeader     Cache-Control: s-maxage=31536000
--   RespHeader     ETag: "17kddgmvd6v4ay"
 -   RespHeader     Content-Type: text/html; charset=utf-8
 -   RespHeader     Content-Encoding: gzip
--   RespHeader     Date: Sun, 11 Oct 2026 14:16:14 GMT
+-   RespHeader     Date: Mon, 12 Oct 2026 07:23:24 GMT
 -   RespHeader     X-Varnish: 15 32771
 -   RespHeader     Age: 0
--   RespHeader     Via: 1.1 5020d0f3926b (Varnish/7.7)
--   RespHeader     ETag: W/"17kddgmvd6v4ay"
+-   RespHeader     Via: 1.1 0b2b5531d0c0 (Varnish/7.7)
 -   RespHeader     Accept-Ranges: bytes
 -   VCL_call       DELIVER
 -   RespHeader     X-Cache: HIT
 -   RespHeader     X-Cache-Hits: 3
--   RespHeader     Content-Length: 5578
+-   RespHeader     Content-Length: 5548
 -   RespHeader     Connection: keep-alive
 
 *   << Request  >> 32783     
@@ -345,26 +307,20 @@
 -   ReqHeader      User-Agent: curl/8.14.1
 -   ReqHeader      Accept: */*
 -   ReqHeader      X-Forwarded-For: 172.19.0.1
--   ReqHeader      Via: 1.1 5020d0f3926b (Varnish/7.7)
+-   ReqHeader      Via: 1.1 0b2b5531d0c0 (Varnish/7.7)
 -   VCL_call       RECV
 -   VCL_call       HASH
 -   VCL_call       MISS
 -   RespStatus     200
+-   RespHeader     Cache-Control: public, s-maxage=31536000
 -   RespHeader     Vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding
--   RespHeader     x-nextjs-cache: HIT
--   RespHeader     x-nextjs-prerender: 1
--   RespHeader     x-nextjs-prerender: 1
--   RespHeader     x-nextjs-stale-time: 300
 -   RespHeader     X-Powered-By: Next.js
--   RespHeader     Cache-Control: s-maxage=31536000
--   RespHeader     ETag: "8aemj4intg4ay"
 -   RespHeader     Content-Type: text/html; charset=utf-8
 -   RespHeader     Content-Encoding: gzip
--   RespHeader     Date: Sun, 11 Oct 2026 14:16:14 GMT
+-   RespHeader     Date: Mon, 12 Oct 2026 07:23:25 GMT
 -   RespHeader     X-Varnish: 32783
 -   RespHeader     Age: 0
--   RespHeader     Via: 1.1 5020d0f3926b (Varnish/7.7)
--   RespHeader     ETag: W/"8aemj4intg4ay"
+-   RespHeader     Via: 1.1 0b2b5531d0c0 (Varnish/7.7)
 -   RespHeader     Accept-Ranges: bytes
 -   VCL_call       DELIVER
 -   RespHeader     X-Cache: MISS
@@ -383,61 +339,49 @@
 -   ReqHeader      User-Agent: curl/8.14.1
 -   ReqHeader      Accept: */*
 -   ReqHeader      X-Forwarded-For: 172.19.0.1
--   ReqHeader      Via: 1.1 5020d0f3926b (Varnish/7.7)
+-   ReqHeader      Via: 1.1 0b2b5531d0c0 (Varnish/7.7)
 -   VCL_call       RECV
 -   VCL_call       HASH
--   Hit            32784 31535999.989462 10.000000 0.000000
+-   Hit            32784 31535999.990654 10.000000 0.000000
 -   VCL_call       HIT
 -   RespStatus     200
+-   RespHeader     Cache-Control: public, s-maxage=31536000
 -   RespHeader     Vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding
--   RespHeader     x-nextjs-cache: HIT
--   RespHeader     x-nextjs-prerender: 1
--   RespHeader     x-nextjs-prerender: 1
--   RespHeader     x-nextjs-stale-time: 300
 -   RespHeader     X-Powered-By: Next.js
--   RespHeader     Cache-Control: s-maxage=31536000
--   RespHeader     ETag: "8aemj4intg4ay"
 -   RespHeader     Content-Type: text/html; charset=utf-8
 -   RespHeader     Content-Encoding: gzip
--   RespHeader     Date: Sun, 11 Oct 2026 14:16:14 GMT
+-   RespHeader     Date: Mon, 12 Oct 2026 07:23:25 GMT
 -   RespHeader     X-Varnish: 17 32784
 -   RespHeader     Age: 0
--   RespHeader     Via: 1.1 5020d0f3926b (Varnish/7.7)
--   RespHeader     ETag: W/"8aemj4intg4ay"
+-   RespHeader     Via: 1.1 0b2b5531d0c0 (Varnish/7.7)
 -   RespHeader     Accept-Ranges: bytes
 -   VCL_call       DELIVER
 -   RespHeader     X-Cache: HIT
 -   RespHeader     X-Cache-Hits: 1
--   RespHeader     Content-Length: 5578
+-   RespHeader     Content-Length: 5548
 -   RespHeader     Connection: keep-alive
 
 *   << Request  >> 32786     
 -   ReqMethod      GET
--   ReqURL         /static/500
+-   ReqURL         /static/20
 -   ReqHeader      Host: 127.0.0.1:8080
 -   ReqHeader      User-Agent: curl/8.14.1
 -   ReqHeader      Accept: */*
 -   ReqHeader      X-Forwarded-For: 172.19.0.1
--   ReqHeader      Via: 1.1 5020d0f3926b (Varnish/7.7)
+-   ReqHeader      Via: 1.1 0b2b5531d0c0 (Varnish/7.7)
 -   VCL_call       RECV
 -   VCL_call       HASH
 -   VCL_call       MISS
 -   RespStatus     200
+-   RespHeader     Cache-Control: public, s-maxage=31536000
 -   RespHeader     Vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding
--   RespHeader     x-nextjs-cache: HIT
--   RespHeader     x-nextjs-prerender: 1
--   RespHeader     x-nextjs-prerender: 1
--   RespHeader     x-nextjs-stale-time: 300
 -   RespHeader     X-Powered-By: Next.js
--   RespHeader     Cache-Control: s-maxage=31536000
--   RespHeader     ETag: "teq7nuhik54ba"
 -   RespHeader     Content-Type: text/html; charset=utf-8
 -   RespHeader     Content-Encoding: gzip
--   RespHeader     Date: Sun, 11 Oct 2026 14:16:14 GMT
+-   RespHeader     Date: Mon, 12 Oct 2026 07:23:25 GMT
 -   RespHeader     X-Varnish: 32786
 -   RespHeader     Age: 0
--   RespHeader     Via: 1.1 5020d0f3926b (Varnish/7.7)
--   RespHeader     ETag: W/"teq7nuhik54ba"
+-   RespHeader     Via: 1.1 0b2b5531d0c0 (Varnish/7.7)
 -   RespHeader     Accept-Ranges: bytes
 -   VCL_call       DELIVER
 -   RespHeader     X-Cache: MISS
@@ -445,53 +389,47 @@
 -   RespHeader     Connection: keep-alive
 -   RespHeader     Transfer-Encoding: chunked
 **  << BeReq    >> 32787     
---  BereqURL       /static/500
+--  BereqURL       /static/20
 --  VCL_call       BACKEND_FETCH
 --  VCL_call       BACKEND_RESPONSE
 
 *   << Request  >> 19        
 -   ReqMethod      GET
--   ReqURL         /static/500
+-   ReqURL         /static/20
 -   ReqHeader      Host: 127.0.0.1:8080
 -   ReqHeader      User-Agent: curl/8.14.1
 -   ReqHeader      Accept: */*
 -   ReqHeader      X-Forwarded-For: 172.19.0.1
--   ReqHeader      Via: 1.1 5020d0f3926b (Varnish/7.7)
+-   ReqHeader      Via: 1.1 0b2b5531d0c0 (Varnish/7.7)
 -   VCL_call       RECV
 -   VCL_call       HASH
--   Hit            32787 31535999.989219 10.000000 0.000000
+-   Hit            32787 31535999.989843 10.000000 0.000000
 -   VCL_call       HIT
 -   RespStatus     200
+-   RespHeader     Cache-Control: public, s-maxage=31536000
 -   RespHeader     Vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding
--   RespHeader     x-nextjs-cache: HIT
--   RespHeader     x-nextjs-prerender: 1
--   RespHeader     x-nextjs-prerender: 1
--   RespHeader     x-nextjs-stale-time: 300
 -   RespHeader     X-Powered-By: Next.js
--   RespHeader     Cache-Control: s-maxage=31536000
--   RespHeader     ETag: "teq7nuhik54ba"
 -   RespHeader     Content-Type: text/html; charset=utf-8
 -   RespHeader     Content-Encoding: gzip
--   RespHeader     Date: Sun, 11 Oct 2026 14:16:14 GMT
+-   RespHeader     Date: Mon, 12 Oct 2026 07:23:25 GMT
 -   RespHeader     X-Varnish: 19 32787
 -   RespHeader     Age: 0
--   RespHeader     Via: 1.1 5020d0f3926b (Varnish/7.7)
--   RespHeader     ETag: W/"teq7nuhik54ba"
+-   RespHeader     Via: 1.1 0b2b5531d0c0 (Varnish/7.7)
 -   RespHeader     Accept-Ranges: bytes
 -   VCL_call       DELIVER
 -   RespHeader     X-Cache: HIT
 -   RespHeader     X-Cache-Hits: 1
--   RespHeader     Content-Length: 5590
+-   RespHeader     Content-Length: 5554
 -   RespHeader     Connection: keep-alive
 
 *   << Request  >> 32789     
 -   ReqMethod      GET
--   ReqURL         /dynamic/1
+-   ReqURL         /dynamic/1/1
 -   ReqHeader      Host: 127.0.0.1:8080
 -   ReqHeader      User-Agent: curl/8.14.1
 -   ReqHeader      Accept: */*
 -   ReqHeader      X-Forwarded-For: 172.19.0.1
--   ReqHeader      Via: 1.1 5020d0f3926b (Varnish/7.7)
+-   ReqHeader      Via: 1.1 0b2b5531d0c0 (Varnish/7.7)
 -   VCL_call       RECV
 -   VCL_call       HASH
 -   VCL_call       MISS
@@ -501,10 +439,10 @@
 -   RespHeader     X-Powered-By: Next.js
 -   RespHeader     Content-Type: text/html; charset=utf-8
 -   RespHeader     Content-Encoding: gzip
--   RespHeader     Date: Sun, 11 Oct 2026 14:16:14 GMT
+-   RespHeader     Date: Mon, 12 Oct 2026 07:23:25 GMT
 -   RespHeader     X-Varnish: 32789
 -   RespHeader     Age: 0
--   RespHeader     Via: 1.1 5020d0f3926b (Varnish/7.7)
+-   RespHeader     Via: 1.1 0b2b5531d0c0 (Varnish/7.7)
 -   RespHeader     Accept-Ranges: bytes
 -   VCL_call       DELIVER
 -   RespHeader     X-Cache: MISS
@@ -512,21 +450,21 @@
 -   RespHeader     Connection: keep-alive
 -   RespHeader     Transfer-Encoding: chunked
 **  << BeReq    >> 32790     
---  BereqURL       /dynamic/1
+--  BereqURL       /dynamic/1/1
 --  VCL_call       BACKEND_FETCH
 --  VCL_call       BACKEND_RESPONSE
 
 *   << Request  >> 21        
 -   ReqMethod      GET
--   ReqURL         /dynamic/1
+-   ReqURL         /dynamic/1/1
 -   ReqHeader      Host: 127.0.0.1:8080
 -   ReqHeader      User-Agent: curl/8.14.1
 -   ReqHeader      Accept: */*
 -   ReqHeader      X-Forwarded-For: 172.19.0.1
--   ReqHeader      Via: 1.1 5020d0f3926b (Varnish/7.7)
+-   ReqHeader      Via: 1.1 0b2b5531d0c0 (Varnish/7.7)
 -   VCL_call       RECV
 -   VCL_call       HASH
--   Hit            32790 59.988471 10.000000 0.000000
+-   Hit            32790 59.984758 10.000000 0.000000
 -   VCL_call       HIT
 -   RespStatus     200
 -   RespHeader     Cache-Control: public, s-maxage=60
@@ -534,55 +472,55 @@
 -   RespHeader     X-Powered-By: Next.js
 -   RespHeader     Content-Type: text/html; charset=utf-8
 -   RespHeader     Content-Encoding: gzip
--   RespHeader     Date: Sun, 11 Oct 2026 14:16:14 GMT
+-   RespHeader     Date: Mon, 12 Oct 2026 07:23:25 GMT
 -   RespHeader     X-Varnish: 21 32790
 -   RespHeader     Age: 0
--   RespHeader     Via: 1.1 5020d0f3926b (Varnish/7.7)
+-   RespHeader     Via: 1.1 0b2b5531d0c0 (Varnish/7.7)
 -   RespHeader     Accept-Ranges: bytes
 -   VCL_call       DELIVER
 -   RespHeader     X-Cache: HIT
 -   RespHeader     X-Cache-Hits: 1
--   RespHeader     Content-Length: 5605
+-   RespHeader     Content-Length: 6092
 -   RespHeader     Connection: keep-alive
 
 *   << Request  >> 32792     
 -   ReqMethod      GET
--   ReqURL         /dynamic/1
+-   ReqURL         /dynamic/1/1
 -   ReqHeader      Host: 127.0.0.1:8080
 -   ReqHeader      User-Agent: curl/8.14.1
 -   ReqHeader      Accept: */*
 -   ReqHeader      RSC: 1
 -   ReqHeader      X-Forwarded-For: 172.19.0.1
--   ReqHeader      Via: 1.1 5020d0f3926b (Varnish/7.7)
+-   ReqHeader      Via: 1.1 0b2b5531d0c0 (Varnish/7.7)
 -   VCL_call       RECV
 -   VCL_call       HASH
 -   VCL_call       PASS
 -   RespStatus     307
 -   RespHeader     Cache-Control: public, s-maxage=60
--   RespHeader     location: /dynamic/1?_rsc
--   RespHeader     Date: Sun, 11 Oct 2026 14:16:14 GMT
+-   RespHeader     location: /dynamic/1/1?_rsc
+-   RespHeader     Date: Mon, 12 Oct 2026 07:23:25 GMT
 -   RespHeader     X-Varnish: 32792
 -   RespHeader     Age: 0
--   RespHeader     Via: 1.1 5020d0f3926b (Varnish/7.7)
+-   RespHeader     Via: 1.1 0b2b5531d0c0 (Varnish/7.7)
 -   VCL_call       DELIVER
 -   RespHeader     X-Cache: PASS
 -   RespHeader     X-Cache-Hits: 0
 -   RespHeader     Content-Length: 0
 -   RespHeader     Connection: keep-alive
 **  << BeReq    >> 32793     
---  BereqURL       /dynamic/1
+--  BereqURL       /dynamic/1/1
 --  VCL_call       BACKEND_FETCH
 --  VCL_call       BACKEND_RESPONSE
 
 *   << Request  >> 23        
 -   ReqMethod      GET
--   ReqURL         /dynamic/1?_rsc
+-   ReqURL         /dynamic/1/1?_rsc
 -   ReqHeader      Host: 127.0.0.1:8080
 -   ReqHeader      User-Agent: curl/8.14.1
 -   ReqHeader      Accept: */*
 -   ReqHeader      RSC: 1
 -   ReqHeader      X-Forwarded-For: 172.19.0.1
--   ReqHeader      Via: 1.1 5020d0f3926b (Varnish/7.7)
+-   ReqHeader      Via: 1.1 0b2b5531d0c0 (Varnish/7.7)
 -   VCL_call       RECV
 -   VCL_call       HASH
 -   VCL_call       MISS
@@ -591,10 +529,10 @@
 -   RespHeader     Vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding
 -   RespHeader     Content-Type: text/x-component
 -   RespHeader     Content-Encoding: gzip
--   RespHeader     Date: Sun, 11 Oct 2026 14:16:14 GMT
+-   RespHeader     Date: Mon, 12 Oct 2026 07:23:25 GMT
 -   RespHeader     X-Varnish: 23
 -   RespHeader     Age: 0
--   RespHeader     Via: 1.1 5020d0f3926b (Varnish/7.7)
+-   RespHeader     Via: 1.1 0b2b5531d0c0 (Varnish/7.7)
 -   RespHeader     Accept-Ranges: bytes
 -   VCL_call       DELIVER
 -   RespHeader     X-Cache: MISS
@@ -602,50 +540,50 @@
 -   RespHeader     Connection: keep-alive
 -   RespHeader     Transfer-Encoding: chunked
 **  << BeReq    >> 24        
---  BereqURL       /dynamic/1?_rsc
+--  BereqURL       /dynamic/1/1?_rsc
 --  VCL_call       BACKEND_FETCH
 --  VCL_call       BACKEND_RESPONSE
 
 *   << Request  >> 32795     
 -   ReqMethod      GET
--   ReqURL         /dynamic/1?_rsc
+-   ReqURL         /dynamic/1/1?_rsc
 -   ReqHeader      Host: 127.0.0.1:8080
 -   ReqHeader      User-Agent: curl/8.14.1
 -   ReqHeader      Accept: */*
 -   ReqHeader      RSC: 1
 -   ReqHeader      X-Forwarded-For: 172.19.0.1
--   ReqHeader      Via: 1.1 5020d0f3926b (Varnish/7.7)
+-   ReqHeader      Via: 1.1 0b2b5531d0c0 (Varnish/7.7)
 -   VCL_call       RECV
 -   VCL_call       HASH
--   Hit            24 59.989691 10.000000 0.000000
+-   Hit            24 59.985138 10.000000 0.000000
 -   VCL_call       HIT
 -   RespStatus     200
 -   RespHeader     Cache-Control: public, s-maxage=60
 -   RespHeader     Vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding
 -   RespHeader     Content-Type: text/x-component
 -   RespHeader     Content-Encoding: gzip
--   RespHeader     Date: Sun, 11 Oct 2026 14:16:14 GMT
+-   RespHeader     Date: Mon, 12 Oct 2026 07:23:25 GMT
 -   RespHeader     X-Varnish: 32795 24
 -   RespHeader     Age: 0
--   RespHeader     Via: 1.1 5020d0f3926b (Varnish/7.7)
+-   RespHeader     Via: 1.1 0b2b5531d0c0 (Varnish/7.7)
 -   RespHeader     Accept-Ranges: bytes
 -   VCL_call       DELIVER
 -   RespHeader     X-Cache: HIT
 -   RespHeader     X-Cache-Hits: 1
--   RespHeader     Content-Length: 3637
+-   RespHeader     Content-Length: 4039
 -   RespHeader     Connection: keep-alive
 
 *   << Request  >> 26        
 -   ReqMethod      GET
--   ReqURL         /dynamic/1
+-   ReqURL         /dynamic/1/1
 -   ReqHeader      Host: 127.0.0.1:8080
 -   ReqHeader      User-Agent: curl/8.14.1
 -   ReqHeader      Accept: */*
 -   ReqHeader      X-Forwarded-For: 172.19.0.1
--   ReqHeader      Via: 1.1 5020d0f3926b (Varnish/7.7)
+-   ReqHeader      Via: 1.1 0b2b5531d0c0 (Varnish/7.7)
 -   VCL_call       RECV
 -   VCL_call       HASH
--   Hit            32790 59.947428 10.000000 0.000000
+-   Hit            32790 59.895064 10.000000 0.000000
 -   VCL_call       HIT
 -   RespStatus     200
 -   RespHeader     Cache-Control: public, s-maxage=60
@@ -653,25 +591,25 @@
 -   RespHeader     X-Powered-By: Next.js
 -   RespHeader     Content-Type: text/html; charset=utf-8
 -   RespHeader     Content-Encoding: gzip
--   RespHeader     Date: Sun, 11 Oct 2026 14:16:14 GMT
+-   RespHeader     Date: Mon, 12 Oct 2026 07:23:25 GMT
 -   RespHeader     X-Varnish: 26 32790
 -   RespHeader     Age: 0
--   RespHeader     Via: 1.1 5020d0f3926b (Varnish/7.7)
+-   RespHeader     Via: 1.1 0b2b5531d0c0 (Varnish/7.7)
 -   RespHeader     Accept-Ranges: bytes
 -   VCL_call       DELIVER
 -   RespHeader     X-Cache: HIT
 -   RespHeader     X-Cache-Hits: 2
--   RespHeader     Content-Length: 5605
+-   RespHeader     Content-Length: 6092
 -   RespHeader     Connection: keep-alive
 
 *   << Request  >> 32797     
 -   ReqMethod      GET
--   ReqURL         /dynamic/2
+-   ReqURL         /dynamic/1/2
 -   ReqHeader      Host: 127.0.0.1:8080
 -   ReqHeader      User-Agent: curl/8.14.1
 -   ReqHeader      Accept: */*
 -   ReqHeader      X-Forwarded-For: 172.19.0.1
--   ReqHeader      Via: 1.1 5020d0f3926b (Varnish/7.7)
+-   ReqHeader      Via: 1.1 0b2b5531d0c0 (Varnish/7.7)
 -   VCL_call       RECV
 -   VCL_call       HASH
 -   VCL_call       MISS
@@ -681,10 +619,10 @@
 -   RespHeader     X-Powered-By: Next.js
 -   RespHeader     Content-Type: text/html; charset=utf-8
 -   RespHeader     Content-Encoding: gzip
--   RespHeader     Date: Sun, 11 Oct 2026 14:16:14 GMT
+-   RespHeader     Date: Mon, 12 Oct 2026 07:23:25 GMT
 -   RespHeader     X-Varnish: 32797
 -   RespHeader     Age: 0
--   RespHeader     Via: 1.1 5020d0f3926b (Varnish/7.7)
+-   RespHeader     Via: 1.1 0b2b5531d0c0 (Varnish/7.7)
 -   RespHeader     Accept-Ranges: bytes
 -   VCL_call       DELIVER
 -   RespHeader     X-Cache: MISS
@@ -692,21 +630,21 @@
 -   RespHeader     Connection: keep-alive
 -   RespHeader     Transfer-Encoding: chunked
 **  << BeReq    >> 32798     
---  BereqURL       /dynamic/2
+--  BereqURL       /dynamic/1/2
 --  VCL_call       BACKEND_FETCH
 --  VCL_call       BACKEND_RESPONSE
 
 *   << Request  >> 28        
 -   ReqMethod      GET
--   ReqURL         /dynamic/2
+-   ReqURL         /dynamic/1/2
 -   ReqHeader      Host: 127.0.0.1:8080
 -   ReqHeader      User-Agent: curl/8.14.1
 -   ReqHeader      Accept: */*
 -   ReqHeader      X-Forwarded-For: 172.19.0.1
--   ReqHeader      Via: 1.1 5020d0f3926b (Varnish/7.7)
+-   ReqHeader      Via: 1.1 0b2b5531d0c0 (Varnish/7.7)
 -   VCL_call       RECV
 -   VCL_call       HASH
--   Hit            32798 59.989271 10.000000 0.000000
+-   Hit            32798 59.989839 10.000000 0.000000
 -   VCL_call       HIT
 -   RespStatus     200
 -   RespHeader     Cache-Control: public, s-maxage=60
@@ -714,28 +652,28 @@
 -   RespHeader     X-Powered-By: Next.js
 -   RespHeader     Content-Type: text/html; charset=utf-8
 -   RespHeader     Content-Encoding: gzip
--   RespHeader     Date: Sun, 11 Oct 2026 14:16:14 GMT
+-   RespHeader     Date: Mon, 12 Oct 2026 07:23:25 GMT
 -   RespHeader     X-Varnish: 28 32798
 -   RespHeader     Age: 0
--   RespHeader     Via: 1.1 5020d0f3926b (Varnish/7.7)
+-   RespHeader     Via: 1.1 0b2b5531d0c0 (Varnish/7.7)
 -   RespHeader     Accept-Ranges: bytes
 -   VCL_call       DELIVER
 -   RespHeader     X-Cache: HIT
 -   RespHeader     X-Cache-Hits: 1
--   RespHeader     Content-Length: 5605
+-   RespHeader     Content-Length: 6092
 -   RespHeader     Connection: keep-alive
 
 *   << Request  >> 32800     
 -   ReqMethod      GET
--   ReqURL         /dynamic/1
+-   ReqURL         /dynamic/1/1
 -   ReqHeader      Host: 127.0.0.1:8080
 -   ReqHeader      User-Agent: curl/8.14.1
 -   ReqHeader      Accept: */*
 -   ReqHeader      X-Forwarded-For: 172.19.0.1
--   ReqHeader      Via: 1.1 5020d0f3926b (Varnish/7.7)
+-   ReqHeader      Via: 1.1 0b2b5531d0c0 (Varnish/7.7)
 -   VCL_call       RECV
 -   VCL_call       HASH
--   Hit            32790 59.914401 10.000000 0.000000
+-   Hit            32790 59.851254 10.000000 0.000000
 -   VCL_call       HIT
 -   RespStatus     200
 -   RespHeader     Cache-Control: public, s-maxage=60
@@ -743,25 +681,25 @@
 -   RespHeader     X-Powered-By: Next.js
 -   RespHeader     Content-Type: text/html; charset=utf-8
 -   RespHeader     Content-Encoding: gzip
--   RespHeader     Date: Sun, 11 Oct 2026 14:16:14 GMT
+-   RespHeader     Date: Mon, 12 Oct 2026 07:23:25 GMT
 -   RespHeader     X-Varnish: 32800 32790
 -   RespHeader     Age: 0
--   RespHeader     Via: 1.1 5020d0f3926b (Varnish/7.7)
+-   RespHeader     Via: 1.1 0b2b5531d0c0 (Varnish/7.7)
 -   RespHeader     Accept-Ranges: bytes
 -   VCL_call       DELIVER
 -   RespHeader     X-Cache: HIT
 -   RespHeader     X-Cache-Hits: 3
--   RespHeader     Content-Length: 5605
+-   RespHeader     Content-Length: 6092
 -   RespHeader     Connection: keep-alive
 
 *   << Request  >> 30        
 -   ReqMethod      GET
--   ReqURL         /dynamic/500
+-   ReqURL         /dynamic/30/1000
 -   ReqHeader      Host: 127.0.0.1:8080
 -   ReqHeader      User-Agent: curl/8.14.1
 -   ReqHeader      Accept: */*
 -   ReqHeader      X-Forwarded-For: 172.19.0.1
--   ReqHeader      Via: 1.1 5020d0f3926b (Varnish/7.7)
+-   ReqHeader      Via: 1.1 0b2b5531d0c0 (Varnish/7.7)
 -   VCL_call       RECV
 -   VCL_call       HASH
 -   VCL_call       MISS
@@ -771,10 +709,10 @@
 -   RespHeader     X-Powered-By: Next.js
 -   RespHeader     Content-Type: text/html; charset=utf-8
 -   RespHeader     Content-Encoding: gzip
--   RespHeader     Date: Sun, 11 Oct 2026 14:16:14 GMT
+-   RespHeader     Date: Mon, 12 Oct 2026 07:23:25 GMT
 -   RespHeader     X-Varnish: 30
 -   RespHeader     Age: 0
--   RespHeader     Via: 1.1 5020d0f3926b (Varnish/7.7)
+-   RespHeader     Via: 1.1 0b2b5531d0c0 (Varnish/7.7)
 -   RespHeader     Accept-Ranges: bytes
 -   VCL_call       DELIVER
 -   RespHeader     X-Cache: MISS
@@ -782,18 +720,18 @@
 -   RespHeader     Connection: keep-alive
 -   RespHeader     Transfer-Encoding: chunked
 **  << BeReq    >> 31        
---  BereqURL       /dynamic/500
+--  BereqURL       /dynamic/30/1000
 --  VCL_call       BACKEND_FETCH
 --  VCL_call       BACKEND_RESPONSE
 
 *   << Request  >> 32802     
 -   ReqMethod      GET
--   ReqURL         /dynamic/501
+-   ReqURL         /dynamic/30/1001
 -   ReqHeader      Host: 127.0.0.1:8080
 -   ReqHeader      User-Agent: curl/8.14.1
 -   ReqHeader      Accept: */*
 -   ReqHeader      X-Forwarded-For: 172.19.0.1
--   ReqHeader      Via: 1.1 5020d0f3926b (Varnish/7.7)
+-   ReqHeader      Via: 1.1 0b2b5531d0c0 (Varnish/7.7)
 -   VCL_call       RECV
 -   VCL_call       HASH
 -   VCL_call       MISS
@@ -803,31 +741,31 @@
 -   RespHeader     X-Powered-By: Next.js
 -   RespHeader     Content-Type: text/html; charset=utf-8
 -   RespHeader     Content-Encoding: gzip
--   RespHeader     Date: Sun, 11 Oct 2026 14:16:14 GMT
+-   RespHeader     Date: Mon, 12 Oct 2026 07:23:25 GMT
 -   RespHeader     X-Varnish: 32802
 -   RespHeader     Age: 0
--   RespHeader     Via: 1.1 5020d0f3926b (Varnish/7.7)
+-   RespHeader     Via: 1.1 0b2b5531d0c0 (Varnish/7.7)
 -   VCL_call       DELIVER
 -   RespHeader     X-Cache: MISS
 -   RespHeader     X-Cache-Hits: 0
 -   RespHeader     Connection: keep-alive
 -   RespHeader     Transfer-Encoding: chunked
 **  << BeReq    >> 32803     
---  BereqURL       /dynamic/501
+--  BereqURL       /dynamic/30/1001
 --  VCL_call       BACKEND_FETCH
 --  VCL_call       BACKEND_RESPONSE
 
 *   << Request  >> 33        
 -   ReqMethod      GET
--   ReqURL         /dynamic/501
+-   ReqURL         /dynamic/30/1001
 -   ReqHeader      Host: 127.0.0.1:8080
 -   ReqHeader      User-Agent: curl/8.14.1
 -   ReqHeader      Accept: */*
 -   ReqHeader      X-Forwarded-For: 172.19.0.1
--   ReqHeader      Via: 1.1 5020d0f3926b (Varnish/7.7)
+-   ReqHeader      Via: 1.1 0b2b5531d0c0 (Varnish/7.7)
 -   VCL_call       RECV
 -   VCL_call       HASH
--   Hit            32803 59.987655 10.000000 0.000000
+-   Hit            32803 59.990101 10.000000 0.000000
 -   VCL_call       HIT
 -   RespStatus     404
 -   RespHeader     Cache-Control: public, s-maxage=60
@@ -835,13 +773,13 @@
 -   RespHeader     X-Powered-By: Next.js
 -   RespHeader     Content-Type: text/html; charset=utf-8
 -   RespHeader     Content-Encoding: gzip
--   RespHeader     Date: Sun, 11 Oct 2026 14:16:14 GMT
+-   RespHeader     Date: Mon, 12 Oct 2026 07:23:25 GMT
 -   RespHeader     X-Varnish: 33 32803
 -   RespHeader     Age: 0
--   RespHeader     Via: 1.1 5020d0f3926b (Varnish/7.7)
+-   RespHeader     Via: 1.1 0b2b5531d0c0 (Varnish/7.7)
 -   VCL_call       DELIVER
 -   RespHeader     X-Cache: HIT
 -   RespHeader     X-Cache-Hits: 1
--   RespHeader     Content-Length: 5403
+-   RespHeader     Content-Length: 5886
 -   RespHeader     Connection: keep-alive
 

@@ -1,21 +1,21 @@
-BENCH_METRIC app_bytes=56222125
+BENCH_METRIC app_bytes=41122452
 BENCH_METRIC native_bytes=0
-BENCH_METRIC file_count=7900
+BENCH_METRIC file_count=2488
 BENCH_DIRS
 BENCH_DIR 26213792	node_modules/next
-BENCH_DIR 12719421	.next/static
 BENCH_DIR 9116192	node_modules/typescript
-BENCH_DIR 4475035	.next/server
 BENCH_DIR 2760803	node_modules/react-dom
+BENCH_DIR 1648469	.next/static
+BENCH_DIR 635035	.next/server
 BENCH_DIR 339057	node_modules/caniuse-lite
-BENCH_DIR 135626	.next/routes-manifest.json
 BENCH_DIR 111635	node_modules/source-map-js
 BENCH_DIR 105233	node_modules/postcss
 BENCH_DIR 84331	node_modules/react
-BENCH_DIR 83799	.next/build-manifest.json
 BENCH_DIR 22255	node_modules/styled-jsx
+BENCH_DIR 21553	.next/routes-manifest.json
 BENCH_DIR 20531	node_modules/@swc
 BENCH_DIR 10847	node_modules/@next
+BENCH_DIR 9151	.next/build-manifest.json
 BENCH_DIR 9034	.next/required-server-files.json
 BENCH_DIR 6936	server.js
 BENCH_DIR 3215	node_modules/picocolors
@@ -46,5 +46,5 @@ BENCH_FILE 449613	node_modules/next/dist/compiled/@next/font/dist/google/font-da
 BENCH_FILE 421786	node_modules/react-dom/cjs/react-dom-server-legacy.browser.development.js
 BENCH_FILE 384015	node_modules/next/dist/compiled/postcss-preset-env/index.cjs
 BENCH_FILE 363603	node_modules/next/dist/compiled/crypto-browserify/index.js
-BENCH_FILE 329156	.next/static/chunks/64ffac2fafd641c0.js
+BENCH_FILE 328821	.next/static/chunks/6c7faa6b4adb92ac.js
 BENCH_NATIVE

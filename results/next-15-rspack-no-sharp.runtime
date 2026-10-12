@@ -1,26 +1,26 @@
-BENCH_METRIC app_bytes=53612558
+BENCH_METRIC app_bytes=41586730
 BENCH_METRIC native_bytes=0
-BENCH_METRIC file_count=3883
+BENCH_METRIC file_count=2080
 BENCH_DIRS
 BENCH_DIR 26258420	node_modules/next
-BENCH_DIR 13622641	.next/server
 BENCH_DIR 9116192	node_modules/typescript
 BENCH_DIR 2760803	node_modules/react-dom
-BENCH_DIR 918697	.next/static
+BENCH_DIR 1879558	.next/server
+BENCH_DIR 825505	.next/static
 BENCH_DIR 339057	node_modules/caniuse-lite
-BENCH_DIR 123247	.next/app-build-manifest.json
 BENCH_DIR 111635	node_modules/source-map-js
 BENCH_DIR 105233	node_modules/postcss
 BENCH_DIR 84331	node_modules/react
-BENCH_DIR 74133	.next/routes-manifest.json
 BENCH_DIR 22255	node_modules/styled-jsx
 BENCH_DIR 20531	node_modules/@swc
-BENCH_DIR 18380	.next/app-path-routes-manifest.json
+BENCH_DIR 13188	.next/app-build-manifest.json
+BENCH_DIR 10890	.next/routes-manifest.json
 BENCH_DIR 10847	node_modules/@next
 BENCH_DIR 9358	.next/required-server-files.json
 BENCH_DIR 6936	server.js
 BENCH_DIR 3215	node_modules/picocolors
 BENCH_DIR 2912	node_modules/nanoid
+BENCH_DIR 2129	.next/app-path-routes-manifest.json
 BENCH_DIR 1587	.next/prerender-manifest.json
 BENCH_DIR 1039	.next/build-manifest.json
 BENCH_DIR 598	package.json
@@ -41,7 +41,7 @@ BENCH_FILE 551519	node_modules/next/dist/compiled/next-server/app-page-experimen
 BENCH_FILE 526518	node_modules/next/dist/compiled/next-server/app-page-turbo.runtime.prod.js
 BENCH_FILE 526509	node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js
 BENCH_FILE 525805	node_modules/next/dist/compiled/edge-runtime/index.js
-BENCH_FILE 480955	.next/static/chunks/lib-05c2acca7eff90c4.js
+BENCH_FILE 480954	.next/static/chunks/lib-4c1934ae3bc43c46.js
 BENCH_FILE 452252	node_modules/react-dom/cjs/react-dom-server.edge.development.js
 BENCH_FILE 451470	node_modules/react-dom/cjs/react-dom-server.browser.development.js
 BENCH_FILE 449613	node_modules/next/dist/compiled/@next/font/dist/google/font-data.json

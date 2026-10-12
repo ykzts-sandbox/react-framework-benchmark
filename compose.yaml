@@ -63,7 +63,8 @@ services:
       args:
         BUNDLER: turbopack
         CACHEBUST: cache-demo
-        STATIC_ROUTES: "500"
+        STATIC_ROUTES: "20"
+        DYNAMIC_ROUTES: "30"
     environment:
       HOSTNAME: 0.0.0.0
       LARAVEL_ORIGIN: http://laravel:8000

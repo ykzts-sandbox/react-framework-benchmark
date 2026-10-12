@@ -16,17 +16,19 @@ COPY --from=deps /app/node_modules ./node_modules
 COPY apps/react-router-declarative/ ./
 COPY scripts/generate-routes.sh /tmp/generate-routes.sh
 COPY scripts/timed-spa-build.mjs ./scripts/timed-build.mjs
-ARG STATIC_ROUTES=500
-RUN STATIC_ROUTES="$STATIC_ROUTES" sh /tmp/generate-routes.sh /app
+ARG STATIC_ROUTES=20
+ARG DYNAMIC_ROUTES=30
+RUN STATIC_ROUTES="$STATIC_ROUTES" DYNAMIC_ROUTES="$DYNAMIC_ROUTES" sh /tmp/generate-routes.sh /app
 ENV BENCHMARK_MODE=declarative
 ENV NODE_ENV=production
 
 # scripts/bench-repeat.sh repeats the timed build in fresh containers of
 # the source stage.
 FROM source AS builder
-ARG STATIC_ROUTES=500
+ARG STATIC_ROUTES=20
+ARG DYNAMIC_ROUTES=30
 ARG CACHEBUST=0
-RUN echo "cold-build mode=declarative static_routes=${STATIC_ROUTES} cachebust=${CACHEBUST}" \
+RUN echo "cold-build mode=declarative static_routes=${STATIC_ROUTES} dynamic_routes=${DYNAMIC_ROUTES} cachebust=${CACHEBUST}" \
   && node scripts/timed-build.mjs
 
 FROM ${NODE_IMAGE} AS runner

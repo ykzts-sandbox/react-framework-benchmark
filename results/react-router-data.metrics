@@ -1,27 +1,27 @@
 BENCH_METRIC bundler=vite-rolldown
 BENCH_METRIC mode=data
-BENCH_METRIC build_seconds=0.323
-BENCH_METRIC output_bytes=444159
+BENCH_METRIC build_seconds=0.268
+BENCH_METRIC output_bytes=335465
 BENCH_METRIC client_html_count=1
-BENCH_METRIC client_js_count=501
+BENCH_METRIC client_js_count=52
 BENCH_METRIC native_bytes=0
-BENCH_FILE 347057	dist/assets/index-D4UIPt5F.js
-BENCH_FILE 318	dist/index.html
-BENCH_FILE 194	dist/assets/100-B1CpoSGF.js
-BENCH_FILE 194	dist/assets/101-BSLXCMr5.js
-BENCH_FILE 194	dist/assets/102-DpIBsUwL.js
-BENCH_FILE 194	dist/assets/103-kL167K-m.js
-BENCH_FILE 194	dist/assets/104-C3wrjrxw.js
-BENCH_FILE 194	dist/assets/105-Dc607s9N.js
-BENCH_FILE 194	dist/assets/106-DGsycrNy.js
-BENCH_FILE 194	dist/assets/107-f5h7jGZt.js
-BENCH_FILE 194	dist/assets/108-hnd8bukC.js
-BENCH_FILE 194	dist/assets/109-G_gmX5Yy.js
-BENCH_FILE 194	dist/assets/110-BXIeWdVZ.js
-BENCH_FILE 194	dist/assets/111-CxgsM5cM.js
-BENCH_FILE 194	dist/assets/112-DjBuqeVN.js
-BENCH_FILE 194	dist/assets/113-B_-JoxMH.js
-BENCH_FILE 194	dist/assets/114-DwXWUcoE.js
-BENCH_FILE 194	dist/assets/115-Dgvp9-9m.js
-BENCH_FILE 194	dist/assets/116-CoJBMTlA.js
-BENCH_FILE 194	dist/assets/117-DId8dga1.js
+BENCH_FILE 317451	dist/assets/index-B_K17LKS.js
+BENCH_FILE 473	dist/assets/pages-Cf-otGHB.js
+BENCH_FILE 447	dist/assets/10-mU6YZODi.js
+BENCH_FILE 447	dist/assets/11-QkArALAv.js
+BENCH_FILE 447	dist/assets/12-DLWEmel0.js
+BENCH_FILE 447	dist/assets/13-Dx1bU9D1.js
+BENCH_FILE 447	dist/assets/14-DLK5lEvt.js
+BENCH_FILE 447	dist/assets/15-Di7R08D8.js
+BENCH_FILE 447	dist/assets/16-DY1pOqR5.js
+BENCH_FILE 447	dist/assets/17-CKHXdqaj.js
+BENCH_FILE 447	dist/assets/18-DAdfgVMQ.js
+BENCH_FILE 447	dist/assets/19-B8hYuWYf.js
+BENCH_FILE 447	dist/assets/20-BL6njNMn.js
+BENCH_FILE 447	dist/assets/21-DOURriS3.js
+BENCH_FILE 447	dist/assets/22-CaqiW3lh.js
+BENCH_FILE 447	dist/assets/23-rjgZOdPI.js
+BENCH_FILE 447	dist/assets/24-0qyjfBXT.js
+BENCH_FILE 447	dist/assets/25-C6eNMF3b.js
+BENCH_FILE 447	dist/assets/26-C4nD4X20.js
+BENCH_FILE 447	dist/assets/27-Bji2RdI4.js

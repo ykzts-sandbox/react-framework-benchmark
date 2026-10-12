@@ -1,5 +1,6 @@
-STATIC_ROUTES ?= 500
-export STATIC_ROUTES
+STATIC_ROUTES ?= 20
+DYNAMIC_ROUTES ?= 30
+export STATIC_ROUTES DYNAMIC_ROUTES
 
 .PHONY: generate bench repeat charts compressed varnish-up varnish-down varnish-verify
 

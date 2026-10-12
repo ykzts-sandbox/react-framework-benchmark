@@ -1,10 +1,10 @@
 BENCH_METRIC bundler=rspack
 BENCH_METRIC router=pages
-BENCH_METRIC build_seconds=15.078
-BENCH_METRIC output_bytes=69333030
-BENCH_METRIC cache_bytes=181551
-BENCH_METRIC standalone_bytes=62757518
-BENCH_METRIC static_bytes=799154
+BENCH_METRIC build_seconds=11.641
+BENCH_METRIC output_bytes=60366212
+BENCH_METRIC cache_bytes=116938
+BENCH_METRIC standalone_bytes=58901517
+BENCH_METRIC static_bytes=497068
 BENCH_METRIC static_html_count=0
 BENCH_METRIC dynamic_html_count=0
 BENCH_METRIC standalone_server=standalone/server.js

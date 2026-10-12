@@ -6,30 +6,37 @@ node_modules/
 apps/next/node_modules/
 apps/next/.next/
 apps/next/app/static/
+apps/next/app/dynamic/
 
 apps/next-pages/node_modules/
 apps/next-pages/.next/
 apps/next-pages/pages/static/
+apps/next-pages/pages/dynamic/
 
 apps/next-15/node_modules/
 apps/next-15/.next/
 apps/next-15/app/static/
+apps/next-15/app/dynamic/
 
 apps/next-pages-15/node_modules/
 apps/next-pages-15/.next/
 apps/next-pages-15/pages/static/
+apps/next-pages-15/pages/dynamic/
 
 apps/react-router/node_modules/
 apps/react-router/build/
 apps/react-router/.react-router/
 apps/react-router/app/routes/static/
+apps/react-router/app/routes/dynamic/
 
 apps/react-router-data/node_modules/
 apps/react-router-data/dist/
 apps/react-router-data/src/routes/static/
+apps/react-router-data/src/routes/dynamic/
 
 apps/react-router-declarative/node_modules/
 apps/react-router-declarative/dist/
 apps/react-router-declarative/src/routes/static/
+apps/react-router-declarative/src/routes/dynamic/
 
 results/*.log

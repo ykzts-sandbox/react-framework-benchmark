@@ -10,7 +10,7 @@ base=${VARNISH_URL:-http://127.0.0.1:8080}
 report="$root/results/varnish.md"
 
 # Build the cache-demo App Router image and the Laravel API. MySQL is the
-# source for /dynamic/:id. Recreate Varnish so it attaches to this Next.js.
+# source for /dynamic/:kind/:id. Recreate Varnish so it attaches to this Next.js.
 docker compose up -d --build --wait mysql laravel nextjs
 docker compose up -d --force-recreate --no-deps varnish
 
@@ -88,8 +88,8 @@ request() {
   rm -f "$header_file" "$body_file"
 }
 
-wait_for_url "http://127.0.0.1:8000/api/pages/1"
-wait_for_url "http://127.0.0.1:3000/dynamic/1"
+wait_for_url "http://127.0.0.1:8000/api/pages/1/1"
+wait_for_url "http://127.0.0.1:3000/dynamic/1/1"
 wait_for_url "${base}/"
 
 timeout 30 docker compose exec -T varnish varnishlog -g request -i ReqURL,ReqMethod,ReqHeader,RespStatus,RespHeader,VCL_call,Hit,BereqURL >results/varnishlog.txt &
@@ -134,11 +134,11 @@ sleep 1
   request "static html after prefetch" "${base}/static/1"
   request "static page 2 html 1" "${base}/static/2"
   request "static page 2 html 2" "${base}/static/2"
-  request "static page 500 html 1" "${base}/static/500"
-  request "static page 500 html 2" "${base}/static/500"
-  request "dynamic html 1" "${base}/dynamic/1"
-  request "dynamic html 2" "${base}/dynamic/1"
-  request "dynamic rsc header 1" "${base}/dynamic/1" -H "RSC: 1"
+  request "static page 20 html 1" "${base}/static/20"
+  request "static page 20 html 2" "${base}/static/20"
+  request "dynamic html 1" "${base}/dynamic/1/1"
+  request "dynamic html 2" "${base}/dynamic/1/1"
+  request "dynamic rsc header 1" "${base}/dynamic/1/1" -H "RSC: 1"
   if [ -f results/last-location.txt ]; then
     location=$(cat results/last-location.txt)
     case "$location" in
@@ -150,13 +150,13 @@ sleep 1
     request "dynamic rsc redirect 2" "$rsc_url" -H "RSC: 1"
     rm -f results/last-location.txt
   fi
-  request "dynamic html after rsc" "${base}/dynamic/1"
-  request "dynamic page 2 html 1" "${base}/dynamic/2"
-  request "dynamic page 2 html 2" "${base}/dynamic/2"
-  request "dynamic html after other page" "${base}/dynamic/1"
-  request "dynamic page 500" "${base}/dynamic/500"
-  request "dynamic missing 1" "${base}/dynamic/501"
-  request "dynamic missing 2" "${base}/dynamic/501"
+  request "dynamic html after rsc" "${base}/dynamic/1/1"
+  request "dynamic page 2 html 1" "${base}/dynamic/1/2"
+  request "dynamic page 2 html 2" "${base}/dynamic/1/2"
+  request "dynamic html after other page" "${base}/dynamic/1/1"
+  request "dynamic kind 30 page 1000" "${base}/dynamic/30/1000"
+  request "dynamic missing 1" "${base}/dynamic/30/1001"
+  request "dynamic missing 2" "${base}/dynamic/30/1001"
   echo '```'
   echo
   echo "## varnishstat"
